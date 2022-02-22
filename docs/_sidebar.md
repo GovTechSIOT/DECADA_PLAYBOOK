@@ -4,10 +4,9 @@
 - [Release History](Release.md)
 - [About The Playbook](AboutPlayBook.md)
 - [Introduction to DECADA](Quicklinks.md)
-     * [DECADA Overview](Overview/Overview.md)
+     * [Overview](Overview/Overview.md)
      * [Pricing Model](Overview/Price.md)
-     * [Role and Responsibility](Overview/Role.md)
-     * [Access Decada](Overview/AccessingEnOS.md)
+     * [Shared Responsibility Model](Overview/Role.md)
      * [Terminalogy](Overview/EnOSGlossaries.md)
 
 - On-Boarding Devices to DECADA

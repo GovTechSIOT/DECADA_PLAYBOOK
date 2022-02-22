@@ -1,4 +1,0 @@
-# Accessing DECADA 
-- Console 
-- APIs
-
