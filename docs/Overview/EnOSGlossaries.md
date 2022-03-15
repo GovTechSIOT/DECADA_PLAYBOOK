@@ -13,8 +13,4 @@
 | Asset                      | An asset is the minimum element that can be bound to a node on an asset tree.                    |
 | Certificate Authority (CA) | An entity that issues digital certificates.                                                      |
 | CA certificate             | A digital certificate issued by the CA. It conforms to the certificate format defined by the [IETF RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280) specification |
-                            
-                            
-**T**
 
-TSDB            Time Series DataBase

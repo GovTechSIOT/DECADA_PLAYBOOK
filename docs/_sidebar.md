@@ -1,31 +1,45 @@
 <!-- docs/sidebar -->
 
 - [**Home**](/#docs)
-- [*Release History*](Release.md)
+- [**Release History**](Release.md)
 - [**About The Playbook**](AboutPlayBook.md)
 - [**Introduction to DECADA**](Overview/intro.md)
      * [DECADA Overview](Overview/Overview.md)
      * [DECADA Pricing Model](Overview/Pricing.md)
-     * [Shared Responsibility Model](Overview/Table_Role.md)
-     * [Service Level Agreement](Dev_Con/SLA.md)
+     * [Roles and Responsibility](Overview/Table_Role.md)
+     * [Service Level Agreement for DECADA](Dev_Con/SLA.md)
  
- - [Technical Architechture](Overview/HighNet.md)
+ - [**Technical Architechture**](Overview/HighNet.md)
 
 - **On-Boarding Devices**
--   [Overview](Dev_Con/OV.md)
+     * [Overview](Dev_Con/OV.md)
      * [Planning and Provisioning](Dev_Con/Onboard.md)
      * [Service Phase](Dev_Con/Service.md)
-     * [Maintenance and Management](Dev_Con/Maintenance.md)
-     * [Decommissioning](Dev_Con/Decommis.md)
+     * [Maintenance Phase](Dev_Con/Maintenance.md)
+     * [Decommissioning Phase](Dev_Con/Decommis.md)
 
 - **On-Boarding Applications**
-     * [Integration with WOG Smart Nation Sensors Platform](Dev_Con/WOG.md)
-     * [Integration with 3rd Party Application](Dev_Con/3PApp.md)
-- [**Security**](Dev_Con/security.md)
-- [**DECADA SDK & API**](Dev_Con/SDK.md)
+     * [Integration with WOG Smart Nation Sensors Platform](OnboardingApplication/WOG_SNSP.md)
+     * [Integration with 3rd Party Application](OnboardingApplication/3rd_Party_Application.md)
+
+- **DECADA SDK & API**
+     * [Introduction](SDK_API/Introduction.md)
+     * [DECADA SDK](SDK_API/SDK.md)
+     * [DECADA API](SDK_API/API.md)
+
+- **Security**
+     * [Introduction](Security/Introduction.md)
+     * [Secure Connection](Security/Secure_Connection.md)
+     * [Device Security](Security/Device_Security.md)
+     * [Application Security](Security/Application_Security.md)
+     * [Cloud Infrastructure Security](Security/Cloud_Infrastructure_Security.md)
+     * [Data Security](Security/Data_Security.md)
+     * [Role-Based Access Control](Security/Role-Based_Access_Control.md)
+     * [Logging and Auditing](Security/Logging_and_Auditing.md)
+     * [Security Incident Management](Security/Security_Incident_Management.md)
+
 - [**Use Cases**](Dev_Con/usedcase.md)
 - [**FAQ**](Dev_Con/FAQ.md)
-- [**Appendix**](Dev_Con/Appendix.md)
 - [**Terminalogy**](Overview/EnOSGlossaries.md)
 
 Additional Info (not in Playbook)
@@ -36,5 +50,6 @@ Additional Info (not in Playbook)
 - [Overview Details](Overview/Overview2.md)
 - [Direct Device Connection](Dev_Con/Dev_DDC.md)
 - [Edge Gateway](Dev_Con/Edge.md)
-- [API Connection](Dev_Con/API.md)        
+- [API Connection](Dev_Con/API.md) 
+- [**Appendix**](Dev_Con/Appendix.md)       
 
