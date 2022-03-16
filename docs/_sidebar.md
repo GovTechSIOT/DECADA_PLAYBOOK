@@ -39,7 +39,14 @@
      * [Security Incident Management](Security/Security_Incident_Management.md)
 
 - [**Use Case**](Dev_Con/usedcase.md)
-- [**FAQ**](Dev_Con/FAQ.md)
+
+- **FAQ**
+     * [On-Boarding Device Related](FAQ/On_Boarding_Phase.md)
+     * [On-Boarding Applications Related](FAQ/On_Boarding_Applications.md)
+     * [SDK & API Related](FAQ/DECADA_SDK_API.md)
+     * [Security Related](FAQ/Security.md)
+     * [Others](FAQ/Others.md)
+
 - [**Terminalogy**](Overview/EnOSGlossaries.md)
 
 Additional Info (not in Playbook)
