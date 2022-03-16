@@ -38,7 +38,11 @@
      * [Logging and Auditing](Security/Logging_and_Auditing.md)
      * [Security Incident Management](Security/Security_Incident_Management.md)
 
-- [**Use Case**](Dev_Con/usedcase.md)
+- **Use Case**
+     * [Introduction](Use_Case/Introduction.md)
+     * [Air Sensors](Use_Case/Air_Sensor.md)
+     * [Solar Panel](Use_Case/Solar_Panel.md)
+     * [Power Meter](Use_Case/Power_Meter.md)
 
 - **FAQ**
      * [On-Boarding Device Related](FAQ/On_Boarding_Phase.md)
