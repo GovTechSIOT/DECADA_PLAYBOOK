@@ -2,11 +2,10 @@
 # HOME
 
 
-|<p> <font size = "150" face="arial" color="grey">Arial - DECADA PLAYBOOK</font></p> |
+|<p> <font size = "150" face="arial" color="grey">DECADA PLAYBOOK</font></p> |
 |:---------------------------------------------------------------------------:|
 
 <center><font size ="80"><bold>DECADA PlayBook</bold></font></center>
--->
 
 <div align=center>
 <img width="900" src="./images/TOPBAR.png"/>

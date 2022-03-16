@@ -1,6 +1,6 @@
-# Overview
+# DECADA Overview
 
-## Objectives
+**<u>Overview</u>**
 
 **De**vice Management **C**ontrol **a**nd **D**ata **A**cquisition System (DECADA) is used as a central IoT Platform for Whole-of-Government (WOG) where it has economies of scale through demand aggregation and standardization.
 
@@ -10,7 +10,7 @@
 
 DECADA also allows Agencies to develop and deploy their Smart Systems solution rapidly.
 
-## Introduction
+**<u>Introduction</u>**
 
 DECADA is a Multi-Tenant Cloud Platform which forms the Device Management Layer of the Smart Nation Sensor Platform. Together with other SNSP components, DECADA offers an easy and powerful solution for Agencies to implement and manage their IoT networks. 
 
@@ -28,7 +28,7 @@ For Agencies with IoT sensors deployment needs, DECADA can offer the following:
 - Provide training, SDK, API for development and integration
 - Enhanced user experience with GSIB laptop access
 
-## Basic Network Design
+**<u>Basic Network Design</u>**
 
 DECADA Cloud Platform is hosted in GCC Azure and is accessible via Internet, private network and WOG Network.
 
@@ -41,7 +41,17 @@ DECADA Cloud Platform is hosted in GCC Azure and is accessible via Internet, pri
 <img width="850" src="./images/GCC.png"/>
 </div>
 
-## Common Services of what DECADA can offer
+**<u>Common Services of what DECADA can offer</u>** <!--## Common Services of what DECADA can offer-->
+
+DECADA is made up of 3 main building blocks:
+
+1. [Device Management and Connectivity](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2281537544)
+2. [Data Management](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2257813613/Data+Asset+Management)
+3. [Data Analytics](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2282520682)
+
+<div align=center>
+<img src="./images/DecadaService.png"/>
+</div>
 
 DECADA Cloud Platform provides APIs/SDK for data ingress, data egress and platform management to provide as a stack for building of IoT devices. 
 
@@ -90,7 +100,7 @@ Use-Case 1: Smart Nation Sensor Platform (SNSP) will send sensor data to Agency 
 <div align=center>
 <img width="850" src="./images/ovuc1.png"/>
 </div>
-                        Use-Case 1
+<!--                        Use-Case 1-->
 
 
 Use-Case 2: Agencies can access DECADA from WOG environment
@@ -98,7 +108,7 @@ Use-Case 2: Agencies can access DECADA from WOG environment
 <div align=center>
 <img width="850" src="./images/ovuc2.png"/>
 </div>
-Use-Case 2
+<!--Use-Case 2-->
 
 
 

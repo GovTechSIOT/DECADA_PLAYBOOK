@@ -1,6 +1,6 @@
 # Technical Architecture of DECADA
 
-## Emterprise Architecture
+**<u>Enterprise Architecture</u>** <!--## Emterprise Architecture-->
 <div align=center>
 <img width="850" src="./images/techarch.png"/>
 </div>
@@ -22,16 +22,18 @@
 </div>
 -->
 
-## Data Flow
+**<u>Data Flow</u>** <!--## Data Flow-->
 <div align=center>
 <img width="850" src="./images/dataflow.png"/>
 </div>
+
+<!--
 <div align=center>
 <img width="850" src="./images/dataflow2.png"/>
 </div>
+-->
 
-
-## Batch Processing
+**<u>Batch Processing</u>** <!--## Batch Processing-->
 <div align=center>
 <img width="850" src="./images/batchprocessing.png"/>
 </div>

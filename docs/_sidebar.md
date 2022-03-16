@@ -3,7 +3,7 @@
 - [**Home**](/#docs)
 - [**Release History**](Release.md)
 - [**About The Playbook**](AboutPlayBook.md)
-- [**Introduction to DECADA**](Overview/intro.md)
+- **Introduction to DECADA**<!--(Overview/intro.md)-->
      * [DECADA Overview](Overview/Overview.md)
      * [DECADA Pricing Model](Overview/Pricing.md)
      * [Roles and Responsibility](Overview/Table_Role.md)
