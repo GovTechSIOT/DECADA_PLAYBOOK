@@ -38,7 +38,7 @@
      * [Logging and Auditing](Security/Logging_and_Auditing.md)
      * [Security Incident Management](Security/Security_Incident_Management.md)
 
-- [**Use Cases**](Dev_Con/usedcase.md)
+- [**Use Case**](Dev_Con/usedcase.md)
 - [**FAQ**](Dev_Con/FAQ.md)
 - [**Terminalogy**](Overview/EnOSGlossaries.md)
 
