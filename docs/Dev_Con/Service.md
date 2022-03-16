@@ -1,277 +1,5 @@
 # Service Phase
 
-## Dashboard
-
-   Once the devices has been provision on DECADA, Agencies can gain an overview of their device and message dynamics through the device management dashboard that DECADA. Agencies can also develop your own application for data presentation.
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dashboard.png"/>
-</div>
-Device Management Dashboard
-
-Agencies can also zoom in to view the on-boarded device information on the dashboard to have a holistic view of the devices inventory.
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dashboards2.png"/>
-</div>
-Holistic View of all On-Boarded Devices
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dashboard3.png"/>
-</div>
-Specific Device Inventory
-
-DECADA also offers Agencies the function to view the real-time statistics of device behaviors and connections such as device event reporting failures, number of message sent by and the network status of devices.
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dashboard4.png"/>
-</div>
-Real-Time Statistics
-
-
-## Remote Controlling of Devices
-
-Agencies can also control their on-boarded devices via:
- - From DECADA to devices
- The sample codes below shows the connection initiated from devices to be connected to DECADA:
-
-
-<!-- tabs:start -->
-#### **Code**
-```
-from enos.message.downstream.tsl.MeasurepointSetCommand import MeasurepointSetCommand
-from enos.message.upstream.tsl.MeasurepointPostRequest import MeasurepointPostRequest
-from enos.message.downstream.tsl.ServiceInvocationCommand import ServiceInvocationCommand
-from enos.message.downstream.tsl.ServiceInvocationReply import ServiceInvocationReply
-
-def set_measurepoint_command_handler(arrived_message, arg_list):
-    print('receive measurepoint set command, params: {}'.format(arrived_message.get_params()))
-    print('product key = {}, device key = {}'.format(arg_list[0], arg_list[1]))
-    print ("measurepoints set success")
-    params = arrived_message.get_params()
-    print('service params: {}'.format(params))
-    measure_point_request = MeasurepointPostRequest.builder() \
-        .add_measurepoint('HDB_RT_Current', 6000) \
-        .set_timestamp(int(time.time() * 1000)) \
-        .build()
-    measure_point_response = client.publish(measure_point_request)
-    print ("publish new measurepoint")
-     
-def get_measurepoint_command_handler(arrived_message, arg_list):
-    print('receive service invocation command: {}, args: {}'.format(arrived_message, arg_list))
-    product_key = arg_list[0]
-    device_key = arg_list[1]
-    service_name = arg_list[2]
-    params = arrived_message.get_params()
-    print('service params: {}'.format(params))
-    if service_name == <condition>:
-        return ServiceInvocationReply.builder()\
-            .add_output_data('HDB_RT_Current', 5000)\
-            .set_code(201)\
-            .build()
-    else:
-        return ServiceInvocationReply.builder().set_message('unknown service:').set_code(220).build()
-
-if __name__ == "__main__":
-    client = MqttClient(str("MQTT Broker URL"), "Product Key", "Device Key","Device Secret")
-    client.get_profile().set_auto_reconnect(True)  # if connection interrupted, the client can automaticlly reconnect
-    client.setup_basic_logger('INFO')
-    # register a msg handler to handle the downstream measurepoint set command
-    client.register_arrived_message_handler(MeasurepointSetCommand.get_class(), set_measurepoint_command_handler)
-    client.register_arrived_message_handler(MeasurepointGetCommand.get_class(), get_measurepoint_command_handler)
-    client.connect()
-```
-<!-- tabs:end -->
-
-From the code above, the devices will report the requested measurement point.
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/measuring1.png"/>
-</div>
-
-DECADA will be able to generate the measurement point requested from the devices.
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/measuring2.png"/>
-</div>
-
-Commands logs are available on DECADA when commands are initiated to the devices.
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/measuring3.png"/>
-</div>
-Commands initiated from DECADA
-
-Agencies may refer [here](https://www.envisioniot.com/docs/device-connection/en/latest/reference/mqtt/downstream/index.html) for more information.
- - From 3rd Party Application to devices through DECADA
-
-
-*Note to team:*
-Is there any used case to quote such functionality?
-Any information for the 2nd method?
-
-
-## Alerts
-
-
-**Overview**
-DECADA has available alert services which Agencies can use to monitor alerts on devices as defined by the alert triggering rules against real-time measure point telemetry. 
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/cloud_edge.png"/>
-</div>
-Alert Overview
-
-The alerts can be sent via email or SMS according to the requirements.
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/alert2.png"/>
-</div>
-Via email
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/alert3.png"/>
-</div>
-Via SMS
-
-DECADA allows Agencies to generate alerts based on the following setting:
-1. Measurement Point (i.e Threshold, Reporting Frequency, No update of data)
-2. Events (i.e Threshold)
-3. Device State
-
-1
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/alert4.png"/>
-</div>
-Configuration to generate alerts when device is offline
-
-2
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/alert5.png"/>
-</div>
-Alerts will be reflected if the threshold is met or device is offline
-
-Agencies may refer [here](https://support.envisioniot.com/docs/alert/en/latest/learn/alert_overview.html) for more information.
-
-**Used case**
-
-Agencies can learn how to create the Alert ID to generate alerts based on the pre-set conditions:
- - [Quick Start: Setting Different Alert Thresholds for Devices of the Same Model](https://support.envisioniot.com/docs/alert/en/latest/howto/set_alert_rule_for_device.html)
-
-
-## Data Asset Management
-
-**Overview**
-DECADA provides the following functions which allows Agencies to manage, consume and store data according to their business needs 
-
-**Data Asset Catalog Services**
-DECADA enables Agencies to search the metadata of models and measurement points (i.e. basic information, stream processing lineage) and all the instances that are associated with the model to which a measurement point belongs.
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dam1.png"/>
-</div>
-
-**<u>Stream Processing Services</u>**
-By leveraging on such service, Agencies will be ensured of the following:
- - High throughput and low latency stream processing.
- - Commonly used stream processing algorithms in the IoT field.
- - Visualized template-based configurations to help Agencies quickly perform their stream data processing jobs.
- - A set of underlying packaged StreamSets operators for developers to develop customized stream data processing jobs to meet the requirements of complex business scenarios.
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dam2.png"/>
-</div>
-Stream Processing Services
-
-
-Agencies may refer [here](https://www.envisioniot.com/docs/stream-processing/en/latest/streaming_overview.html) for more information.
-
-**<u>Time Series Data Management (TSDB)</u>**
-
-The Time Series Database (TSDB) provides efficient and stable storage and management for time series data that is ingested from devices or generated by the stream processing engine by having a variety of data storage options based on Agencies' data storage and reading requirements. It allows Agencies to view the latest data ingested from devices via the Data Insights feature and delete historical data via the Data Deletion feature.
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dam3.png"/>
-</div>
-
-Note: The data storage policy must be configured before the devices start uploading data to DECADA. Otherwise, the uploaded device data will not be stored in TSDB.
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dam5.png"/>
-</div>
-TSDB Feature
-
-Agencies may refer [here](https://www.envisioniot.com/docs/time-series-data/en/latest/overview.html) for more information.
-
-**<u>Data Federation Service</u>**
-DECADA provides data reading and writing services from and to multi-source heterogeneous data storage systems. Agencies can read data from and write data to heterogeneous data sources through unified SQL statements.
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dam6.png"/>
-</div>
-Data Federation Service
-
-Agencies may refer [here](https://www.envisioniot.com/docs/data-federation/en/latest/index.html) for more information.
-
-**<u>Data Subscription Service</u>**
-
-The data subscription service improves the API calling efficiency of applications with active data push, which supports subscription to various data types such as real-time asset data, asset alert data, and event data. Agencies can use the provided Java SDK to retrieve the subscribed data.
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dam7.png"/>
-</div>
-Agencies may refer [here](https://www.envisioniot.com/docs/data-subscription/en/latest/data_subscription_overview.html) for more information.
-
-
-
-**<u>Data Archiving Service</u>**
-
-DECADA supports archiving and storing data from the real-time message channel, data from the offline message channels, real-time alert records, and data stored in TSDB. It provides flexible storage configurations to reduce Agencies data storage costs.
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dam8.png"/>
-</div>
-Data Archiving Service
-
-Agencies may refer [here](https://www.envisioniot.com/docs/data-archiving/en/latest/archive_policy.html) for more information.
-
-**<u>Data Synchronization Service</u>**
-
-DECADA supports synchronizing data between extensive heterogeneous data sources (i.e. synchronizing structured data from external source databases to the Hive database in DECADA and from the DECADA Hive database to external target databases).
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dam9.png"/>
-</div>
-Data Synchronization Service
-Agencies may refer [here](https://www.envisioniot.com/docs/data-sync/en/latest/di_overview.html) for more information.
-
-
-**<u>Batch Processing Service</u>**
-
-DECADA provides a GUI-based Dataflow Service that enables batch data processing based on scheduled workflows. The batch data processing operations support various scenarios from simple data transformation to complete ETL (extract-transform-load). The Batch Processing Service also provides common libraries out-of-the-box for most frequently used data processing operations.
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dam10.png"/>
-</div>
-Batch Processing Service
-
-Agencies may refer [here](https://www.envisioniot.com/docs/batch-processing/en/latest/dataide_overview.html) for more information.
-
-
 ## Multi-Tenancy
 
 **Overview**
@@ -339,35 +67,373 @@ DECADA has also built-in logging mechanism to log incorrect login. See below.
 <name=Device Management Dashboard>
 <img width="850" src="./images/mt8.png"/>
 </div>
+Audit Trail
 
-Agencies may refer [here](https://support.envisioniot.com/docs/enos/en/latest/iam/concept/index.html) for more information.
+?> Agencies can leverage on  existing API/SDK and the DECADA Management Portal to control users access/permission. 
 
+**Via DECADA Management Portal**
 
-**<u>Used case</u>**
+Other than the diagram above, Agencies may refer [here](https://support.envisioniot.com/docs/enos/en/latest/iam/concept/index.html) for the implementation details via the DECADA Management Portal.
+
+**Via API Calls**
+
+Agencies may refer below for the implementation details via the existing API calls.
+- [IAM Services](https://support.envisioniot.com/docs/iam-api/en/2.3.0/overview.html)
+
+**<u>Use-case</u>**
 Agencies can learn how to set up a user account in a particular organization:
 [Quick Start: Creation of user account](https://support.envisioniot.com/docs/enos/en/latest/iam/ou_admin/iam_gettingstarted_adduser)
 
-## Logging Mechanism
+
+
+
+
+## Dashboard
 
 **Overview**
 
-DECADA provides logging mechanism which allows Agencies to identify and analyze issue early and ensure that the device intended functions are running smoothly. 
+Once the devices has been provision on DECADA, Agencies can:-
+- Gain an overview of their device inventory and message dynamics (i.e. real-time statistics of device behaviors and connections such as device event reporting  failures, number of message sent by and the network status of devices)
+- Develop their own application for data presentation via the dashboarding functions.
 
-Logs in DECADA are categorized into two types as per the below.
- - Cloud Logs: Include upstream and downstream messages such as device onboarding, firmware upgrades, file uploads and downloads, data parsing, data reporting, data storage, commands, etc. Logs of upstream messages are messages sent by the device to the message queue, messages flowed from the topic queue to the rule engine, and messages forwarded from the rule engine to other products and services in DECADA, while logs of downstream messages are messages sent from the cloud to the device.
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/lm1.png"/>
+<img width="850" src="./images/dashboard.png"/>
 </div>
- 
- - Device Logs: Include information that are related to the device running state and processing logic. Note that devices need to support log reporting for logs to be viewed.
+Device Management Dashboard
+
+<!--
+Agencies can also zoom in to view the on-boarded device information on the dashboard to have a holistic view of the devices inventory.
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dashboards2.png"/>
+</div>
+Holistic View of all On-Boarded Devices
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dashboard3.png"/>
+</div>
+Specific Device Inventory
+
+DECADA also offers Agencies the function to view the real-time statistics of device behaviors and connections such as device event reporting failures, number of message sent by and the network status of devices.
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dashboard4.png"/>
+</div>
+Real-Time Statistics
+-->
+
+## Remote Controlling of Devices
+
+**Overview**
+
+DECADA also has the functions which allows Agencies to control their devices remotely from:
+- Directly from DECADA
+- 3rd Party Application owned by Agencies
+
+?> Agencies can leverage on existing API/SDK and the DECADA Management Portal to control their on-boarded devices remotely.
+
+**Via DECADA Management Portal**
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/commands.png"/>
+</div>
+
+**Via API Calls**
+
+Agencies may refer here for the details to perform remote controlling to their on-boarded devices. via the existing API calls.
+[Remote Controlling of Devices](https://github.com/EnvisionIot/enos-device-sdk-python/blob/master/enos/sample/CommandSample.py)
+[DECADA Issuing Commands to Devices](https://www.envisioniot.com/docs/device-connection/en/latest/reference/mqtt/downstream/index.html)
+
+Note to team:
+Is there any use-case to quote such functionality?
+Any information for the 2nd method?
+DECADA will be able to generate the measurement point requested from the devices.
+
+Agencies may refer [here](https://www.envisioniot.com/docs/device-connection/en/latest/reference/mqtt/downstream/index.html) for more information.
+ - From 3rd Party Application to devices through DECADA
+
+
+*Note to team:*
+Is there any used case to quote such functionality?
+Any information for the 2nd method?
+
+
+## Alerts
+
+**Overview**
+
+DECADA has available alert services which Agencies can use to monitor alerts on devices as defined by the alert triggering rules against real-time measure point telemetry. 
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/cloud_edge.png"/>
+</div>
+Alert Overview
+
+DECADA allows Agencies to generate alerts based on the following setting:
+1. Measurement Point (i.e Threshold, Reporting Frequency, No update of data)
+2. Events (i.e Threshold)
+3. Device State
+
+The alerts can be sent via email or SMS according to the requirements.
+
+?> Agencies can leverage on existing API/SDK and the DECADA Management Portal to generate Alerts and their desired notification feature (i.e. SMS/Email).
+
+**Via DECADA Management Portal**
+
+Agencies may refer [here](https://support.envisioniot.com/docs/alert/en/latest/learn/alert_overview.html) for the implementation details via the DECADA Management Portal.
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/alert5.png"/>
+</div>
+Alerts will be reflected if the threshold is met or device is offline
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/alert2.png"/>
+</div>
+Via email
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/alert3.png"/>
+</div>
+Via SMS
+
+?> The alerts setting available in DECADA are generic in nature. Agencies are advise to utilize the existing API should they require further customization. 
+
+**Via API Calls**
+
+Agencies may refer below for the implementation details via the existing API calls.
+- [Alerts Service:](https://support.envisioniot.com/docs/alert-api/en/2.3.0/overview.html) Monitor asset statuses, define alert contents, alert types, alert severities, alert trigger conditions, and manage the alert records.
+- [Notification Management Service:](https://support.envisioniot.com/docs/notification-mgmt-api/en/2.3.0/overview.html) Send messages to Agencies with specific templates and query the message sending results
+
+**Used case**
+
+Agencies can learn how to create the Alert ID to generate alerts based on the pre-set conditions:
+ - [Quick Start: Setting Different Alert Thresholds for Devices of the Same Model](https://support.envisioniot.com/docs/alert/en/latest/howto/set_alert_rule_for_device.html)
+
+
+## Logging Mechanism
+**Overview**
+
+DECADA provides logging mechanism which allows Agencies to retrieve both system and devices logs to identify and analyze issue early and ensure that the intended functions are running smoothly. 
+
+Logs in DECADA are categorized into two types as per the below.
+- **Cloud Logs:** Include upstream and downstream messages such as device onboarding, firmware upgrades, file uploads and downloads, data parsing, data reporting, data storage, commands, etc. Logs of upstream messages are messages sent by the device to the message queue, messages flowed from the topic queue to the rule engine, and messages forwarded from the rule engine to other products and services in DECADA, while logs of downstream messages are messages sent from the cloud to the device.
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/cloud.png"/>
+</div>
+
+- **Device Logs:** Include information that are related to the device running state and processing logic. Note that devices need to support log reporting for logs to be viewed.
 
 Agencies may refer [here](https://support.envisioniot.com/docs/device-connection/en/2.2.0/howto/monitoring/logs.html) for more information.
-
-*Note to Team:*
+Note to Team:
 Is there any use-case on how to configure to view device logs?
 
 
+## Data Asset Management
+
+**Overview**
+
+DECADA provides functions relating to Data Asset Management which allows Agencies to manage, consume and store data according to their business needs.
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dataasset.png"/>
+</div>
+
+<!--
+**Data Asset Catalog Services**
+DECADA enables Agencies to search the metadata of models and measurement points (i.e. basic information, stream processing lineage) and all the instances that are associated with the model to which a measurement point belongs.
+-->
+
+The data flow of real-time data in DECADA Data Asset Management can be viewed through 3 key capabilities:
+- Stream Analytics (i.e. Stream Processing)
+- Storage Management & Access (i.e. Time Series Database TSDB, Data Archiving)
+- Data Governance (i.e. Data Subscription Services)
 
 
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dataasset2.png"/>
+</div>
+Data Asset Management Overview
 
+**Stream Processing Services**
+
+Powered by Apache SparkTM Streaming, DECADA Stream Analytics targets to meet the real-time data processing requirement of devices and assets where it can be used for the following scenarios:
+- Aggregating and calculating asset raw data
+- Computation of device state
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dataasset3.png"/>
+</div>
+DECADA Streaming Service Overview
+
+By leveraging on such service, Agencies will be ensured of the following:
+- High throughput and low latency stream processing.
+- Commonly used stream processing algorithms in the IoT field.
+- Visualized template-based configurations to help Agencies quickly perform their stream data processing jobs.
+- A set of underlying packaged StreamSets operators for developers to develop customized stream data processing jobs to meet the requirements of complex business scenarios. Agencies may refer here for more information on the existing StreamSets operators.
+
+?> Agencies can leverage on existing API/SDK and the DECADA Management Portal to create the analytics pipeline to meet the real-time data processing requirement of devices and assets
+
+**Via DECADA Management Portal**
+
+Agencies may refer [here](https://www.envisioniot.com/docs/stream-processing/en/latest/gettingstarted_ai.html) for the implementation details via the DECADA Management Portal.
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dataasset4.png"/>
+</div>
+Stream Processing Services
+
+**Via API Calls**
+
+Agencies may refer [here](https://support.envisioniot.com/docs/stream-processing-api/en/2.3.0/overview.html) for the implementation details via the existing API calls.
+
+
+**<u>Time Series Data Management (TSDB)</u>**
+
+The Time Series Database (TSDB) provides efficient and stable storage and management for time series data that is ingested from devices or generated by the stream processing engine by having a variety of data storage options based on Agencies' data storage and reading requirements. It allows Agencies to view the latest data ingested from devices via the Data Insights feature and delete historical data via the Data Deletion feature.
+
+?> 1. The data storage policy must be configured before the devices start uploading data to DECADA. Otherwise, the uploaded device data will not be stored in TSDB. 2. Agencies can leverage on existing API/SDK and the DECADA Management Portal to query and update related storage resources.
+
+**Via DECADA Management Portal**
+
+Agencies may refer [here](https://www.envisioniot.com/docs/time-series-data/en/latest/policy.html) for the implementation details via the DECADA Management Portal.
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dataasset6.png"/>
+</div>
+TSDB Feature
+
+**Via API Calls**
+
+Agencies may refer below for the implementation details via the existing API calls.
+- [TSDB Policy Service:](https://support.envisioniot.com/docs/tsdb-policy-api/en/2.3.0/v2.1/overview.html) To query and update TSDB Storage Policies
+- [TSDB Data Service:](https://support.envisioniot.com/docs/tsdb-data-api/en/2.3.0/v2.1/v21.html) Query assets data that is stored in the DECADA TSDB and filter/aggregate the data based on use-case
+
+**Data Archiving Service**
+
+DECADA supports archiving and storing data from the real-time message channel, data from the offline message channels, real-time alert records, and data stored in TSDB. It provides flexible storage configurations to reduce Agencies data storage costs.
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dataasset7.png"/>
+</div>
+Data Archiving Service
+
+Agencies may refer [here](https://www.envisioniot.com/docs/data-archiving/en/latest/archive_policy.html)for more information.
+
+**Data Subscription Services**
+
+Agencies can subscribe to both the original and the calculated data, so that the asset data can be consumed by Agencies' application directly The subscription setting can be configured though the Data Subscription function in the DECADA Management Portal and existing API.
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dataasset8.png"/>
+</div>
+Data Subscription Service
+
+Agencies may refer [here](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2258043087) for more information.
+
+## Data Analytics
+
+**Overview**
+
+DECADA provides functions relating to Data Analytics which allows Agencies to obtain insights from data which are stored via batch processing.
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dataanalytics1.png"/>
+</div>
+Data Analytics
+
+It provides an end-to-end tooling for:
+- Simple data transformation
+- Complete ETL (Extract-Transform-Load) Pipeline
+- Further interactive exploration
+- Providing the modeling-ready data for machine learning, or writing the data to a data store that is optimized for analytics and visualization. 
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dataanalytics2.png"/>
+</div>
+
+**Batch Processing Service**
+
+DECADA provides Dataflow Service that enables batch data processing based on scheduled workflows. The batch data processing operations support various scenarios from simple data transformation to complete ETL (extract-transform-load). The Batch Processing Service also provides common libraries out-of-the-box for most frequently used data processing operations.
+
+?> Agencies can leverage on existing API/SDK and the DECADA Management Portal to manage the data synchronization, data development, and workflow operation tasks for batch data processing.
+
+**Via DECADA Management Portal**
+
+Agencies may refer [here](https://www.envisioniot.com/docs/batch-processing/en/latest/managing_resource.html) for the implementation details via the DECADA Management Portal.
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dataanalytics3.png"/>
+</div>
+Batch Processing Service
+
+**Via API Calls**
+
+Agencies may refer [here](https://www.envisioniot.com/docs/batch-processing-api/en/latest/v2.1/overview.html) for the implementation details via the existing API calls.
+
+
+**<u>Data Federation Service</u>**
+
+DECADA provides data reading and writing services from and to multi-source heterogeneous data storage systems. Agencies can read data from and write data to heterogeneous data sources through unified SQL statements.
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/dam6.png"/>
+</div>
+Data Federation Service
+
+**Via DECADA Management Portal**
+
+Agencies may refer [here](https://www.envisioniot.com/docs/data-federation/en/latest/index.html) for the implementation details via the DECADA Management Portal.
+
+**Via API Calls**
+
+Agencies may refer [here](https://support.envisioniot.com/docs/data-federation-api/en/2.3.0/overview.html) for the implementation details via the existing API calls.
+ 
+Note to Team:
+To mentioned about ML?
+
+
+## Device Integration
+
+**Overview**
+
+The device integration functionality is a flow that allows Agencies to design and deploy process in a seamless manner. This will provides Agencies the functionality to schedule, automate, and orchestrate integration flows when they need to integrate device data across enterprises or organizations. 
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/deviceintegration1.png"/>
+</div>
+Device Integration Overview
+
+**Via DECADA Management Portal**
+
+Agencies may refer [here](https://support.envisioniot.com/docs/device-integration/en/latest/howto/gettingstarted_storing_data.html) for the implementation details via the DECADA Management Portal.
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/deviceintegration2.png"/>
+</div>
+Device Integration - DECADA Management Portal
+
+**Use Case**
+
+Agencies can learn how to set up a user account in a particular organization:
+[PC Device Data Integration](https://support.envisioniot.com/docs/device-integration/en/latest/howto/tutorial_pc_device_mgmt.html)

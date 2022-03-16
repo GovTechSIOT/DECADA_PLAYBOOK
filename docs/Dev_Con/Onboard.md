@@ -2,6 +2,10 @@
 
 ## Integration with DECADA
 
+### - Introduction on Integration to DECADA
+ 
+**Overview**
+
 DECADA provides several connection solutions for Agencies to connect sensors to DECADA. The first step to determine which solution to use is to check whether the device to connect meets the following two conditions.
 
   - Supports TCP/UDP communication.
@@ -16,13 +20,25 @@ Communications to DECADA can be done via any one of the following methods:
 <img width="850" src="./images/integration_with_decada.png"/>
 </div>
 
-###   Direct Connection
+**Mode of Connection**
+
+1. Direct Connection
+Agencies can leverage on this mode of connection if the sensors is able to communicate to DECADA via SDKs and/or MQTT/CoAP/HTTPS. For more information, please refer [here](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2284191770/Direct+Connection). 
+ 
+2. Connect through on-site/Cloud EDGE Gateway
+Agencies can leverage on this mode of connection by deploying a physical/cloud edge if the sensors has limited capabilities. For more information, please refer [here](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2284322826/Connection+Via+Edge). 
+ 
+3. Connect through Cloud 
+Agencies can leverage on this mode of connection if they have an existing application residing in Cloud and wish to integrate with DECADA or where direct link to DECADA is not possible. For more information, please refer [here](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2284814349/Cloud-to-Cloud+Connection). 
+
+
+### - Direct Connection
 
 <div align=center>
 <img width="850" src="./images/snsp.png"/>
 </div>
 
-###   Using Device SDK
+**Using Device SDK**
 Direct connection can be made via the use of GovTech provided SDKs which are available in
 Java, Python 2/3 and C/C++. The device SDKs encapsulate protocols for data transmission and provide features such as device registration, device data ingestion and device control.
 
@@ -34,7 +50,7 @@ This option is applicable only for sensors with the capability for direct access
   - Connected devices are registered, and devices are burned with the **same** product information (product key and product secret key) in batch. Agencies to call the REST API to register the devices in batch and once they are connected to the network they will be automatically connect to the cloud.
 
 
-###   Non-SDK Methods
+**Non-SDK Methods**
 If the device SDKs provided by GovTech cannot meet Agencies’s requirements, Agencies can choose to send telemetries based on DECADA's device protocol standards. The supported protocols are as follows:
 
   - <u>MQTT Based Protocol:</u>
@@ -51,7 +67,7 @@ Details of implementation can be found [here](https://support.envisioniot.com/do
 
 Agencies (with the right internet login access) can refer to the [Appendix](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2264956988/Appendix) for more information.
 
-###   Protocols Comparison
+**Protocols Comparison**
 
 | FUNCTION                         | MQTT              | CoAP              | HTTPS                             |
 | -------------------------------- | :---------------: | :---------------: | :-------------------------------: |
@@ -82,7 +98,7 @@ Agencies to use the following flow chart to determine which protocol the sensors
 <img width="850" src="./images/flowchart_protocol.png"/>
 </div>
 
-###   Connection via Edge
+### - Connection via Edge
 
 <div align=center>
 <img width="850" src="./images/snsp2.png"/>
@@ -119,12 +135,11 @@ The **recommended** hardware requirements for edge hardware for the edge softwar
  - Serial to Ethernet adapter if Modbus RTU or DNP3 serial protocol is used
  - 128GB Storage
 
- ###   Cloud-to-Cloud Connection with DECADA
+ ### - Cloud-to-Cloud Connection with DECADA
 
 <div align=center>
 <img width="850" src="./images/snsp3.png"/>
 </div>
-
 
 In the event where direct link to DECADA is not possible, Cloud-to-Cloud connection is possible via a myriad of mechanism.
 For example: 
@@ -144,7 +159,7 @@ In general, both teams will have to minimally agree to provide APIs for the foll
 <img width="850" src="./images/external.png"/>
 </div>
 
-###   Summary
+**Summary**
 
 
 | Type of Communication  | Pros                              | Cons                            |
@@ -211,7 +226,7 @@ Note to team:
 
 ## Device Registration
 
-###   Overview
+**Overview**
 In the provisioning phase, Agencies will need to plan and design on ways to manage the endpoints. DECADA allows user to determine the **model** of the devices such as attributes and measure points for the device information, and also determine the device's **hierarchy** if required. DECADA also determines the **connection** scheme of the devices based on device's hardware designs, deployment methods or security requirements.
 
 For devices on-boarding directly to DECADA. there are two ways of connection:
@@ -235,7 +250,7 @@ Example: SCADA, Inverters
 ?> Agencies can leverage on either existing **DECADA Management Portal** or **API/SDK** to on-board their devices. See below.
 
 
-###   via DECADA Management Portal
+**via DECADA Management Portal**
 
 Based on the selected connection scheme, Agencies will need to:
 
@@ -346,7 +361,8 @@ The sample codes below show the devices is generated randomized measurement poin
 
 On-boarded devices will be reflected as “online” in DECADA
 
-###   via API Calls
+**via API Calls**
+
 Agencies may refer below for the required API to perform search and get the details of models, product and device that are defined or created in DECADA.
 Creation of Modeling Service
 Creation of Product and Devices
@@ -358,7 +374,7 @@ Creation of Product and Devices
 Measurement Points
 -->
 
-###   Use Case
+**Use Case**
 
 Agencies can learn how to quickly connect a typical IoT devices or an edge devices to DECADA and start sending telemetries between the devices and the cloud:
  - [Quick Start: Connect a Smart Device](https://support.envisioniot.com/docs/device-connection/en/latest/quickstart/gettingstarted_device_connection)
@@ -368,14 +384,14 @@ Agencies can learn how to quickly connect a typical IoT devices or an edge devic
 
 ## Managing Asset Tree
 
-###   Overview
+**Overview**
 
 Asset tree is a key function of the Asset Management service of DECADA. Asset tree is mainly for asset owners who understand the enterprise asset management business where they can quickly create the asset topology to manage assets in the cloud.
 
 ?> Agencies can leverage on either existing API/SDK or the DECADA Management Portal to create the Assets Tree
 
 
-###  via DECADA Management Portal
+**via DECADA Management Portal**
 
 Agencies can create the Asset Tree and bind the assets (such as devices) to the node of an asset tree via the DECADA Management Portal.
 
@@ -386,13 +402,14 @@ Asset Tree
 
 Agencies may refer [here](https://www.envisioniot.com/docs/device-connection/en/latest/howto/asset_tree/assettree_overview) for more information.
 
-###  via API Calls
+**via API Calls**
+
 Alternatively, Agencies may refer below for the required API to manage the manage asset trees (i.e. nodes, path)in their organization and to extract and update the details of the assets that are connected to DECADA.
 [Asset Service](https://support.envisioniot.com/docs/asset-api/en/2.3.0/overview.html)
 [Asset Tree Service](https://support.envisioniot.com/docs/asset-tree-api/en/2.3.0/overview.html)
 
 
-###   Use Case
+**Use Case**
 
 Agencies can learn how to set up an Asset Tree in DECADA:
 - [Quick Start: Asset Tree Management](https://www.envisioniot.com/docs/device-connection/en/latest/howto/asset_tree/gettingstarted_assettree#)
@@ -400,7 +417,7 @@ Agencies can learn how to set up an Asset Tree in DECADA:
 
 ## Data Format
 
-### Overview
+**Overview**
 The endpoints transmit data to the cloud as per the attributes, measurement points, events, and services defined in the model. DECADA supports the data in both DECADA standard JSON format and custom format.
 
 **<u>DECADA Standard Data Format</u>**

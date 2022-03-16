@@ -8,28 +8,30 @@ The chapter provides and introduce to what are the building blocks which makes u
 
 Device on-boarding typically follows the lifecycle depicted below diagram:
 - **Planning/Provisioning:**
-   - [Integration of devices to DECADA](/Dev_Con/Onboard?id=integration-with-decada)
-   - [Device Connectivity](Dev_Con/Onboard?id=device-connectivity)   
+   - [Integration of devices to DECADA](http://localhost:3000/#/Dev_Con/Onboard?id=integration-with-decada)
+   - [Device Connectivity](http://localhost:3000/#/Dev_Con/Onboard?id=device-connectivity)   
 
 - **Provisioning:**
-   - [Device Registration](Dev_Con/Onboard?id=device-registration)
-   - [Managing Assets Tree](Dev_Con/Onboard?id=managing-asset-tree)
-   - [Data Format](Dev_Con/Onboard?id=data-format)
+   - [Device Registration](http://localhost:3000/#/Dev_Con/Onboard?id=device-registration)
+   - [Managing Assets Tree](http://localhost:3000/#/Dev_Con/Onboard?id=managing-asset-tree)
+   - [open managing Asset Tree](http://localhost:3000/#/Dev_Con/Onboard?id=managing-asset-tree)
+   - [Data Format](http://localhost:3000/#/Dev_Con/Onboard?id=data-format)
 
 - **Service:**
-   - [Dashboard](Dev_Con/Service?id=dashboard)
-   - [Remote Controlling of Devices](Dev_Con/Service?id=remote-controlling-of-devices)
-   - [Alerts](Dev_Con/Service?id=alerts)
-   - [Data Asset Management](Dev_Con/Service?id=data-asset-management)
-   - [Multi-Tenancy](Dev_Con/Service?id=multi-tenancy)
-   - [Logging Mechanism](Dev_Con/Service?id=logging-mechanism)
+   - [Multi-Tenancy](http://localhost:3000/#/Dev_Con/Service?id=multi-tenancy)
+   - [Dashboard](http://localhost:3000/#/Dev_Con/Service?id=dashboard)
+   - [Remote Controlling of Devices](http://localhost:3000/#/Dev_Con/Service?id=remote-controlling-of-devices)
+   - [Alerts](http://localhost:3000/#/Dev_Con/Service?id=alerts)
+   - [Logging Mechanism](http://localhost:3000/#/Dev_Con/Service?id=logging-mechanism)
+   - [Data Asset Management](http://localhost:3000/#/Dev_Con/Service?id=data-asset-management)
+   
 
 - **Maintenance**
-   - [Over-The-Air Update](Dev_Con/Maintenance?id=over-the-air-ota-upgrade )
-   - [Certificate Lifecycle Management]( Dev_Con/Maintenance?id=certificate-lifecycle-management ) 
+   - [Over-The-Air Update](http://localhost:3000/#/Dev_Con/Maintenance?id=over-the-air-ota-upgrade )
+   - [Certificate Lifecycle Management](http://localhost:3000/#/Dev_Con/Maintenance?id=certificate-lifecycle-management ) 
 <!--Dev_Con/Maintenance?id=certificate-lifecycle-management   Dev_Con/Onboard?id=device-registration-->
 
-- [Decommissioning](Dev_Con/Decommis.md)
+- [Decommissioning](http://localhost:3000/#/Dev_Con/Decommis.md)
 
 
 <div align=center>

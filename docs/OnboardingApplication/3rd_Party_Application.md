@@ -31,7 +31,6 @@ Data can be ingested via the following protocol:
 
 1. HTTPS
 2. Kafka Pipeline
-3. SFTP
 
 ?> Agencies are advised to contact GovTech if they require further customization on the protocol to ingest data to their application. 
 
