@@ -51,7 +51,7 @@
      * [Security Related](FAQ/Security.md)
      * [Others](FAQ/Others.md)
 
-- [**Terminalogy**](Overview/EnOSGlossaries.md)
+- [**Terminalogy**](Overview/Terminology.md)
 
 Additional Info (not in Playbook)
 - [Technical Architechture](Overview/HighNet.md)
