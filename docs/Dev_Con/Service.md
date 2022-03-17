@@ -81,6 +81,7 @@ Agencies may refer below for the implementation details via the existing API cal
 - [IAM Services](https://support.envisioniot.com/docs/iam-api/en/2.3.0/overview.html)
 
 **<u>Use-case</u>**
+
 Agencies can learn how to set up a user account in a particular organization:
 [Quick Start: Creation of user account](https://support.envisioniot.com/docs/enos/en/latest/iam/ou_admin/iam_gettingstarted_adduser)
 
