@@ -43,11 +43,10 @@ DECADA Cloud Platform is hosted in GCC Azure and is accessible via Internet, pri
 
 **<u>Common Services of what DECADA can offer</u>** <!--## Common Services of what DECADA can offer-->
 
-DECADA is made up of 3 main building blocks:
+DECADA is made up of 2 main building blocks:
 
 1. [Device Management and Connectivity](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2281537544)
 2. [Data Management](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2257813613/Data+Asset+Management)
-3. [Data Analytics](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2282520682)
 
 <div align=center>
 <img src="./images/DecadaService.png"/>
