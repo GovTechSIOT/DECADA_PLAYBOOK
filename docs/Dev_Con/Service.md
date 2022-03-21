@@ -2,7 +2,7 @@
 
 ## Multi-Tenancy
 
-**Overview**
+**<u>Overview</u>**
 
 DECADA Identity and Access Management (IAM) allows Agencies to manage user identities and control access to your resources in DECADA. It allows Agencies to manage user account lifecycles, authenticate user identities, and control the access rights to the resources. 
 
@@ -19,21 +19,18 @@ The user administration hierarchy can be divided into the following, from top to
 <name=Device Management Dashboard>
 <img width="850" src="./images/mt1.png"/>
 </div>
-Organization Profile (OU)
 
  - User (i.e. staff who requires to access DECADA)
 <div align=center>
 <name=Device Management Dashboard>
 <img width="850" src="./images/mt2.png"/>
 </div>
-Users
 
  - User group (i.e. collection of staff who does maintenance work)
 <div align=center>
 <name=Device Management Dashboard>
 <img width="850" src="./images/mt3.png"/>
 </div>
-User Group
 
 Access Policies in IAM are classified into two types:
  - Built-in policies (i.e. Pre-defined access policies for typical roles in DECADA)
@@ -41,41 +38,36 @@ Access Policies in IAM are classified into two types:
 <name=Device Management Dashboard>
 <img width="850" src="./images/mt4.png"/>
 </div>
-Built-In Policies
 
  - Custom policies (i.e. Access policies customized to the needs of users)
 <div align=center>
 <name=Device Management Dashboard>
 <img width="850" src="./images/mt5.png"/>
 </div>
-Customization of roles required
 
 <div align=center>
 <name=Device Management Dashboard>
 <img width="850" src="./images/mt6.png"/>
 </div>
-Customization of roles required
 
 <div align=center>
 <name=Device Management Dashboard>
 <img width="850" src="./images/mt7.png"/>
 </div>
-User accessing DECADA
 
 DECADA has also built-in logging mechanism to log incorrect login. See below.
 <div align=center>
 <name=Device Management Dashboard>
 <img width="850" src="./images/mt8.png"/>
 </div>
-Audit Trail
 
 ?> Agencies can leverage on  existing API/SDK and the DECADA Management Portal to control users access/permission. 
 
-**Via DECADA Management Portal**
+**<u>Via DECADA Management Portal</u>**
 
 Other than the diagram above, Agencies may refer [here](https://support.envisioniot.com/docs/enos/en/latest/iam/concept/index.html) for the implementation details via the DECADA Management Portal.
 
-**Via API Calls**
+**<u>Via API Calls</u>**
 
 Agencies may refer below for the implementation details via the existing API calls.
 - [IAM Services](https://support.envisioniot.com/docs/iam-api/en/2.3.0/overview.html)
@@ -83,7 +75,7 @@ Agencies may refer below for the implementation details via the existing API cal
 **<u>Use-case</u>**
 
 Agencies can learn how to set up a user account in a particular organization:
-[Quick Start: Creation of user account](https://support.envisioniot.com/docs/enos/en/latest/iam/ou_admin/iam_gettingstarted_adduser)
+- [Quick Start: Creation of user account](https://support.envisioniot.com/docs/enos/en/latest/iam/ou_admin/iam_gettingstarted_adduser)
 
 
 
@@ -91,7 +83,7 @@ Agencies can learn how to set up a user account in a particular organization:
 
 ## Dashboard
 
-**Overview**
+**<u>Overview</u>**
 
 Once the devices has been provision on DECADA, Agencies can:-
 - Gain an overview of their device inventory and message dynamics (i.e. real-time statistics of device behaviors and connections such as device event reporting  failures, number of message sent by and the network status of devices)
@@ -101,8 +93,6 @@ Once the devices has been provision on DECADA, Agencies can:-
 <name=Device Management Dashboard>
 <img width="850" src="./images/dashboard.png"/>
 </div>
-Device Management Dashboard
-
 <!--
 Agencies can also zoom in to view the on-boarded device information on the dashboard to have a holistic view of the devices inventory.
 
@@ -129,7 +119,7 @@ Real-Time Statistics
 
 ## Remote Controlling of Devices
 
-**Overview**
+**<u>Overview</u>**
 
 DECADA also has the functions which allows Agencies to control their devices remotely from:
 - Directly from DECADA
@@ -137,20 +127,23 @@ DECADA also has the functions which allows Agencies to control their devices rem
 
 ?> Agencies can leverage on existing API/SDK and the DECADA Management Portal to control their on-boarded devices remotely.
 
-**Via DECADA Management Portal**
+**<u>Via DECADA Management Portal</u>**
+
+Agencies can control their on-boarded devices via the DECADA Management Portal:
 
 <div align=center>
 <name=Device Management Dashboard>
 <img width="850" src="./images/commands.png"/>
 </div>
 
-**Via API Calls**
+**<u>Via API Calls</u>**
 
 Agencies may refer here for the details to perform remote controlling to their on-boarded devices. via the existing API calls.
-[Remote Controlling of Devices](https://github.com/EnvisionIot/enos-device-sdk-python/blob/master/enos/sample/CommandSample.py)
-[DECADA Issuing Commands to Devices](https://www.envisioniot.com/docs/device-connection/en/latest/reference/mqtt/downstream/index.html)
 
-Note to team:
+- [Remote Controlling of Devices](https://github.com/EnvisionIot/enos-device-sdk-python/blob/master/enos/sample/CommandSample.py)
+- [DECADA Issuing Commands to Devices](https://www.envisioniot.com/docs/device-connection/en/latest/reference/mqtt/downstream/index.html)
+
+<!--Note to team:
 Is there any use-case to quote such functionality?
 Any information for the 2nd method?
 DECADA will be able to generate the measurement point requested from the devices.
@@ -162,11 +155,11 @@ Agencies may refer [here](https://www.envisioniot.com/docs/device-connection/en/
 *Note to team:*
 Is there any used case to quote such functionality?
 Any information for the 2nd method?
-
+-->
 
 ## Alerts
 
-**Overview**
+**<u>Overview</u>**
 
 DECADA has available alert services which Agencies can use to monitor alerts on devices as defined by the alert triggering rules against real-time measure point telemetry. 
 
@@ -174,7 +167,6 @@ DECADA has available alert services which Agencies can use to monitor alerts on 
 <name=Device Management Dashboard>
 <img width="850" src="./images/cloud_edge.png"/>
 </div>
-Alert Overview
 
 DECADA allows Agencies to generate alerts based on the following setting:
 1. Measurement Point (i.e Threshold, Reporting Frequency, No update of data)
@@ -185,44 +177,48 @@ The alerts can be sent via email or SMS according to the requirements.
 
 ?> Agencies can leverage on existing API/SDK and the DECADA Management Portal to generate Alerts and their desired notification feature (i.e. SMS/Email).
 
-**Via DECADA Management Portal**
+**<u>Via DECADA Management Portal</u>**
 
 Agencies may refer [here](https://support.envisioniot.com/docs/alert/en/latest/learn/alert_overview.html) for the implementation details via the DECADA Management Portal.
 
+- Alerts will be reflected if the threshold is met or device is offline
 <div align=center>
 <name=Device Management Dashboard>
 <img width="850" src="./images/alert5.png"/>
 </div>
-Alerts will be reflected if the threshold is met or device is offline
 
+- Via Email
 <div align=center>
 <name=Device Management Dashboard>
 <img width="850" src="./images/alert2.png"/>
 </div>
 Via email
 
+- Via SMS
 <div align=center>
 <name=Device Management Dashboard>
 <img width="850" src="./images/alert3.png"/>
 </div>
-Via SMS
 
 ?> The alerts setting available in DECADA are generic in nature. Agencies are advise to utilize the existing API should they require further customization. 
 
-**Via API Calls**
+**<u>Via API Calls</u>**
 
 Agencies may refer below for the implementation details via the existing API calls.
+
 - [Alerts Service:](https://support.envisioniot.com/docs/alert-api/en/2.3.0/overview.html) Monitor asset statuses, define alert contents, alert types, alert severities, alert trigger conditions, and manage the alert records.
 - [Notification Management Service:](https://support.envisioniot.com/docs/notification-mgmt-api/en/2.3.0/overview.html) Send messages to Agencies with specific templates and query the message sending results
 
-**Used case**
+**<u>Use-Case</u>**
 
 Agencies can learn how to create the Alert ID to generate alerts based on the pre-set conditions:
+
  - [Quick Start: Setting Different Alert Thresholds for Devices of the Same Model](https://support.envisioniot.com/docs/alert/en/latest/howto/set_alert_rule_for_device.html)
 
 
 ## Logging Mechanism
-**Overview**
+
+**<u>Overview</u>**
 
 DECADA provides logging mechanism which allows Agencies to retrieve both system and devices logs to identify and analyze issue early and ensure that the intended functions are running smoothly. 
 
@@ -231,24 +227,26 @@ Logs in DECADA are categorized into two types as per the below.
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/cloud.png"/>
+<img width="850" src="./images/LoggingMechanism.png"/>
 </div>
 
 - **Device Logs:** Include information that are related to the device running state and processing logic. Note that devices need to support log reporting for logs to be viewed.
 
 Agencies may refer [here](https://support.envisioniot.com/docs/device-connection/en/2.2.0/howto/monitoring/logs.html) for more information.
-Note to Team:
-Is there any use-case on how to configure to view device logs?
+
+<!--Note to Team:
+Is there any use-case on how to configure to view device logs?-->
 
 
 ## Data Asset Management
 
-**Overview**
+**<u>Overview</u>**
 
 DECADA provides functions relating to Data Asset Management which allows Agencies to manage, consume and store data according to their business needs.
+
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/dataasset.png"/>
+<img width="850" src="./images/DataAssetManagement.png"/>
 </div>
 
 <!--
@@ -257,28 +255,26 @@ DECADA enables Agencies to search the metadata of models and measurement points 
 -->
 
 The data flow of real-time data in DECADA Data Asset Management can be viewed through 3 key capabilities:
-- Stream Analytics (i.e. Stream Processing)
-- Storage Management & Access (i.e. Time Series Database TSDB, Data Archiving)
+- Stream Analytics (i.e. Stream Processing, Batch Processing)
+- Storage Management & Access (i.e. Time Series Database TSDB, Data Archiving, Data Federation)
 - Data Governance (i.e. Data Subscription Services)
-
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/dataasset2.png"/>
+<img width="850" src="./images/DataAssetManagementOverview.png"/>
 </div>
-Data Asset Management Overview
 
-**Stream Processing Services**
+**<u>Stream Processing Services</u>**
 
 Powered by Apache SparkTM Streaming, DECADA Stream Analytics targets to meet the real-time data processing requirement of devices and assets where it can be used for the following scenarios:
+
 - Aggregating and calculating asset raw data
 - Computation of device state
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/dataasset3.png"/>
+<img width="850" src="./images/StreamProcessing.png"/>
 </div>
-DECADA Streaming Service Overview
 
 By leveraging on such service, Agencies will be ensured of the following:
 - High throughput and low latency stream processing.
@@ -288,19 +284,38 @@ By leveraging on such service, Agencies will be ensured of the following:
 
 ?> Agencies can leverage on existing API/SDK and the DECADA Management Portal to create the analytics pipeline to meet the real-time data processing requirement of devices and assets
 
-**Via DECADA Management Portal**
+**<u>Via DECADA Management Portal</u>**
 
 Agencies may refer [here](https://www.envisioniot.com/docs/stream-processing/en/latest/gettingstarted_ai.html) for the implementation details via the DECADA Management Portal.
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/dataasset4.png"/>
+<img width="850" src="./images/StreamProcessingService.png"/>
 </div>
-Stream Processing Services
 
-**Via API Calls**
+**<u>Via API Calls</u>**
 
 Agencies may refer [here](https://support.envisioniot.com/docs/stream-processing-api/en/2.3.0/overview.html) for the implementation details via the existing API calls.
+
+**<u>Batch Processing Service</u>**
+
+DECADA provides Dataflow Service that enables batch data processing based on scheduled workflows. The batch data processing operations support various scenarios from simple data transformation to complete ETL (extract-transform-load). The Batch Processing Service also provides common libraries out-of-the-box for most frequently used data processing operations.
+
+?> Agencies can leverage on existing API/SDK and the DECADA Management Portal to manage the data synchronization, data development, and workflow operation tasks for batch data processing.
+
+**<u>Via DECADA Management Portal</u>**
+
+Agencies may refer [here](https://www.envisioniot.com/docs/batch-processing/en/latest/managing_resource.html) for the implementation details via the DECADA Management Portal.
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/BatchProcessingServices.png"/>
+</div>
+
+**<u>Via API Calls</u>**
+
+Agencies may refer [here](https://www.envisioniot.com/docs/batch-processing-api/en/latest/v2.1/overview.html) for the implementation details via the existing API calls.
+
 
 
 **<u>Time Series Data Management (TSDB)</u>**
@@ -309,46 +324,64 @@ The Time Series Database (TSDB) provides efficient and stable storage and manage
 
 ?> 1. The data storage policy must be configured before the devices start uploading data to DECADA. Otherwise, the uploaded device data will not be stored in TSDB. 2. Agencies can leverage on existing API/SDK and the DECADA Management Portal to query and update related storage resources.
 
-**Via DECADA Management Portal**
+**<u>Via DECADA Management Portal</u>**
 
 Agencies may refer [here](https://www.envisioniot.com/docs/time-series-data/en/latest/policy.html) for the implementation details via the DECADA Management Portal.
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/dataasset6.png"/>
+<img width="850" src="./images/TSDBFeature.png"/>
 </div>
-TSDB Feature
 
-**Via API Calls**
+**<u>Via API Calls</u>**
 
 Agencies may refer below for the implementation details via the existing API calls.
+
 - [TSDB Policy Service:](https://support.envisioniot.com/docs/tsdb-policy-api/en/2.3.0/v2.1/overview.html) To query and update TSDB Storage Policies
 - [TSDB Data Service:](https://support.envisioniot.com/docs/tsdb-data-api/en/2.3.0/v2.1/v21.html) Query assets data that is stored in the DECADA TSDB and filter/aggregate the data based on use-case
 
-**Data Archiving Service**
+**<u>Data Archiving Service</u>**
 
 DECADA supports archiving and storing data from the real-time message channel, data from the offline message channels, real-time alert records, and data stored in TSDB. It provides flexible storage configurations to reduce Agencies data storage costs.
+
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/dataasset7.png"/>
+<img width="850" src="./images/DataArchivingService.png"/>
 </div>
-Data Archiving Service
 
 Agencies may refer [here](https://www.envisioniot.com/docs/data-archiving/en/latest/archive_policy.html)for more information.
 
-**Data Subscription Services**
+**<u>Data Federation Service</u>**
+
+DECADA provides data reading and writing services from and to multi-source heterogeneous data storage systems. Agencies can read data from and write data to heterogeneous data sources through unified SQL statements.
+
+?> Agencies can leverage on existing API/SDK and the DECADA Management Portal to manage data federation channels, and read data from or write data to multi-source heterogeneous data storage systems.
+
+**<u>Via DECADA Management Portal</u>**
+
+Agencies may refer [here](https://www.envisioniot.com/docs/data-federation/en/latest/index.html) for the implementation details via the DECADA Management Portal.
+
+<div align=center>
+<name=Device Management Dashboard>
+<img width="850" src="./images/DataFederationService.png"/>
+</div>
+
+**<u>Via API Calls</u>**
+
+Agencies may refer [here](https://support.envisioniot.com/docs/data-federation-api/en/2.3.0/overview.html) for the implementation details via the existing API calls.
+ 
+**<u>Data Subscription Services</u>**
 
 Agencies can subscribe to both the original and the calculated data, so that the asset data can be consumed by Agencies' application directly The subscription setting can be configured though the Data Subscription function in the DECADA Management Portal and existing API.
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/dataasset8.png"/>
+<img width="850" src="./images/DataSubscriptionService_DataAsset.png"/>
 </div>
-Data Subscription Service
 
 Agencies may refer [here](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2258043087) for more information.
 
-## Data Analytics
+<!--## Data Analytics
 
 **Overview**
 
@@ -370,71 +403,37 @@ It provides an end-to-end tooling for:
 <img width="850" src="./images/dataanalytics2.png"/>
 </div>
 
-**Batch Processing Service**
-
-DECADA provides Dataflow Service that enables batch data processing based on scheduled workflows. The batch data processing operations support various scenarios from simple data transformation to complete ETL (extract-transform-load). The Batch Processing Service also provides common libraries out-of-the-box for most frequently used data processing operations.
-
-?> Agencies can leverage on existing API/SDK and the DECADA Management Portal to manage the data synchronization, data development, and workflow operation tasks for batch data processing.
-
-**Via DECADA Management Portal**
-
-Agencies may refer [here](https://www.envisioniot.com/docs/batch-processing/en/latest/managing_resource.html) for the implementation details via the DECADA Management Portal.
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dataanalytics3.png"/>
-</div>
-Batch Processing Service
-
-**Via API Calls**
-
-Agencies may refer [here](https://www.envisioniot.com/docs/batch-processing-api/en/latest/v2.1/overview.html) for the implementation details via the existing API calls.
 
 
-**<u>Data Federation Service</u>**
 
-DECADA provides data reading and writing services from and to multi-source heterogeneous data storage systems. Agencies can read data from and write data to heterogeneous data sources through unified SQL statements.
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dam6.png"/>
-</div>
-Data Federation Service
-
-**Via DECADA Management Portal**
-
-Agencies may refer [here](https://www.envisioniot.com/docs/data-federation/en/latest/index.html) for the implementation details via the DECADA Management Portal.
-
-**Via API Calls**
-
-Agencies may refer [here](https://support.envisioniot.com/docs/data-federation-api/en/2.3.0/overview.html) for the implementation details via the existing API calls.
- 
 Note to Team:
 To mentioned about ML?
-
+-->
 
 ## Device Integration
 
-**Overview**
+**<u>Overview</u>**
 
 The device integration functionality is a flow that allows Agencies to design and deploy process in a seamless manner. This will provides Agencies the functionality to schedule, automate, and orchestrate integration flows when they need to integrate device data across enterprises or organizations. 
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/deviceintegration1.png"/>
+<img width="850" src="./images/DeviceIntegration.png"/>
 </div>
 Device Integration Overview
 
-**Via DECADA Management Portal**
+**<u>Via DECADA Management Portal</u>**
 
 Agencies may refer [here](https://support.envisioniot.com/docs/device-integration/en/latest/howto/gettingstarted_storing_data.html) for the implementation details via the DECADA Management Portal.
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/deviceintegration2.png"/>
+<img width="850" src="./images/DeviceIntegration_Portal.png"/>
 </div>
 Device Integration - DECADA Management Portal
 
-**Use Case**
+**<u>Use Case</u>**
 
 Agencies can learn how to set up a user account in a particular organization:
-[PC Device Data Integration](https://support.envisioniot.com/docs/device-integration/en/latest/howto/tutorial_pc_device_mgmt.html)
+
+-[PC Device Data Integration](https://support.envisioniot.com/docs/device-integration/en/latest/howto/tutorial_pc_device_mgmt.html)
