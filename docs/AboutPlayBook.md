@@ -8,7 +8,7 @@ For readers who are familiar with DECADA, they may navigate to the topics direct
 
 For readers who are starting out to implement with DECADA, you can refer to the following to learn what is DECADA and the initial stage to connect your devices to DECADA
 
-- [DECADA Overview](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2258731068)
-- [Integration with DECADA](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2284257507/Introduction+on+Integration+to+DECADA)
+- [DECADA Overview](Overview/Overview.md)
+- [Integration with DECADA](DEV_CON/Onboard.md)
 
 

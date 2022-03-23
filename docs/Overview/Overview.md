@@ -5,7 +5,7 @@
 **De**vice Management **C**ontrol **a**nd **D**ata **A**cquisition System (DECADA) is used as a central IoT Platform for Whole-of-Government (WOG) where it has economies of scale through demand aggregation and standardization.
 
 <div align=center>
-<img width="850" src="./images/ov_intro.png"/>
+<img width="850" src="./images/decada_ov_firstpic1.png"/>
 </div>
 
 DECADA also allows Agencies to develop and deploy their Smart Systems solution rapidly.
