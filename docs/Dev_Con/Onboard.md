@@ -199,13 +199,13 @@ In general, both teams will have to minimally agree to provide APIs for the foll
 |                        | as most changes are made on the   |                                 |
 |                        | cloud.                            |                                 |
 
-
+<!--
 *Note to team:*
 1. Is there editable file to update “SDX”?
 2. To confirm that it is not mandatory that only devices connecting via internet access is able to leverage on (1) mode of connection.
 3. Understanding is that as long as device is able to support the following protocols, it doesn't have to meet the stated SDK?
 4. There are more than the stated protocols (i.e. MQTT/CoAP/HTTPS) to integrate with DECADA for Edge Connection. Why none-SDK device method can only support 3? Or as long as the device is using protocol listed in the table (i.e. ModbusRTU), it is able to be compatible with DECADA?
-
+-->
 
 
 ## Device Connectivity
@@ -225,9 +225,11 @@ DECADA Cloud Platform is hosted in GCC Azure and is connectable via:
 <img width="850" src="./images/High Level Net Arch.png"/>
 </div>
 
+<!--
 Note to team:
 1. For connection to GCC DECADA, does agencies need to subscribe to the cloud connect to connect to GCC DECADA?
 2. Is there the editable version of this architecture to include 3rd party application connectivity?
+-->
 
 ## Device Registration
 

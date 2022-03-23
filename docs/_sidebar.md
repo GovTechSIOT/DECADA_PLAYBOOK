@@ -52,7 +52,7 @@
      * [Others](FAQ/Others.md)
 
 - [**Terminalogy**](Overview/Terminology.md)
-
+<!--
 Additional Info (not in Playbook)
 - [Technical Architechture](Overview/HighNet.md)
 - [DECADA ONBOARDING OLD OVERVIEW]((Dev_Con/Lifecycle.md))
@@ -63,4 +63,4 @@ Additional Info (not in Playbook)
 - [Edge Gateway](Dev_Con/Edge.md)
 - [API Connection](Dev_Con/API.md) 
 - [**Appendix**](Dev_Con/Appendix.md)       
-
+-->
