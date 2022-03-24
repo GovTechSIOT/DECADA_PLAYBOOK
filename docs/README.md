@@ -2,7 +2,7 @@
 # HOME
 
 
-|<p> <font size = "150" face="arial" color="grey">DECADA PLAYBOOK</font></p> |
+|<p> <font size = "151" face="arial" color="grey">DECADA PLAYBOOK</font></p> |
 |:---------------------------------------------------------------------------:|
 
 <center><font size ="80"><bold>DECADA PlayBook</bold></font></center>
