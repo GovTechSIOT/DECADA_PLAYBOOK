@@ -38,10 +38,21 @@
      * [Logging and Auditing](Security/Logging_and_Auditing.md)
      * [Security Incident Management](Security/Security_Incident_Management.md)
 
-- [**Use Case**](Dev_Con/usedcase.md)
-- [**FAQ**](Dev_Con/FAQ.md)
-- [**Terminalogy**](Overview/EnOSGlossaries.md)
+- **Use Case**
+     * [Introduction](Use_Case/Introduction.md)
+     * [Air Sensors](Use_Case/Air_Sensor.md)
+     * [Solar Panel](Use_Case/Solar_Panel.md)
+     * [Power Meter](Use_Case/Power_Meter.md)
 
+- **FAQ**
+     * [On-Boarding Device Related](FAQ/On_Boarding_Phase.md)
+     * [On-Boarding Applications Related](FAQ/On_Boarding_Applications.md)
+     * [SDK & API Related](FAQ/DECADA_SDK_API.md)
+     * [Security Related](FAQ/Security.md)
+     * [Others](FAQ/Others.md)
+
+- [**Terminalogy**](Overview/Terminology.md)
+<!--
 Additional Info (not in Playbook)
 - [Technical Architechture](Overview/HighNet.md)
 - [DECADA ONBOARDING OLD OVERVIEW]((Dev_Con/Lifecycle.md))
@@ -52,4 +63,4 @@ Additional Info (not in Playbook)
 - [Edge Gateway](Dev_Con/Edge.md)
 - [API Connection](Dev_Con/API.md) 
 - [**Appendix**](Dev_Con/Appendix.md)       
-
+-->

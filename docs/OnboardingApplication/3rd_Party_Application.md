@@ -2,7 +2,13 @@
 
 **<u>Overview</u>**
 
-Overview
+Agencies can ingest data from DECADA to their Application via the push or pull method:
+
+1. Push (via Kafka Pipe, Data Subscription)
+2. Pull (via RESTFUL API)
+
+**<u>Application Registration</u>**
+
 Prior on-boarding Agencies' 3rd Party Application to DECADA via APIs, Agencies will have to create an application via the “application registration” for the access and secret keys with the appropriate access roles in order to carry out its intended purpose.
 
 <div align=center>
@@ -29,22 +35,26 @@ Once the connectivity is firmed up, Agencies will have to open the relevant port
 
 Data can be ingested via the following protocol:
 
-1. HTTPS
-2. Kafka Pipeline
+1. HTTPS (via RESTFUL or Data Subscription Service)
+2. MQTT (via Data Subscription Service)
+3. TCP-Based Protocols (via Data Subscription Service)
 
 ?> Agencies are advised to contact GovTech if they require further customization on the protocol to ingest data to their application. 
 
 **<u>Data Subscription Services</u>**
 
-Agencies can subscribe to both original and calculated data where the asset data can be consumed by application directly. The subscription settings can be configured through the Data Subscription Service.
+For data to be ingested from DECADA to 3rd Party applications, Agencies can consider leveraging on this services and install the necessary SDK to receive the data. Agencies can subscribe to both original and calculated data where the asset data can be consumed by application directly. The subscription settings can be configured through the Data Subscription Service.
 
 <div align=center>
 <img src="./images/DataSubscriptionService.png"/>
 </div>
 
-DECADA Data Subscription Service improves the API calling efficiency of applications with active data push, which supports subscription to various data types such as real-time asset data, asset alert data, and event data. Applications do not need to call APIs repeatedly and frequently to get the asset data. Instead the subscribed data will be pushed automatically and applications can consume the pushed data as needed. 
+The DECADA Data Subscription Service utilize the Kafka Pipeline to improves the API calling efficiency of applications with active data push, which supports subscription to various data types such as real-time asset data, asset alert data, and event data. Applications do not need to call APIs repeatedly and frequently to get the asset data. Instead the subscribed data will be pushed automatically and applications can consume the pushed data as needed. 
 
-Agencies can use the provided Java SDK to retrieve the subscribed data.
+Agencies can use the provided SDKs to retrieve the subscribed data:
+
+1. [Java SDK](https://mvnrepository.com/artifact/com.envisioniot/enos-subscribe)
+2. [Python SDK](https://github.com/EnvisionIot/enos-subscription-service-sdk-python)
 
 <div align=center>
 <img src="./images/DataSubscriptionService_Portal.png"/>
@@ -52,3 +62,10 @@ Agencies can use the provided Java SDK to retrieve the subscribed data.
 
 Agencies may refer [here](https://www.envisioniot.com/docs/data-subscription/en/latest/data_subscription_overview.html) for more information.
 
+**<u>Use-Case</u>**
+
+Agencies can learn how to quickly connect a typical IoT devices DECADA and start sending data to another system real-time:
+
+- [Subscribing to Device Real-Time Data and Alert Records](https://www.envisioniot.com/docs/enos-tutorials/en/latest/subscribing_to_device_data/index.html)
+
+?> Agencies will have to ensure that the protocol has to be TCP based
