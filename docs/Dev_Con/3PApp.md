@@ -1,12 +1,11 @@
 # Integration with 3rd Party Application
 
-1. API SDK
+TBC
 
 ## Application Hosted in Agencies' Premises
 
-- Get HTTP
-- Get server address
+TBC
 
 ## Application Hosted on Vendor's Premises
-- Get 
-- Publish
+
+TBC

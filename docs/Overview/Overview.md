@@ -1,17 +1,114 @@
-# Overview
+# DECADA Overview
 
-DECADA runs on Envision OS (EnOS) 
-DECADA is a Multi-Tenant Cloud Platform which forms the Device Management Layer of Smart Nation Sensor Platform. DECADA (Device Management, Control and Data Acquisition Systems) offers an easy and powerful solution for agencies to implement and manage their Internet Of Things (IoT) networks.
- 
-Understanding DECADA
-The IoT Tech Stack is a set of tools and services for sensors and IoT applications and is also known as DECADA. It consists of three core components, which facilitate the acquisition and exchange of data from sensors to the cloud. Agencies can use DECADA to easily develop and run IoT applications.
-The three core components of the IoT Tech Stack are as shown below.
-DECADA Edge Gateway: A product and software solution to onboard new and existing sensor nodes to DECADA easily and securely. It is both a gateway to DECADA Cloud, and an edge device to process and aggregate sensor nodes data to reduce data traffic to the cloud. Agencies can make use of its web user interface to allow for various combinations of sensor nodes connection and data processing.
+**<u>Overview</u>**
 
-DECADA Embedded (formerly known as MANUCA): This is a family of microcontroller-class devices that can communicate directly to DECADA Cloud. DECADA Embedded provides software reference designs for onboarding and communication with DECADA Cloud. Hence, developers can add custom application logic for their use cases and quickly have a ready-to-deploy embedded device.
+**De**vice Management **C**ontrol **a**nd **D**ata **A**cquisition System (DECADA) is used as a central IoT Platform for Whole-of-Government (WOG) where it has economies of scale through demand aggregation and standardization.
 
-DECADA Cloud: A multi-tenant cloud platform deployed on the Government Commercial Cloud. DECADA Cloud’s features include asset management, data acquisition, event triggers, stream processing, data analytics, report generation and APIs for querying data.
+<div align=center>
+<img width="850" src="./images/DECADA_OV_FIRSTPIC1.png">
+</div>
 
 
-Picture Picture 
+DECADA also allows Agencies to develop and deploy their Smart Systems solution rapidly.
+
+**<u>Introduction</u>**
+
+DECADA is a Multi-Tenant Cloud Platform which forms the Device Management Layer of the Smart Nation Sensor Platform. Together with other SNSP components, DECADA offers an easy and powerful solution for Agencies to implement and manage their IoT networks. 
+
+
+<div align=center>
+<img width="850" src="./images/DECADA_OV.png"/>
+</div>
+
+For Agencies with IoT sensors deployment needs, DECADA can offer the following:
+- Handling multiple sensor protocols
+- Multiple 3rd Party IoT System integration
+- Security aspects
+- Develop custom application based on use-case 
+- Handle up to confidential data classification
+- Provide training, SDK, API for development and integration
+- Enhanced user experience with GSIB laptop access
+
+**<u>Basic Network Design</u>**
+
+DECADA Cloud Platform is hosted in GCC Azure and is accessible via Internet, private network and WOG Network.
+
+
+<div align=center>
+<img width="850" src="./images/High Level Net Arch.png"/>
+</div>
+
+<div align=center>
+<img width="850" src="./images/GCC.png"/>
+</div>
+
+**<u>Common Services of what DECADA can offer</u>** <!--## Common Services of what DECADA can offer-->
+
+DECADA is made up of 2 main building blocks:
+
+1. [Device Management and Connectivity](Dev_Con/OV.md)
+2. [Data Management](http://localhost:3000/#/Dev_Con/Service?id=data-asset-management)
+
+<div align=center>
+<img src="./images/DecadaService.png"/>
+</div>
+
+DECADA Cloud Platform provides APIs/SDK for data ingress, data egress and platform management to provide as a stack for building of IoT devices. 
+
+- Device Enrollment
+- Data Acquisition
+- Event Triggering
+- Data Analytics
+- Dashboarding
+- Report Generation
+- API and SDK
+
+<div align=center>
+<img width="850" src="./images/DecadaLC2.png"/>
+</div>
+
+It caters services such as:
+- **Device Management:** Supports Agencies in managing the commissioning an decommissioning aspect of their field devices and equipment 
+- **Dash-boarding:** Supports Agencies to quickly deploy dashboard interface for their project needs in a shorter time
+- **Security Management:** Agencies users is able to use two-factor authentication (2FA) instead of one-time password for login
+- **Data Analytics:** The processed data set can be used with 3rd party tools such as Tableau.
+
+GovTech provides a **DECADA Management Portal** where Agencies can easily on-board their devices and/or application to achieve the stated services.
+<div align=center>
+<img width="900" src="./images/Decada_home.png"/>
+</div>
+
+Alternatively Agencies can leverage on existing API/SDK to achieve the same results or to customized further based on their use-case. 
+
+Features Elaboration where is accessible from DECADA Console Portal and API:
+
+<div align=left>
+<img width="850" src="./images/provision.png"/>
+</div>
+
+<div align=left>
+<img width="850" src="./images/maintain.png"/>
+</div>
+
+**<u>DECADA Use-Cases</u>**
+
+Some general use-cases are featured in below diagrams. 
+For more examples, refer [here](Dev_Con/usedcase.md).
+
+Use-Case 1: Smart Nation Sensor Platform (SNSP) will send sensor data to Agency Application Server
+
+<div align=center>
+<img width="850" src="./images/ovuc1.png"/>
+</div>
+<!--                        Use-Case 1-->
+
+
+Use-Case 2: Agencies can access DECADA from WOG environment
+
+<div align=center>
+<img width="850" src="./images/ovuc2.png"/>
+</div>
+<!--Use-Case 2-->
+
+
 

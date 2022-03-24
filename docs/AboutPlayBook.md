@@ -1,19 +1,14 @@
-> WELCOME ABOARD!
+# About the Playbook
 
-Here You will Find Treasures and Knowledge beyond your imagination!
+<u>**Using the Playbook**</u>
 
-## Objectives What We Seek to Achieve
+The playbook is written as sections that can be read independently covering topics including architecture, design, application development, operations and security. 
 
-1. To understand the basic of DECADA and its role
-2. To learn how to onboard a new project to DECADA
-3. To learn how to onboard sensors/devices to DECADA
-4. To learn how to use DECADA Device Management
-5. To learn how to build Application with DECADA
-6. To reference of existing DECADA use cases (omitting project specifics if possible)  
+For readers who are familiar with DECADA, they may navigate to the topics directly from this site’s navigation menu.
 
-## Disclaimer that is not a policy documentation
+For readers who are starting out to implement with DECADA, you can refer to the following to learn what is DECADA and the initial stage to connect your devices to DECADA
 
-
-
+- [DECADA Overview](Overview/Overview.md)
+- [Integration with DECADA](Dev_Con/Onboard.md)
 
 

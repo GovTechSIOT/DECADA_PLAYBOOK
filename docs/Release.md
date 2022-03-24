@@ -1,6 +1,10 @@
-> WELCOME ABOARD!
+# Release History
 
-Here You will Find Treasures and Knowledge beyond your imagination!
+?> Welcome to DECADA Playbook
+This is for Homepage information for DECADA 
+
+Draft Version 1, as of 8 March 2022
+
 
 
 

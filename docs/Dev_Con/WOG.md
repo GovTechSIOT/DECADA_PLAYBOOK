@@ -1,14 +1,11 @@
 # Integration with WOG Smart Nation Sensor Platform
 
-
+TBC
 
 ## For data subscription with other Agencies (APEX)
 
-- Get HTTP
-- Get server address
+TBC
 
 ## Step No 2
-- Get 
-- Publish
-- Get HTTP
-- Get server address
+
+TBC

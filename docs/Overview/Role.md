@@ -1,8 +1,8 @@
-> WELCOME ABOARD!
+# Shared Responsibilities Model
 
-Here You will Find Treasures and Knowledge beyond your imagination!
-## Objectives What We Seek to Achieve
+<div align=center>
+<img width="800" src="./images/sharedresponsibility.png"/>
+</div>
 
-## Disclaimer that is not a policy documentation
-
+?> GovTech to act as a consultancy service for case (1)
 
