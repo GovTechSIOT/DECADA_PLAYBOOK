@@ -5,8 +5,9 @@
 **De**vice Management **C**ontrol **a**nd **D**ata **A**cquisition System (DECADA) is used as a central IoT Platform for Whole-of-Government (WOG) where it has economies of scale through demand aggregation and standardization.
 
 <div align=center>
-<img width="850" src="./images/ov_intro.png"/>
+<img width="850" src="./images/DECADA_OV_FIRSTPIC1.png">
 </div>
+
 
 DECADA also allows Agencies to develop and deploy their Smart Systems solution rapidly.
 
@@ -45,8 +46,8 @@ DECADA Cloud Platform is hosted in GCC Azure and is accessible via Internet, pri
 
 DECADA is made up of 2 main building blocks:
 
-1. [Device Management and Connectivity](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2281537544)
-2. [Data Management](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2257813613/Data+Asset+Management)
+1. [Device Management and Connectivity](Dev_Con/OV.md)
+2. [Data Management](http://localhost:3000/#/Dev_Con/Service?id=data-asset-management)
 
 <div align=center>
 <img src="./images/DecadaService.png"/>
