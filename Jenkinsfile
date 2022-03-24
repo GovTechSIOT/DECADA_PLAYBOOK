@@ -34,8 +34,7 @@ pipeline {
         }
         // TEST PORTAINER WEBHOOK
         success {
-            steps {
-                echo "Docker build image and pushed succeeded"
+            script{
                 def response = sh(script: 'curl -X POST https://portainer.siot.local/api/webhooks/93da6a3e-153b-41d1-86e2-98aaaf77522e', returnStdout: true)      
             }
         }
