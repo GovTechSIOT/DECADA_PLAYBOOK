@@ -36,7 +36,7 @@
         <div class="sgds-container is-fluid">
             <div class="sgds-navbar-brand">
                 <a class="sgds-navbar-item" href="/">
-                    <img src="/images/logo_color.svg" alt="documentation service logo">
+                    <img src="/images/logo_color_new.svg" alt="documentation service logo">
                 </a>
                 <div class="sgds-navbar-burger">
                     <span></span>
@@ -68,7 +68,16 @@
         </div>
     </nav>
 
-    <div id="app"></div>
+    <script async defer src="/searchApp.cae8cb92.bundle.js"></script>
+
+    <script nonce="0a2f6ea947ac56c8">
+        const navLogInBtn = document.getElementById("navLoginBtn")
+        if (navLogInBtn) {
+            navLogInBtn.href += "?originalPath=" + encodeURIComponent(window.location.pathname + window.location.search + window.location.hash)
+        }
+    </script>
+    <div id="app">Please wait...</div>
+
     <script>
         window.$docsify = {
             name: 'DECADA Playbook',
