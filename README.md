@@ -1,3 +1,11 @@
+## Clone a repository
+
+When commits are pushed into the master branch, a new docker image will be built and push to SIOT's private registry.
+The image will be deployed locally in the staging environment and can be accessed from the url below.
+
+**https://decada-playbook.siot.local/**
+
+
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
 When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
