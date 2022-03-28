@@ -13,20 +13,10 @@ LABEL docker_docsify_version="1.0.0.1"
 
 ## Container setup
 RUN npm install -g docsify-cli@latest
-WORKDIR /usr/local/docsify
-COPY . .
-RUN chmod +x ./docs
+COPY ./docs /usr/local/docsify/docs
+WORKDIR /usr/local/docsify/docs
+RUN ls
 
-
-## Container environment variables
-ENV DEBUG 0
-ENV PORT 3000
-ENV DOCSIFY_VERSION latest
-ENV NODE_VERSION alpine
-
-## Container RUNtime configuration
 EXPOSE 3000
-
-## Container entry point
-ENTRYPOINT [ "docsify", "serve","./docs", "--port", "3000" ]
-
+ENTRYPOINT [ "docsify", "serve", "--port", "3000" ]
+CMD [  "." ]

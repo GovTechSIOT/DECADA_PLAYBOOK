@@ -1,6 +1,6 @@
 <!-- docs/sidebar -->
 
-- [**Home**](/#docs)
+- [**Home**](README.md)
 - [**Release History**](Release.md)
 - [**About The Playbook**](AboutPlayBook.md)
 - **Introduction to DECADA**<!--(Overview/intro.md)-->
