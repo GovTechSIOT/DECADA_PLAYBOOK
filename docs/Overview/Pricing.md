@@ -39,4 +39,5 @@ Example 1:
 1. GovTech is also exploring to price DECADA based on no. of insights provided to the Agencies. 
 2. Data collected will be purged after 6 months. Data collected are accessible to Agencies and Agencies can download these data to their local drive.
 3. Data is based on thee number of sensors, data packet size and frequency.  
+4. Data consumed is based on no. of sensors, data packet size and frequency.
 
