@@ -5,6 +5,7 @@
 
 The chapter provides and introduction to how DECADA implements a secured IoT Solution for Agencies. This chapter will provide Agencies insight on the security measures implemented for end-to-end deployment. 
 DECADA us a full IM8 compliant and has gone through audit and penetration testing by GovTech’s CSG (Cyber Security Group) in conjunction with CSA.
+
 <div align=center>
 <img src="./images/DecadaSystemDiagram.png"/>
 </div>
@@ -48,7 +49,8 @@ Create a device instance in DECADA by either using the console or calling an API
 
 - Authentication
   You can either dynamically or statically (static is the default authentication method) authenticate a device. Once the device is authenticated, its state changes from Inactive to Online. If an Online device does not send any data to DEDCADA within the specified time range, it will become Offline. When the device is not working properly or you do not want to receive its data, set it to Disabled. The device will then go Offline.    
-  <div align=center>
+
+<div align=center>
 <img src="./images/security2.png"/>
 </div>
 Securing of Devices
@@ -99,6 +101,7 @@ DECADA secures the application connected to its northbound interface through the
 **<u>Access Keys</u>**
 
 DECADA requires that all API requests be signed — that is, they must include a digital signature that the platform can use to verify the identity of the requestor. Application developers calculate the digital signature using a cryptographic hash function. The input to the hash function in this case includes the text of the request and the secret access key. The generated API Keys are tagged with specific permission to conduct the relevant actions.
+
 <div align=center>
 <img src="./images/security3.png"/>
 </div>

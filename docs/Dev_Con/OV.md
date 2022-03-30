@@ -8,6 +8,7 @@ The chapter provides and introduce to what are the building blocks which makes u
 </div>
 
 **<u>Device Lifecycle Management</u>**
+
 Agencies can use the following flow chart to have an overview of the DECADA usage from on-boarding to the management of their devices via DECADA:
 <!--
 <script>

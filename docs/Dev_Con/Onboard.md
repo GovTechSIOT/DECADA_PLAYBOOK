@@ -496,7 +496,7 @@ Agencies are preferable to transmit data using the DECADA standard JSON format.
 </div>
 
 The sample codes below show the standard data format used for uploading data into DECADA:
-
+<!-- tabs:start -->
 #### **Code**
 ```
 {
@@ -518,6 +518,7 @@ The sample codes below show the standard data format used for uploading data int
         "method": "thing.measurepoint.post"
 }
 ```
+<!-- tabs:end -->
 
 The sample code below show the standard data format used for issuing data from DECADA to endpoints :
 <!-- tabs:start -->
