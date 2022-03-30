@@ -29,7 +29,7 @@ Once the on-boarding of the Agencies 3rd Party application is completed, Agencie
 2. Internet
 3. Intranet
 
-?> DECADA has existing SG-WAN connections for Agencies to connect via, however the APIs to call is in the roadmap. Agencies are advised to contact GovTech if they require such APIs and/or further customization. 
+!> DECADA has existing SG-WAN connections for Agencies to connect via, however the APIs to call is in the roadmap. Agencies are advised to contact GovTech if they require such APIs and/or further customization. 
 
 **<u>Type of Protocol</u>**
 
@@ -41,7 +41,7 @@ Data can be ingested via the following protocol:
 2. MQTT (via Data Subscription Service)
 3. TCP-Based Protocols (via Data Subscription Service)
 
-?> Agencies are advised to contact GovTech if they require further customization on the protocol to ingest data to their application. 
+!> Agencies are advised to contact GovTech if they require further customization on the protocol to ingest data to their application. 
 
 **<u>Data Subscription Services</u>**
 

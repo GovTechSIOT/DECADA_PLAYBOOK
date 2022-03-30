@@ -7,19 +7,12 @@
 **<u>Overview</u>**
 
 DECADA provides several connection solutions for Agencies to connect sensors to the platform.
-<!--DECADA provides several connection solutions for Agencies to connect sensors to DECADA. The first step to determine which solution to use is to check whether the device to connect meets the following two conditions.
-
-  - Supports TCP/UDP communication.
-  - Supports the data format of the EnOS device connection protocol through firmware upgrade.
-
-If the device meets both conditions, the device can be directly connected to DECADA.
-If the device does not meet either of the conditions and is connected to another system or cloud platform, Agencies should refer to the “Cloud-to-Cloud” method to connect to DECADA. 
--->
 Communications to DECADA can be done via any one of the following methods:
 
 <div align=center>
 <img width="850" src="./images/integration_with_decada.png"/>
 </div>
+Integration Methodology
 
 **<u>Mode of Connection</u>**
 
@@ -53,18 +46,32 @@ Agencies can consider the following when selecting the Mode of Connections:
 | Via on-Site/Cloud Edge Gateway  | <div>- No modification to device firmware has to be done.</div> <div>- Much larger suite of protocol support as compared to direct connections.</div> <div>- Offline caching in event of communication breakdown</div> <div>- More secured since connection between EDGE and sensors can be isolated in the private network while exposing only the connection between EDGE and Cloud</div> | <div>- Additional resources required in terms of hardware (if on-premise) or Virtual Instance (if on cloud).</div> <div>- Additional data latency</div>                                                                                                                        |
 | Cloud-to-Cloud via API          | <div>- No modification to device firmware has to be done.</div> <div>- Limited restriction on the endpoint as most changes are made on the Cloud</div>                                                                                                                                                                                                                                      | <div>- Limited control of devices</div> <div>- Additional data latency</div>                                                                                                                                                                                                   |
 
+**<u>Flow Chart to determine the Mode of Connections</u>**
+
+Agencies can use the following flow chart to the determine which mode of connection to use to on-board their devices to DECADA
+
+<div align=center>
+<img width="850" src="./images/integration_fc1.png"/>
+</div>
+
+ 
+
+
+
 ### Direct Connection
 
 <div align=center>
 <img width="850" src="./images/snsp.png"/>
 </div>
 
+
 **Using Device SDK**
 
 Direct connection can be made via the use of GovTech provided SDKs which are available in
 Java, Python 2/3 and C/C++. The device SDKs encapsulate protocols for data transmission and provide features such as device registration, device data ingestion and device control.
 
-Supported platforms include x86 and ARM. DECADA’s SDKs are all open source in nature, and are available for reference [here](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2263220229/DECADA+SDK+API). Need to confirm this link. Faultly link(!) will be fixed
+Supported platforms include x86 and ARM. DECADA’s SDKs are all open source in nature, and are available for reference [here](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2263220229/DECADA+SDK+API). 
+***[Need to confirm this link. Faultly link(!) will be fixed]***
 
 This option is applicable only for sensors with the capability for direct access. There are a few scenarios for direct connection:
   - Connected device is registered, and the device is burned with a **unique** product and device keys provided by DECADA portal. This scenario is mainly for **small number of devices**, and the device is burned with device triple (product key, device key and device secret key) through cloud registration.
@@ -278,17 +285,24 @@ For devices on-boarding directly to DECADA. there are two ways of connection:
 
 
 According to the above, deployed devices can be divided into 2 major categories:
-Smart Devices: 
-Support firmware burning, as well as direct connection to DECADA via Wi-Fi, GPRS, 3G, or 4G signals. A smart device can directly connect to and communicate with DECADA to complete authentication and data transmission.
-Example: Surveillance cameras, and smart thermometers and hygrometers
 
-Non-Smart Devices:
-Do not support firmware burning, and lack the ability to connect to DECADA via Wi-Fi, 3G, or 4G. In this scenario, the devices need to connect through an edge gateway that is able to support firmware burning and network to DECADA. The data of these devices are then collected by the edge gateway. The device connected via this solution is also called the sub-device. The gateway serves as a proxy of the sub-devices to help them complete operations such as authentication, login, and data transmission.
-Example: SCADA, Inverters
+**Smart Devices:**
+
+- Support firmware burning, as well as direct connection to DECADA via Wi-Fi, GPRS, 3G, or 4G signals. A smart device can directly connect to and communicate with DECADA to complete authentication and data transmission.
+- Example: Surveillance cameras, and smart thermometers and hygrometers
+
+**Non-Smart Devices:**
+
+- Do not support firmware burning, and lack the ability to connect to DECADA via Wi-Fi, 3G, or 4G. In this scenario, the devices need to connect through an edge gateway that is able to support firmware burning and network to DECADA. The data of these devices are then collected by the edge gateway. The device connected via this solution is also called the sub-device. The gateway serves as a proxy of the sub-devices to help them complete operations such as authentication, login, and data transmission.
+- Example: SCADA, Inverters
 
 ?> Agencies can leverage on either existing **DECADA Management Portal** or **API/SDK** to on-board their devices. See below.
 
 **<u>Before You Start</u>**
+
+To register the devices onto DECADA, Agencies will need to have an account and write access to the Device Management. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access. 
+
+**<u>Before you Start</u>**
 
 To register the devices onto DECADA, Agencies will need to have an account and write access to the Device Management. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access. 
 
@@ -439,6 +453,9 @@ Asset tree is a key function of the Asset Management service of DECADA. Asset tr
 
 ?> Agencies can leverage on either existing API/SDK or the DECADA Management Portal to create the Assets Tree
 
+**<u>Before you Start</u>**
+
+To create an asset tree, Agencies will need to have an account and write access to the Asset Tree services. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
 
 **<u>Via DECADA Management Portal</u>**
 
@@ -479,7 +496,7 @@ Agencies are preferable to transmit data using the DECADA standard JSON format.
 </div>
 
 The sample codes below show the standard data format used for uploading data into DECADA:
-
+<!-- tabs:start -->
 #### **Code**
 ```
 {
@@ -501,6 +518,7 @@ The sample codes below show the standard data format used for uploading data int
         "method": "thing.measurepoint.post"
 }
 ```
+<!-- tabs:end -->
 
 The sample code below show the standard data format used for issuing data from DECADA to endpoints :
 <!-- tabs:start -->

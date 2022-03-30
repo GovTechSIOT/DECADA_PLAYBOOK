@@ -7,7 +7,7 @@
 Under The maintenance phase, Agencies can leverage on the Over-The-Air (OTA) feature offered by DECADA portal to manage and perform device firmware upgrade(i.e. creating new firmware versions, setting upgrade policies, and deleting firmware versions).
 
  <div align=center>
-<img width="850" src="./images/ota.png"/>
+<img width="850" src="./images/otacopy.png"/>
 </div>
 
 **<u>Device SDK for OTA</u>**
@@ -25,7 +25,7 @@ DECADA supports the following firmware upgrade modes:
 **Cloud initiated OTA process:** DECADA pushes the upgrade to the device, upgrading the device to a specified version.
 
 <div align=center>
-<img width="700" src="./images/ota2.png"/>
+<img width="700" src="./images/ota2copy.png"/>
 </div>
 
 The devices will start the OTA upgrade process once they receive the request and report their new versions after rebooting. However, whether to perform the OTA upgrade depends on the device settings. Agencies can still add an upgrade confirmation for the downloaded OTA firmware on devices so that they can choose whether to proceed with the upgrading. The partition storing the new firmware is activated only after confirmation.
@@ -33,7 +33,7 @@ The devices will start the OTA upgrade process once they receive the request and
 **Upon device request:** Devices initiate the OTA request and DECADA provides the list of available firmware. The device will then proceed with the OTA upgrade.
 
 <div align=center>
-<img width="1500" src="./images/ota3.png"/>
+<img width="1500" src="./images/ota3copy.png"/>
 </div>
 
 OTA upgrade can be initiated by devices. When devices send the upgrade requests to DECADA, DECADA decides whether the devices fall into any upgrade list. If the device can be upgraded, DECADA sends available firmware to the devices. The upgrade starts after the device confirms the upgrade. Upon device request upgrades require manual intervention and confirmation steps; this provides more flexibility for Agencies to decide whether to upgrade the devices.

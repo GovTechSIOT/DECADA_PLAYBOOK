@@ -67,6 +67,10 @@ DECADA has also built-in logging mechanism to log incorrect login. See below.
 
 To manage and configure the roles for each users, Agencies will need to have an account and write access to the Identity & Access Management Services. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
 
+**<u>Before you Start</u>**
+
+To manage and configure the roles for each users, Agencies will need to have an account and write access to the Identity & Access Management Services. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
+
 **<u>Via DECADA Management Portal</u>**
 
 Other than the diagram above, Agencies may refer [here](https://support.envisioniot.com/docs/enos/en/latest/iam/concept/index.html) for the implementation details via the DECADA Management Portal.
@@ -93,6 +97,10 @@ Once the devices has been provision on DECADA, Agencies can:-
 - Gain an overview of their device inventory and message dynamics (i.e. real-time statistics of device behaviors and connections such as device event reporting  failures, number of message sent by and the network status of devices)
 - Develop their own application for data presentation 
 via the dashboarding functions.
+
+**<u>Via DECADA Management Portal</u>**
+
+To review and develop your own application for data presentation , Agencies will need to have a DECADA Management Portal account. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
 
 **<u>Via DECADA Management Portal</u>**
 
@@ -161,14 +169,6 @@ Agencies may refer here for the details to perform remote controlling to their o
 Is there any use-case to quote such functionality?
 Any information for the 2nd method?
 DECADA will be able to generate the measurement point requested from the devices.
-
-Agencies may refer [here](https://www.envisioniot.com/docs/device-connection/en/latest/reference/mqtt/downstream/index.html) for more information.
- - From 3rd Party Application to devices through DECADA
-
-
-*Note to team:*
-Is there any used case to quote such functionality?
-Any information for the 2nd method?
 -->
 
 ## Alerts
@@ -450,6 +450,9 @@ The device integration functionality is a flow that allows Agencies to design an
 
 **<u>Before You Start</u>**
 
+To utilize the services, Agencies will need to have an account and access to the Device Integration resources. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
+
+**<u>Before you Start</u>**
 To utilize the services, Agencies will need to have an account and access to the Device Integration resources. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
 
 **<u>Via DECADA Management Portal</u>**
