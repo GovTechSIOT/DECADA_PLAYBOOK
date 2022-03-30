@@ -7,6 +7,7 @@ The chapter provides and introduce to what are the building blocks which makes u
 </div>
 
 **<u>Device Lifecycle Management</u>**
+
 Agencies can use the following flow chart to have an overview of the DECADA usage from on-boarding to the management of their devices via DECADA:
 
 <script>
@@ -69,6 +70,44 @@ Agencies can use the following flow chart to have an overview of the DECADA usag
          </map>
 <img usemap="#flowchart" src="./images/decada_flow.png" alt="DECADA LifeCycleManagement" />
 
+**<u>Planning & Design Phase:</u>**
+
+In the planning and design phase, Agencies will determine how to abstract their device models and manage the asset hierarchy. They will also determine the connection scheme and data format to use based on the type of devices to connect, the device deployment conditions, and the required security requirements.
+
+**<u>Provisioning Phase:</u>**
+
+In the provisioning phase, based on the selected connection scheme, Agencies can: 
+
+- Register devices to obtain the device identities, and when certificate authentication is required, generate the certificates.
+- Use device SDKs to perform device-end development so that devices are authenticated to the cloud and start to transmit data.
+
+**<u>Service Phase:</u>**
+
+In the servicing phase, Agencies can:
+
+- Gain an overview of your device and message dynamics through the device management dashboard that GovTech provides in the console. 
+- Control your devices remotely from the cloud, such as enabling or disabling the devices, or triggering the services as defined by the device model.
+- Monitoring alerts on devices as defined by the alert triggering rules against real-time measure point telemetry. 
+- Manage, consume, and store the device data according to your business needs. 
+
+**<u>Maintenance Phase:</u>**
+
+In the maintenance phase, Agencies can
+
+- Use the OTA Service to manage the device firmware in the cloud and achieve firmware upgrade over-the-air. 
+- Renew the device certificate when a certificate expires.
+
+**<u>Decommissioning Phase:</u>**
+
+In the decommissioning phase, Agencies can
+
+- Disable and delete the digital twin of a device from the cloud.
+- Revoke the device certificate that was issued to the device.
+- Archive the data of the decommissioned devices.
+
+Agencies can refer to the link above for the details for each functionality.
+
+<!--
 Device on-boarding typically follows the lifecycle depicted below diagram:
 
 **1. Planning/Designing:**
@@ -96,13 +135,12 @@ Device on-boarding typically follows the lifecycle depicted below diagram:
    - [Certificate Lifecycle Management](https://decada-playbook.siot.local/#/Dev_Con/Maintenance?id=certificate-lifecycle-management ) 
 <!--Dev_Con/Maintenance?id=certificate-lifecycle-management   Dev_Con/Onboard?id=device-registration-->
 
-**5.  [Decommissioning](https://decada-playbook.siot.local/#/Dev_Con/Decommis.md)**
+<!--**5.  [Decommissioning](https://decada-playbook.siot.local/#/Dev_Con/Decommis.md)**
 
 <div align=center>
 <img width="800" src="./images/DecadaLC2.png"/>
 </div>
-
-Agencies can refer to the link above for the details for each functionality.
+-->
 
 **<u>Mode of Access to DECADA</u>**
 

@@ -7,6 +7,8 @@ Agencies can ingest data from DECADA to their Application via the push or pull m
 1. Push (via Kafka Pipe, Data Subscription)
 2. Pull (via RESTFUL API)
 
+?> To integrate 3rd Party application to DECADA, Agencies will need to have an account and access to the intended resources. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
+
 **<u>Application Registration</u>**
 
 Prior on-boarding Agencies' 3rd Party Application to DECADA via APIs, Agencies will have to create an application via the “application registration” for the access and secret keys with the appropriate access roles in order to carry out its intended purpose.

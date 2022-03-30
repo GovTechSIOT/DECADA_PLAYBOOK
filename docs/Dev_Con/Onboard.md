@@ -6,14 +6,15 @@
  
 **<u>Overview</u>**
 
-DECADA provides several connection solutions for Agencies to connect sensors to DECADA. The first step to determine which solution to use is to check whether the device to connect meets the following two conditions.
+DECADA provides several connection solutions for Agencies to connect sensors to the platform.
+<!--DECADA provides several connection solutions for Agencies to connect sensors to DECADA. The first step to determine which solution to use is to check whether the device to connect meets the following two conditions.
 
   - Supports TCP/UDP communication.
   - Supports the data format of the EnOS device connection protocol through firmware upgrade.
 
 If the device meets both conditions, the device can be directly connected to DECADA.
 If the device does not meet either of the conditions and is connected to another system or cloud platform, Agencies should refer to the “Cloud-to-Cloud” method to connect to DECADA. 
-
+-->
 Communications to DECADA can be done via any one of the following methods:
 
 <div align=center>
@@ -34,6 +35,23 @@ Agencies can leverage on this mode of connection by deploying a physical/cloud e
 
 Agencies can leverage on this mode of connection if they have an existing application residing in Cloud and wish to integrate with DECADA or where direct link to DECADA is not possible. For more information, please refer [here](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2284814349/Cloud-to-Cloud+Connection). 
 
+**<u>Flow Chart to Determine The Mode of Connection</u>**
+
+Agencies can use the following flow chart to the determine which mode of connection to use to on-board their devices to DECADA
+
+<div align=center>
+<img src="./images/Integration_FlowChart.png"/>
+</div>
+
+**<u>Comparison on the Mode of Connections </u>**
+
+Agencies can consider the following when selecting the Mode of Connections:
+
+| <p align="center">**Type of Connections**</p>     | <p align="center">**Pros**</p>                                                                                                                                                                                                                                                                                                                                                                             | <p align="center">**Cons**</p>                                                                                                                                                                                                                                                                |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Direct Connection               | <div>- No intermediate data nodes resulting in lower latency.</div> <div>- Full control of device which is capable of leveraging on the full suite of service offered by DECADA. (i.e. 2 way-communication, OTA Firmware Update etc)</div>                                                                                                                                                  | <div>- Device firmware has to modified</div> <div>- Device has direct access to DECADA. This might not be possible for low-end processor commonly found on embedded devices.</div> <div>- Device has to be capable of supporting communication via MQTT, HTTPS or CoAP. </div> |
+| Via on-Site/Cloud Edge Gateway  | <div>- No modification to device firmware has to be done.</div> <div>- Much larger suite of protocol support as compared to direct connections.</div> <div>- Offline caching in event of communication breakdown</div> <div>- More secured since connection between EDGE and sensors can be isolated in the private network while exposing only the connection between EDGE and Cloud</div> | <div>- Additional resources required in terms of hardware (if on-premise) or Virtual Instance (if on cloud).</div> <div>- Additional data latency</div>                                                                                                                        |
+| Cloud-to-Cloud via API          | <div>- No modification to device firmware has to be done.</div> <div>- Limited restriction on the endpoint as most changes are made on the Cloud</div>                                                                                                                                                                                                                                      | <div>- Limited control of devices</div> <div>- Additional data latency</div>                                                                                                                                                                                                   |
 
 ### Direct Connection
 
@@ -70,10 +88,23 @@ Details of implementation can be found [here](https://support.envisioniot.com/do
    - <u>RESTful API via HTTPS:</u>
      Used commonly in the Web Technology world, connection with DECADA can be performed through a comprehensive set of RESTful APIs which can be easily accessed via HTTPS. Details of implementation can be found [here](https://support.envisioniot.com/docs/device-connection/en/latest/learn/connection_protocols/enos_http).
 
-Agencies can refer to the [Appendix](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2264956988/Appendix) for more information.
+     Flow Chart for the selection of protocols
+
+Agencies to use the following flow chart to determine which protocol the sensors should use to connect to DECADA:
+
+<div align=center>
+<img width="850" src="./images/flowchart_protocol.png"/>
+</div>
+
+<!--Agencies can refer to the [Appendix](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2264956988/Appendix) for more information.-->
 
 **<u>Protocol Comparison</u>**
 
+<div align=center>
+<img src="./images/DirectConnection_ProtocolComparison.png"/>
+</div>
+
+<!--
 | FUNCTION                         | MQTT              | CoAP              | HTTPS                             |
 | -------------------------------- | :---------------: | :---------------: | :-------------------------------: |
 | Static authentication            | Supported       | Supported       | Supported                             |
@@ -96,12 +127,7 @@ Agencies can refer to the [Appendix](https://siotteam.atlassian.net/wiki/spaces/
 | upper & lower thresholds, and    |                 |                 |                                       |
 | device lifecycle management      |                 |                 |                                       |
 | Firmware OTA update              | Supported       | Not supported   | Not supported                         |
-
-Agencies to use the following flow chart to determine which protocol the sensors should use to connect to DECADA:
-
-<div align=center>
-<img width="850" src="./images/flowchart_protocol.png"/>
-</div>
+-->
 
 ### Connection via Edge
 
@@ -155,6 +181,7 @@ For example:
 For more information, see [Message Integration](https://support.envisioniot.com/docs/device-connection/en/latest/learn/ingestion/index).
 
 As Cloud-to-Cloud implementation is a project-specific solution, close collaboration will be required between both technical teams (GovTech & Agencies) to make it work.
+
 In general, both teams will have to minimally agree to provide APIs for the following:
  - Access to sensor device attributes (Example: Device Id, Location, Type etc)
  - Access to sensor device data format via a unique identifier.
@@ -164,6 +191,9 @@ In general, both teams will have to minimally agree to provide APIs for the foll
 <img width="850" src="./images/external.png"/>
 </div>
 
+?> To register the applications onto DECADA, Agencies will need to have an account and write access to the Application Management Layer. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
+
+<!--
 **Summary**
 
 
@@ -198,6 +228,7 @@ In general, both teams will have to minimally agree to provide APIs for the foll
 |                        | Limited restriction on the        |                                 |
 |                        | as most changes are made on the   |                                 |
 |                        | cloud.                            |                                 |
+-->
 
 <!--
 *Note to team:*
@@ -257,6 +288,9 @@ Example: SCADA, Inverters
 
 ?> Agencies can leverage on either existing **DECADA Management Portal** or **API/SDK** to on-board their devices. See below.
 
+**<u>Before You Start</u>**
+
+To register the devices onto DECADA, Agencies will need to have an account and write access to the Device Management. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access. 
 
 **<u>Via DECADA Management Portal</u>**
 

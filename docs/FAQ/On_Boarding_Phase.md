@@ -8,7 +8,7 @@ This page listed the frequently asked questions about DECADA services during the
 
 **Q1**: How to select my device connection scheme?
 
-**A1**: The choice depends on the capability of your devices, your business scenario and requirements. Refer to [Integration with DECADA](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2284257507/Introduction+on+Integration+to+DECADA)
+**A1**: The choice depends on the capability of your devices, your business scenario and requirements. Refer to [Integration with DECADA](https://decada-playbook.siot.local/#/Dev_Con/Onboard?id=integration-with-decada)
 
 **Q2**: Is there any limit on the basic information fields of model, product, asset, and asset tree?
 
@@ -21,6 +21,12 @@ This page listed the frequently asked questions about DECADA services during the
 **Q3**: How do we connect real devices to DECADA and get their reported data?
 
 **A3**: Real devices can be connected to DECADA directly or through a gateway proxy via MQTT/HTPP/CoAP. You need to create a device model, create a product, and register the device on DECADA. DECADA provides standard C/Java/Node.js/Python device SDKs for development.
+
+**Q4**: Is it possible to stream video analytics to DECADA?
+
+**A4**: It is possible as long as your devices is capable of support the relevant SDK or protocols. Refer to [DECADA SDK/API](SDK_API/Introduction.md) for more information.
+
+Alternately, you may procure an edge to connect your camera to it and onboard to DECADA as a edge and sub-devices relationship.
 
 ### Device Connectivity
 

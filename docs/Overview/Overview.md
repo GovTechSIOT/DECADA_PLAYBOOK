@@ -2,7 +2,7 @@
 
 **<u>Overview</u>**
 
-**De**vice Management **C**ontrol **a**nd **D**ata **A**cquisition System (DECADA) is used as a central IoT Platform for Whole-of-Government (WOG) where it has economies of scale through demand aggregation and standardization.
+GovTech has developed a multi-tenant IoT Platform;  **De**vice Management **C**ontrol **a**nd **D**ata **A**cquisition System (DECADA) is used as a central IoT Platform for Whole-of-Government (WOG) where it has economies of scale through demand aggregation and standardization.
 
 <div align=center>
 <img width="850" src="./images/DECADA_OV_FIRSTPIC1.png">
@@ -15,7 +15,7 @@ DECADA also allows Agencies to develop and deploy their Smart Systems solution r
 
 **<u>Introduction</u>**
 
-In collaboration with Envision, DECADA is built on-top of their solution (EnOS) to form the Device Management Layer of the Smart Nation Sensor Platform.a Multi-Tenant Cloud Platform which forms the Device Management Layer of the Smart Nation Sensor Platform.
+In collaboration with Envision, DECADA is built on-top of their solution (EnOS) to form the Device Management Layer of the Smart Nation Sensor Platform.
 
 <div align=center>
 <img width="850" src="./images/Decada_OV_Diagram.png"/>
@@ -75,7 +75,6 @@ DECADA Cloud Platform provides APIs/SDK for data ingress, data egress and platfo
 - Device Enrollment
 - Data Acquisition
 - Event Triggering
-- Data Analytics
 - Dashboarding
 - Report Generation
 - API and SDK
@@ -88,7 +87,6 @@ It caters services such as:
 - **Device Management:** Supports Agencies in managing the commissioning an decommissioning aspect of their field devices and equipment 
 - **Dash-boarding:** Supports Agencies to quickly deploy dashboard interface for their project needs in a shorter time
 - **Security Management:** Agencies users is able to use two-factor authentication (2FA) instead of one-time password for login
-- **Data Analytics:** The processed data set can be used with 3rd party tools such as Tableau.
 
 GovTech provides a **DECADA Management Portal** where Agencies can easily on-board their devices and/or application to achieve the stated services.
 <div align=center>
