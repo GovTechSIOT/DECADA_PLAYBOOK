@@ -15,7 +15,11 @@ DECADA also allows Agencies to develop and deploy their Smart Systems solution r
 
 **<u>Introduction</u>**
 
+<<<<<<< HEAD
 In collaboration with Envision, DECADA is built on-top of their solution (EnOS) to form the Device Management Layer of the Smart Nation Sensor Platform.
+=======
+In collaboration with Envision, DECADA is built on-top of their solution (EnOS) to form the Device Management Layer of the Smart Nation Sensor Platform.a Multi-Tenant Cloud Platform which forms the Device Management Layer of the Smart Nation Sensor Platform.
+>>>>>>> e936f4397f674a6ca5748e34c677488c504bdb17
 
 <div align=center>
 <img width="850" src="./images/Decada_OV_Diagram.png"/>

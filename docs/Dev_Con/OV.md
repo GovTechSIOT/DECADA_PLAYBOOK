@@ -7,6 +7,67 @@ The chapter provides and introduce to what are the building blocks which makes u
 </div>
 
 **<u>Device Lifecycle Management</u>**
+Agencies can use the following flow chart to have an overview of the DECADA usage from on-boarding to the management of their devices via DECADA:
+
+<script>
+   $(document).ready(function(){
+      $('img[usemap]').rwdImageMaps();
+   });
+   /* You can see that it's responsive */
+   img {
+      width: 800px;
+      height: 800px;
+   }
+</script>
+
+<map name="flowchart">
+        <area shape="rect" coords="30,145,120,197"
+          href="https://decada-playbook.siot.local/#/Dev_Con/Onboard?id=integration-with-decada"
+          target="_blank" alt="Integration" />
+        <area shape="rect" coords="30,230,120,288"
+          href="https://decada-playbook.siot.local/#/Dev_Con/Onboard?id=device-connectivity"
+          target="_blank" alt="Connectivity" />
+        <area shape="rect" coords="30,310,120,370"
+          href="https://decada-playbook.siot.local/#/Dev_Con/Onboard?id=data-format"
+          target="_blank" alt="Data" />
+        <area shape="rect" coords="170,313,260,361"
+         href="https://decada-playbook.siot.local/#/Dev_Con/Onboard?id=device-registration"
+         target="_blank" alt="Rego"  />
+         <area shape="rect" coords="160,410,269,460"
+         href="https://decada-playbook.siot.local/#/Dev_Con/Onboard?id=managing-asset-tree"
+         target="_blank" alt="Asset"  />
+         <area shape="rect" coords="320,75,408,125"
+         href="https://decada-playbook.siot.local/#/Dev_Con/Service?id=multi-tenancy"
+         target="_blank" alt="Multi-Tenancy"  />
+         <area shape="rect" coords="320,150,410,205"
+         href="https://decada-playbook.siot.local/#/Dev_Con/Service?id=dashboard"
+         target="_blank" alt="Dashboard"  />
+         <area shape="rect" coords="320,232,410,282"
+         href="https://decada-playbook.siot.local/#/Dev_Con/Service?id=remote-controlling-of-devices"
+         target="_blank" alt="Remote"  />
+         <area shape="rect" coords="320,310,410,362"
+         href="https://decada-playbook.siot.local/#/Dev_Con/Service?id=alerts"
+         target="_blank" alt="Alerts"  />
+         <area shape="rect" coords="316,400,425,452"
+         href="https://decada-playbook.siot.local/#/Dev_Con/Service?id=logging-mechanism"
+         target="_blank" alt="Logging"  />
+         <area shape="rect" coords="312,480,420,555"
+         href="https://decada-playbook.siot.local/#/Dev_Con/Service?id=data-asset-management"
+         target="_blank" alt="DAM"  />
+         <area shape="rect" coords="312,580,420,630"
+         href="https://decada-playbook.siot.local/#/Dev_Con/Service?id=device-integration"
+         target="_blank" alt="Integration"  />
+         <area shape="rect" coords="475,310,560,362"
+         href="https://decada-playbook.siot.local/#/Dev_Con/Maintenance?id=over-the-air-ota-upgrade"
+         target="_blank" alt="OTA"  />
+         <area shape="rect" coords="475,400,560,452"
+         href="https://decada-playbook.siot.local/#/Dev_Con/Maintenance?id=certificate-lifecycle-management"
+         target="_blank" alt="Cert"  />
+         <area shape="rect" coords="616,313,701,362"
+         href="https://decada-playbook.siot.local/#/Dev_Con/Decommis"
+         target="_blank" alt="Decom"  />
+         </map>
+<img usemap="#flowchart" src="./images/decada_flow.png" alt="DECADA LifeCycleManagement" />
 
 Agencies can use the following flow chart to have an overview of the DECADA usage from on-boarding to the management of their devices via DECADA:
 
@@ -135,7 +196,11 @@ Device on-boarding typically follows the lifecycle depicted below diagram:
    - [Certificate Lifecycle Management](https://decada-playbook.siot.local/#/Dev_Con/Maintenance?id=certificate-lifecycle-management ) 
 <!--Dev_Con/Maintenance?id=certificate-lifecycle-management   Dev_Con/Onboard?id=device-registration-->
 
+<<<<<<< HEAD
 <!--**5.  [Decommissioning](https://decada-playbook.siot.local/#/Dev_Con/Decommis.md)**
+=======
+**5.  [Decommissioning](https://decada-playbook.siot.local/#/Dev_Con/Decommis.md)**
+>>>>>>> e936f4397f674a6ca5748e34c677488c504bdb17
 
 <div align=center>
 <img width="800" src="./images/DecadaLC2.png"/>
