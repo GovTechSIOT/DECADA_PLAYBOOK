@@ -7,7 +7,8 @@ This is for Homepage information for DECADA
 | **Version** | **Date**      | **Remark**           |
 |:-----------:|:-------------:|:--------------------:|
 | 1.0         | 8 March 2022  | Initial Codes        |
-| 1.1         | 22 March 2022 | After 1st Discussion |
+| 1.1         | 22 March 2022 | After 1st Merge      |
+| 1.2         | 30 March 2022 | After 2nd Merge      |
 
 
 
