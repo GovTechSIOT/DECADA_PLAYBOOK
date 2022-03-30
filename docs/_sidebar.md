@@ -9,7 +9,7 @@
      * [Roles and Responsibility](Overview/Table_Role.md)
      * [Service Level Agreement for DECADA](Dev_Con/SLA.md)
  
- - [**Technical Architechture**](Overview/HighNet.md)
+ - [**Technical Architecture**](Overview/HighNet.md)
 
 - **On-Boarding Devices**
      * [Overview](Dev_Con/OV.md)

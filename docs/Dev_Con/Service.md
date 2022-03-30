@@ -63,6 +63,10 @@ DECADA has also built-in logging mechanism to log incorrect login. See below.
 
 ?> Agencies can leverage on  existing API/SDK and the DECADA Management Portal to control users access/permission. 
 
+**<u>Before you Start</u>**
+
+To manage and configure the roles for each users, Agencies will need to have an account and write access to the Identity & Access Management Services. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
+
 **<u>Via DECADA Management Portal</u>**
 
 Other than the diagram above, Agencies may refer [here](https://support.envisioniot.com/docs/enos/en/latest/iam/concept/index.html) for the implementation details via the DECADA Management Portal.
@@ -88,6 +92,10 @@ Agencies can learn how to set up a user account in a particular organization:
 Once the devices has been provision on DECADA, Agencies can:-
 - Gain an overview of their device inventory and message dynamics (i.e. real-time statistics of device behaviors and connections such as device event reporting  failures, number of message sent by and the network status of devices)
 - Develop their own application for data presentation via the dashboarding functions.
+
+**<u>Via DECADA Management Portal</u>**
+
+To review and develop your own application for data presentation , Agencies will need to have a DECADA Management Portal account. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
 
 <div align=center>
 <name=Device Management Dashboard>
@@ -127,6 +135,10 @@ DECADA also has the functions which allows Agencies to control their devices rem
 
 ?> Agencies can leverage on existing API/SDK and the DECADA Management Portal to control their on-boarded devices remotely.
 
+**<u>Before you Start</u>**
+
+To control the devices remotely, Agencies will need to have an account with the necessary rights access. If Agencies do not have the access, please contact GovTech.
+
 **<u>Via DECADA Management Portal</u>**
 
 Agencies can control their on-boarded devices via the DECADA Management Portal:
@@ -147,14 +159,6 @@ Agencies may refer here for the details to perform remote controlling to their o
 Is there any use-case to quote such functionality?
 Any information for the 2nd method?
 DECADA will be able to generate the measurement point requested from the devices.
-
-Agencies may refer [here](https://www.envisioniot.com/docs/device-connection/en/latest/reference/mqtt/downstream/index.html) for more information.
- - From 3rd Party Application to devices through DECADA
-
-
-*Note to team:*
-Is there any used case to quote such functionality?
-Any information for the 2nd method?
 -->
 
 ## Alerts
@@ -176,6 +180,10 @@ DECADA allows Agencies to generate alerts based on the following setting:
 The alerts can be sent via email or SMS according to the requirements.
 
 ?> Agencies can leverage on existing API/SDK and the DECADA Management Portal to generate Alerts and their desired notification feature (i.e. SMS/Email).
+
+**<u>Before you Start</u>**
+
+To create alerts on DECADA, Agencies will need to have an account and access to the model, assets management and alert services. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
 
 **<u>Via DECADA Management Portal</u>**
 
@@ -232,6 +240,11 @@ Logs in DECADA are categorized into two types as per the below.
 
 - **Device Logs:** Include information that are related to the device running state and processing logic. Note that devices need to support log reporting for logs to be viewed.
 
+**<u>Before you Start</u>**
+
+To view logs on DECADA, Agencies will need to have an account and access to the Device Management Administrator Policy. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
+
+
 Agencies may refer [here](https://support.envisioniot.com/docs/device-connection/en/2.2.0/howto/monitoring/logs.html) for more information.
 
 <!--Note to Team:
@@ -263,6 +276,11 @@ The data flow of real-time data in DECADA Data Asset Management can be viewed th
 <name=Device Management Dashboard>
 <img width="850" src="./images/DataAssetManagementOverview.png"/>
 </div>
+
+**<u>Before you Start</u>**
+
+To leverage on the following services for better data management, Agencies will need to have an account and access to the corresponding services If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
+
 
 **<u>Stream Processing Services</u>**
 
@@ -421,6 +439,9 @@ The device integration functionality is a flow that allows Agencies to design an
 <img width="850" src="./images/DeviceIntegration.png"/>
 </div>
 Device Integration Overview
+
+**<u>Before you Start</u>**
+To utilize the services, Agencies will need to have an account and access to the Device Integration resources. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
 
 **<u>Via DECADA Management Portal</u>**
 

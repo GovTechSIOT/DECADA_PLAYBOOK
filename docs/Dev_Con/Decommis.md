@@ -23,5 +23,6 @@ Revocation of Device Certificate
 </div>
 Deletion of Devices
 
+?> To conduct the actions above to decommission the devices from DECADA, Agencies will need to have an account and access to the intended resources. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
 
 

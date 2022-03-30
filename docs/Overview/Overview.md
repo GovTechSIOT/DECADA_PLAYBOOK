@@ -75,7 +75,6 @@ DECADA Cloud Platform provides APIs/SDK for data ingress, data egress and platfo
 - Device Enrollment
 - Data Acquisition
 - Event Triggering
-- Data Analytics
 - Dashboarding
 - Report Generation
 - API and SDK

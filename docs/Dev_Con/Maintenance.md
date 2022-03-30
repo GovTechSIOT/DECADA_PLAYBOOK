@@ -38,6 +38,10 @@ The devices will start the OTA upgrade process once they receive the request and
 
 OTA upgrade can be initiated by devices. When devices send the upgrade requests to DECADA, DECADA decides whether the devices fall into any upgrade list. If the device can be upgraded, DECADA sends available firmware to the devices. The upgrade starts after the device confirms the upgrade. Upon device request upgrades require manual intervention and confirmation steps; this provides more flexibility for Agencies to decide whether to upgrade the devices.
 
+**<u>Before you Start</u>**
+
+To conduct OTA updates to devices via DECAD, Agencies will need to have an account and write access to the Device Management Service. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
+
 **<u>Via DECADA Management Portal</u>**
 
 Agencies can leverage on the existing OTA feature on DECADA to manage their on-boarded devices:
@@ -134,6 +138,11 @@ Under some circumstances, Agencies needs to revoke the X.509 certificate of the 
 **<u>Device SDK for Certificate Management</u>**
 
 The device SDK can be used to encapsulate the messaging interfaces for generating of the necessary certificate files and reporting (i.e. private keys, SSL Self-Signed Cert) . Agencies should ensure the new certificate can be installed on devices, reboot, and authenticate with DECADA. For the respective steps and sample code, refer [here](https://github.com/EnvisionIot/enos-cert-tool/blob/master/README.md#configuration).
+
+**<u>Before you Start</u>**
+
+To authenticate the devices to DECADA via certificate-basis, Agencies will need to have an account and access to the Device Management. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
+
 
 **<u>Via DECADA Management Portal</u>**
 
