@@ -197,12 +197,12 @@ Device on-boarding typically follows the lifecycle depicted below diagram:
    - [Certificate Lifecycle Management](https://decada-playbook.siot.local/#/Dev_Con/Maintenance?id=certificate-lifecycle-management ) 
 Dev_Con/Maintenance?id=certificate-lifecycle-management   Dev_Con/Onboard?id=device-registration
 **5.  [Decommissioning](https://decada-playbook.siot.local/#/Dev_Con/Decommis.md)**
--->
+
 
 <div align=center>
 <img width="800" src="./images/DecadaLC2.png"/>
 </div>
-
+-->
 
 **<u>Mode of Access to DECADA</u>**
 
