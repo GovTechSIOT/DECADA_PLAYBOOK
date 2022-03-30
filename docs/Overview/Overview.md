@@ -2,7 +2,7 @@
 
 **<u>Overview</u>**
 
-**De**vice Management **C**ontrol **a**nd **D**ata **A**cquisition System (DECADA) is used as a central IoT Platform for Whole-of-Government (WOG) where it has economies of scale through demand aggregation and standardization.
+GovTech has developed a multi-tenant IoT Platform;  **De**vice Management **C**ontrol **a**nd **D**ata **A**cquisition System (DECADA) is used as a central IoT Platform for Whole-of-Government (WOG) where it has economies of scale through demand aggregation and standardization.
 
 <div align=center>
 <img width="850" src="./images/DECADA_OV_FIRSTPIC1.png">
@@ -11,14 +11,31 @@
 
 DECADA also allows Agencies to develop and deploy their Smart Systems solution rapidly.
 
+?> DECADA only allows the hosting of up to **RESTRICTED** sensors/system data classification.
+
 **<u>Introduction</u>**
 
-DECADA is a Multi-Tenant Cloud Platform which forms the Device Management Layer of the Smart Nation Sensor Platform. Together with other SNSP components, DECADA offers an easy and powerful solution for Agencies to implement and manage their IoT networks. 
+In collaboration with Envision, DECADA is built on-top of their solution (EnOS) to form the Device Management Layer of the Smart Nation Sensor Platform.
 
+<div align=center>
+<img width="850" src="./images/Decada_OV_Diagram.png"/>
+</div>
+
+EnOS provides the following functional building blocks to develop an end-to-end platform:
+
+1. Device Management System: To manage all field equipment (i.e. sensors and systems) and ensure that all the devices adhere to the device lifecycle management process
+2. Multi-Agencies Tenancy: To support multi-Agencies with DECADA via providing role-based access control
+3. Security Management: To support the utilization of the Certificate (Public Key Infrastructure) for all encryption functionality within DECADA
+4. API/SDK: To provide existing API/SDK which allows GovTech and/or Agencies for future enhancement development and security purpose 
+
+With these functional building made readily available, this will save GovTech the additional effort to rebuild what is available in the market. GovTech can also leverage on these building blocks to develop solution which are specific to Agencies use-case (i.e. Custom Data Integration solution).
+
+Together with other SNSP components, DECADA offers an easy and powerful solution for Agencies to implement and manage their IoT networks.
 
 <div align=center>
 <img width="850" src="./images/DECADA_OV.png"/>
 </div>
+
 
 For Agencies with IoT sensors deployment needs, DECADA can offer the following:
 - Handling multiple sensor protocols
@@ -58,7 +75,6 @@ DECADA Cloud Platform provides APIs/SDK for data ingress, data egress and platfo
 - Device Enrollment
 - Data Acquisition
 - Event Triggering
-- Data Analytics
 - Dashboarding
 - Report Generation
 - API and SDK
@@ -71,14 +87,15 @@ It caters services such as:
 - **Device Management:** Supports Agencies in managing the commissioning an decommissioning aspect of their field devices and equipment 
 - **Dash-boarding:** Supports Agencies to quickly deploy dashboard interface for their project needs in a shorter time
 - **Security Management:** Agencies users is able to use two-factor authentication (2FA) instead of one-time password for login
-- **Data Analytics:** The processed data set can be used with 3rd party tools such as Tableau.
 
 GovTech provides a **DECADA Management Portal** where Agencies can easily on-board their devices and/or application to achieve the stated services.
 <div align=center>
 <img width="900" src="./images/Decada_home.png"/>
 </div>
 
-Alternatively Agencies can leverage on existing API/SDK to achieve the same results or to customized further based on their use-case. 
+?>Agencies can contact GovTech for the creation of an account in the management portal to test out its functionality. 
+
+Alternatively Agencies can leverage on existing **API/SDK** to achieve the same results or to customized further based on their use-case. 
 
 Features Elaboration where is accessible from DECADA Console Portal and API:
 
