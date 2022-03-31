@@ -79,8 +79,8 @@ Agencies can use the following flow chart to have an overview of the DECADA usag
    });
    /* You can see that it's responsive */
    img {
-      width: 800px;
-      height: 800px;
+      width: 1362px;
+      height: 1452px;
    }
 </script>
 
