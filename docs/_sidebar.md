@@ -2,26 +2,28 @@
 
 - [**Home**](/#docs)
 - [**Release History**](Release.md)
-- [**About The Playbook**](AboutPlayBook.md)
+- [**About The Playbook**](aboutplaybook.md)
 - **Introduction to DECADA**<!--(Overview/intro.md)-->
      * [DECADA Overview](Overview/Overview.md)
      * [DECADA Pricing Model](Overview/Pricing.md)
      * [Roles and Responsibility](Overview/Table_Role.md)
-     * [Service Level Agreement for DECADA](Dev_Con/SLA.md)
+     * [Service Level Agreement for DECADA](OnBoardDevice/SLA.md)
  
  - [**Technical Architecture**](Overview/HighNet.md)
 
 - **On-Boarding Devices**
-     * [Overview](Dev_Con/OV.md)
-     * [Planning and Provisioning](Dev_Con/Onboard.md)
-     * [Service Phase](Dev_Con/Service.md)
-     * [Maintenance Phase](Dev_Con/Maintenance.md)
-     * [Decommissioning Phase](Dev_Con/Decommis.md)
-
+     * [Overview](OnBoardDevice/Overview.md)
+     * [Planning and Provisioning](OnBoardDevice/Onboard.md)
+     * [Service Phase](OnBoardDevice/Service.md)
+     * [Maintenance Phase](OnBoardDevice/Maintenance.md)
+     * [Decommissioning Phase](OnBoardDevice/Decommis.md)
+     * [Test Page: Overview with DrawIo](OnBoardDevice/overview2.md)
+     * [Test Page: Responsive Image Map Example](Responsive.html)
+     
 - **On-Boarding Applications**
-     * [Overview on Application](OnboardingApplication/OV.md)
-     * [Integration with WOG Smart Nation Sensors Platform](OnboardingApplication/WOG_SNSP.md)
-     * [Integration with 3rd Party Application](OnboardingApplication/3rd_Party_Application.md)
+     * [Overview on Application](OnboardingApplication/overview.md)
+     * [Integration with WOG Smart Nation Sensors Platform](OnboardingApplication/wog_snsp.md)
+     * [Integration with 3rd Party Application](OnboardingApplication/3rd_party_application.md)
 
 - **DECADA SDK & API**
      * [Introduction](SDK_API/Introduction.md)
@@ -48,7 +50,7 @@
 - **FAQ**
      * [On-Boarding Device Related](FAQ/On_Boarding_Phase.md)
      * [On-Boarding Applications Related](FAQ/On_Boarding_Applications.md)
-     * [SDK & API Related](FAQ/DECADA_SDK_API.md)
+     * [SDK & API Related](FAQ/decada_sdk_api.md)
      * [Security Related](FAQ/Security.md)
      * [Others](FAQ/Others.md)
 
@@ -56,12 +58,12 @@
 <!--
 Additional Info (not in Playbook)
 - [Technical Architechture](Overview/HighNet.md)
-- [DECADA ONBOARDING OLD OVERVIEW]((Dev_Con/Lifecycle.md))
+- [DECADA ONBOARDING OLD OVERVIEW]((OnBoardDevice/Lifecycle.md))
 - [High Level Key Features](Overview/Price.md)
 - [Accessing Decada](Overview/AccessingEnOS.md)
 - [Overview Details](Overview/Overview2.md)
-- [Direct Device Connection](Dev_Con/Dev_DDC.md)
-- [Edge Gateway](Dev_Con/Edge.md)
-- [API Connection](Dev_Con/API.md) 
-- [**Appendix**](Dev_Con/Appendix.md)       
+- [Direct Device Connection](OnBoardDevice/Dev_DDC.md)
+- [Edge Gateway](OnBoardDevice/Edge.md)
+- [API Connection](OnBoardDevice/API.md) 
+- [**Appendix**](OnBoardDevice/Appendix.md)       
 -->

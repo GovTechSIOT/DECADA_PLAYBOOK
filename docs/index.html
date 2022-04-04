@@ -23,6 +23,19 @@
     <!--link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/imageMapResizer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <!-- 1. Import mermaid.js, BEFORE the window.$docsify initialisation -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/imageMapResizer.min.js"></script>
+    <script src="../../js/ios-orientationchange-fix.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+	
+      
+
 </head>
 
 <body style="position: relative">
@@ -80,7 +93,33 @@
         }
     </script>
     <div id="app">Please wait...</div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery.rwdImageMaps.min.js"></script>
     <script>
+            $(document).ready(function(e) {
+	        $('img[usemap]').rwdImageMaps();
+	            
+	        $('area').on('click', function() {
+		    alert($(this).attr('alt') + ' clicked');
+	        });
+     });
+    </script>
+
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});
+    </script>
+    -->
+
+
+
+    <script>
+
+    // 2. Add the two lines below before declaring the window.$docsify object:
+    
+        var num = 0;
+        mermaid.initialize({ startOnLoad: false });
         window.$docsify = {
             name: 'DECADA Playbook',
             //repo: "https://github.com",
@@ -93,39 +132,14 @@
             subMaxLevel: 3,
             loadNavbar: false,
             mergeNavbar: false,
+            executeScript: true,
             formatUpdated: '{MM}/{DD}/{YYYY}',
-
-
-            // 5. docsify-themeable
+            
+            // docsify-themeable
             themeable: {
                 readyTransition: true,
                 responsiveTables: true,
-            },
-
-            // $(document).ready(function(){
-            //  $('img[usemap]').rwdImageMaps();
-            //  });
-            /* You can see that it's responive */
-            //img: {
-            //      width: 800px;
-            //      height: 800px;
-            //} 
-
-            //	noCompileLinks: [
-            //		'/foo',
-            //		'/bar/.*'
-            //	],
-            // search things
-            //		search: {
-            //			maxAge: 10000, // Expiration time, milliseconds, 10s now.
-            //			paths: 'auto', // or 'auto' or []
-            //			placeholder: 'Type to search',
-            //			hideOtherSidebarContent: false, // whether or not to hide other sidebar content
-            //	  	},
-            //        copyCode: {
-            //            buttonText : 'Copy to clipboard',
-            //           errorText  : 'Error',
-            //            successText: 'Copied'}
+             },
 
             tabs: {
                 persist: true,      // default
@@ -133,15 +147,35 @@
                 theme: 'classic', // default
                 tabComments: false,      // default
                 tabHeadings: true       // default
-            }
-        }
+            },
+            
+            //mermaid
+            
+            markdown: {
+            renderer: {
+                code: function (code, lang) {
+                if (lang === "mermaid") {
+                    return (
+                           '<div class="mermaid">' +
+                           mermaid.render("mermaid-svg-" + num++, code) +
+                           "</div>"
+                            );
+                        }
+                        return this.origin.code.apply(this, arguments);
+                        },
+                    },
+                },
+
+
+
+            };
 
     </script>
-
+    
     <!-- Required: Docsify + Docsify-themeable -->
     <!--script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script src="https://unpkg.com/docsify-themeable"></script>
-
     <!-- Docsify Plugins -->
     <!-- docsify-tabs (latest v1.x.x) -->
     <!--<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>-->
@@ -154,6 +188,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
     <!-- <script src="//unpkg.com/docsify-edit-on-github/index.js"></script> -->
+    <!-- Vega and Vega-Lite Includes -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <!-- gitter -->
     <!-- Docsify v4 -->
 
@@ -161,7 +199,7 @@
     <style>
         :root {
             /* Cover   */
-            --cover-color:;
+            --cover-color:black;
             --cover-margin: 0;
             --cover-max-width: 60em;
             --cover-text-align: center;
@@ -169,13 +207,13 @@
             --theme-hue: 625;
             /* Change the sidebar bullets */
             /*--sidebar-nav-link-before-content:   '😀'; '-->';*/
-            --sidebar-width: 30rem;
-            --base-font-size: 15px;
+            --sidebar-width: 21rem;
+            --base-font-size: 18px;
             --theme-color: rgb(5, 163, 255);
             /* Tab blocks */
             --docsifytabs-border-color: #24d8f8;
             --docsifytabs-border-px: 1px;
-            --docsifytabs-border-radius-px:;
+            --docsifytabs-border-radius-px:1px;
             --docsifytabs-margin: 1.5em 0;
             /* Tabs */
             --docsifytabs-tab-background: #f8f8f8;
@@ -189,17 +227,19 @@
             --docsifytabs-content-background: inherit;
             --docsifytabs-content-padding: 1.5rem;
             /* Tables */
-            --table-body-border-color:;
-            --table-body-border-width:;
-            --table-cell-border-color:;
-            --table-cell-border-width:;
+            --table-body-border-color:black;
+            --table-body-border-width:1px;
+            --table-cell-border-color:black;
+            --table-cell-border-width:1px;
             --table-cell-padding: 0.75em 0.5em;
-            --table-head-background:;
+            --table-head-background:rgb(180, 178, 178);
             --table-head-border-color: var(--table-cell-border-color);
-            --table-head-border-width:;
+            --table-head-border-width:1px;
             --table-head-font-weight: var(--mono-tint3);
-            --table-row-even-background:;
+            --table-row-even-background:rgb(194, 192, 192);
             --table-row-odd-background: var(--mono-tint3);
+            /* Mermaid*/
+            --mermaid-font-size: 2px;
         }
     </style>
     <!--

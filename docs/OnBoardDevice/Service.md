@@ -402,7 +402,7 @@ Agencies can subscribe to both the original and the calculated data, so that the
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/DataSubscriptionService_DataAsset.png"/>
+<img width="850" src="./images/datasubscriptionservice_dataasset.png"/>
 </div>
 
 Agencies may refer [here](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2258043087) for more information.
@@ -444,7 +444,7 @@ The device integration functionality is a flow that allows Agencies to design an
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/DeviceIntegration.png"/>
+<img width="850" src="./images/deviceintegration.png"/>
 </div>
 <!--Device Integration Overview-->
 
@@ -461,7 +461,7 @@ Agencies may refer [here](https://support.envisioniot.com/docs/device-integratio
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/DeviceIntegration_Portal.png"/>
+<img width="850" src="./images/deviceintegration_portal.png"/>
 </div>
 Device Integration - DECADA Management Portal
 

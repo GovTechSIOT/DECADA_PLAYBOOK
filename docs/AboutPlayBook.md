@@ -7,20 +7,20 @@ The playbook is written as sections that can be read independently covering topi
 Target audience can navigate to the proposed section based on their interest:
 
 1. For users whom requires information on the benefit/cost of DECADA & user guide for basic functionality on DECADA
-- [Introduction of DECADA](Dev_Con/OV.md)
+- [Introduction of DECADA](OnBoardDevice/OV.md)
 - [Pricing Model](Overview/Pricing.md)
 - [Roles & Responsibility](Overview/Role.md)
-- [Service Level Agreement for DECADA](Dev_Con/SLA.md)
+- [Service Level Agreement for DECADA](OnBoardDevice/SLA.md)
 - [DECADA Use-Case](Use_Case/Introduction.md)
 
 2. For users whom requires technical information to evaluate DECADA as a solution (i.e. Agencies IT consultants)
 - [Technical Architecture](Overview/HighNet.md)
-- [On-boarding of devices to DECADA](Dev_Con/OV.md)
+- [On-boarding of devices to DECADA](OnBoardDevice/OV.md)
 - [On-boarding of application to DECADA](OnboardingApplication/OV.md)
 - [Security](Security/Introduction.md)
 
 3. For users whom requires comprehensive technical guide on how to integration with/build on DECADA (i.e. Industry Partners)
-- [On-boarding of devices to DECADA](Dev_Con/OV.md)
+- [On-boarding of devices to DECADA](OnBoardDevice/OV.md)
 - [On-boarding of application to DECADA](OnboardingApplication/OV.md)
 - [DECADA SDK/API](SDK_API/Introduction.md)
 

@@ -46,7 +46,7 @@ To conduct OTA updates to devices via DECADA, Agencies will need to have an acco
 
 Agencies can leverage on the existing OTA feature on DECADA to manage their on-boarded devices:
 <div align=center>
-<img width="1500" src="./images/FirmwareUpgradeProcess.png"/>
+<img width="1500" src="./images/firmwareupgradeprocess.png"/>
 </div>
 
 Agencies may refer [here](https://support-cn5.envisioniot.com/docs/device-connection/en/latest/howto/ota/developing_device_ota) for the implementation details via the DECADA Management Portal.
@@ -80,7 +80,7 @@ The following diagram illustrate the process of secure communication between the
 <u>Deployment Phase</u>
 
 <div align=center>
-<img width="1500" src="./images/Certificate_DeploymentPhase.png"/>
+<img width="1500" src="./images/certificate_deploymentphase.png"/>
 </div>
 
 2a. Agencies provision the edge with the necessary information such as the product key, product secret, serial number, and license and uses these parameters to create the device in DECADA.
@@ -99,7 +99,7 @@ The following diagram illustrate the process of secure communication between the
 
 - On DECADA after Provisioning the self-signed certificate
 <div align=center>
-<img width="1500" src="./images/Certificate_DeploymentPhase_Portal.png"/>
+<img width="1500" src="./images/certificate_deploymentphase_portal.png"/>
 </div>
 
 <u>Communication Phase</u>
@@ -108,7 +108,7 @@ During peacetime after the initial certificate has been provisioned:
 
 - Edge Communicates with the IoT Hub Using the Certificate-based Bi-directional Authentication
 <div align=center>
-<img width="1500" src="./images/Certificate_CommunicationPhase.png"/>
+<img width="1500" src="./images/certificate_communicationphase.png"/>
 </div>
 
 3a. The edge validates the certificate of DECADA.
@@ -128,7 +128,7 @@ As the current certificate validity period is set to 2-Years validity,  Agencies
 Under some circumstances, Agencies needs to revoke the X.509 certificate of the edge
 
 <div align=center>
-<img width="1500" src="./images/Certificate_RevocationPhase.png"/>
+<img width="1500" src="./images/certificate_revocationphase.png"/>
 </div>
 
 4a. DECADA calls the revocation API to revoke the X.509 certificate with the serial number of the certificate.
@@ -147,7 +147,7 @@ To authenticate the devices to DECADA via certificate-basis, Agencies will need 
 
 Once the certificate has been installed on the devices, Agencies can utilize the management portal to manage the lifecycle of the installed certificate.
 <div align=center>
-<img width="1500" src="./images/Certificate_Portal.png"/>
+<img width="1500" src="./images/certificate_portal.png"/>
 </div>
 
 ?> Agencies will have to create an application via the “application registration” for the access and secret keys with the appropriate access roles in order to generate the relevant certificate files.

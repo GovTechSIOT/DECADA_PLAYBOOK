@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML ImageMap resizing example</title>
+	<script src="../../js/ios-orientationchange-fix.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+	<style>
+	/* You can see that it's responive */
+     img {
+      width: auto;
+	  max-width: 100%;
+      height: auto;
+     }
+	</style>
+</head>
+
+<body style>
+	<h2>Introduction</h2>
+	<p>The chapter provides and introduce to what are the building blocks which makes up DECADA. This chapter will provide Agencies insights on what is DECADA (i.e Device Management & Data Management) and how Agencies can leverage on DECADA to manage and provision their devices and to have a holistic view via their application.</p>
+	
+	<div>
+	<img width="1200" src="./images/buildingblock.png"/>
+	</div>
+	
+	**<u>Device Lifecycle Management</u>**
+	
+	<p>
+	Agencies can use the following flow chart to have an overview of the DECADA usage from on-boarding to the management of their devices via DECADA:
+	</p>
+	
+	<script>
+		$(document).ready(function(){
+         $('img[usemap]').rwdImageMaps();
+         });
+	</script>
+
+	<div>
+	<img src="./images/decada_flow.png" width="1362px" height="1452px" usemap="#m_Map">
+	<map name="m_Map">
+		<area name="Integrate" shape="rect" coords="57,288,240,380" href="./#/Dev_Con/Onboard?id=integration-with-decada" title="Integration">
+	 </map>
+	</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+	$('area').on('click', function() {
+		alert($(this).attr('alt') + ' clicked');
+	});
+});
+
+
+</script>
+
+ <!--console.log("HELLO")-->
+ <!--//width: 1362px;-->
+ <!--max-width: 1000vw;
+			 height: 1452px;-->
+			 <!--$(document).ready(function(e) {
+				$('img[usemap]').rwdImageMaps();
+				
+				$('area').on('click', function() {
+					alert($(this).attr('alt') + ' clicked');
+				});
+			});-->
+			
+</body>
+</html>

@@ -14,7 +14,7 @@ Agencies can ingest data from DECADA to their Application via the push or pull m
 Prior on-boarding Agencies' 3rd Party Application to DECADA via APIs, Agencies will have to create an application via the “application registration” for the access and secret keys with the appropriate access roles in order to carry out its intended purpose.
 
 <div align=center>
-<img src="./images/ApplicationRegisteration.png"/>
+<img src="./images/applicationregisteration.png"/>
 </div>
 
 This will allow Agencies to create, delete and manage the applications and its users via permission management. Agencies can refer [here](https://support.envisioniot.com/docs/app-development/en/latest/app_portal/app_developer/developing_apps.html#:~:text=Log%20in%20to%20the%20EnOS%20Management%20Console%2C%20select,about%20the%20application%20to%20complete%20the%20application%20registration.) for more information via DECADA Management Portal.
@@ -48,7 +48,7 @@ Data can be ingested via the following protocol:
 For data to be ingested from DECADA to 3rd Party applications, Agencies can consider leveraging on this services and install the necessary SDK to receive the data. Agencies can subscribe to both original and calculated data where the asset data can be consumed by application directly. The subscription settings can be configured through the Data Subscription Service.
 
 <div align=center>
-<img src="./images/DataSubscriptionService.png"/>
+<img src="./images/datasubscriptionservice.png"/>
 </div>
 
 The DECADA Data Subscription Service utilize the Kafka Pipeline to improves the API calling efficiency of applications with active data push, which supports subscription to various data types such as real-time asset data, asset alert data, and event data. Applications do not need to call APIs repeatedly and frequently to get the asset data. Instead the subscribed data will be pushed automatically and applications can consume the pushed data as needed. 
@@ -59,7 +59,7 @@ Agencies can use the provided SDKs to retrieve the subscribed data:
 2. [Python SDK](https://github.com/EnvisionIot/enos-subscription-service-sdk-python)
 
 <div align=center>
-<img src="./images/DataSubscriptionService_Portal.png"/>
+<img src="./images/datasubscriptionservice_portal.png"/>
 </div>
 
 Agencies may refer [here](https://www.envisioniot.com/docs/data-subscription/en/latest/data_subscription_overview.html) for more information.

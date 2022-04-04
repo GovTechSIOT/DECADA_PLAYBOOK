@@ -8,7 +8,7 @@ Device on-boarding typically follows the lifecycle depicted below diagram:
  5. **Decommissioning.**
 
 <div align=center>
-<img width="800" src="./images/DecadaLC2.png"/>
+<img width="800" src="./images/decadalc2.png"/>
 </div>
 
 ## Device Connection Methods
