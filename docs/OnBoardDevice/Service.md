@@ -17,48 +17,48 @@ The user administration hierarchy can be divided into the following, from top to
  - Organization (i.e. Agency-based)
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/mt1.png"/>
+<img width="850" src="./images/onBoardDevice/mt1.png"/>
 </div>
 
  - User (i.e. staff who requires to access DECADA)
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/mt2.png"/>
+<img width="850" src="./images/onBoardDevice/mt2.png"/>
 </div>
 
  - User group (i.e. collection of staff who does maintenance work)
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/mt3.png"/>
+<img width="850" src="./images/onBoardDevice/mt3.png"/>
 </div>
 
 Access Policies in IAM are classified into two types:
  - Built-in policies (i.e. Pre-defined access policies for typical roles in DECADA)
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/mt4.png"/>
+<img width="850" src="./images/onBoardDevice/mt4.png"/>
 </div>
 
  - Custom policies (i.e. Access policies customized to the needs of users)
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/mt5.png"/>
+<img width="850" src="./images/onBoardDevice/mt5.png"/>
 </div>
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/mt6.png"/>
+<img width="850" src="./images/onBoardDevice/mt6.png"/>
 </div>
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/mt7.png"/>
+<img width="850" src="./images/onBoardDevice/mt7.png"/>
 </div>
 
 DECADA has also built-in logging mechanism to log incorrect login. See below.
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/mt8.png"/>
+<img width="850" src="./images/onBoardDevice/mt8.png"/>
 </div>
 
 ?> Agencies can leverage on existing API/SDK and the DECADA Management Portal to control users access/permission. 
@@ -108,7 +108,7 @@ To review and develop your own application for data presentation , Agencies will
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/dashboard.png"/>
+<img width="850" src="./images/onBoardDevice/dashboard.png"/>
 </div>
 
 <!--
@@ -155,7 +155,7 @@ Agencies can control their on-boarded devices via the DECADA Management Portal:
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/commands.png"/>
+<img width="850" src="./images/onBoardDevice/commands.png"/>
 </div>
 
 **<u>Via API Calls</u>**
@@ -179,7 +179,7 @@ DECADA has available alert services which Agencies can use to monitor alerts on 
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/cloud_edge.png"/>
+<img width="850" src="./images/onBoardDevice/cloudEdge.png"/>
 </div>
 
 DECADA allows Agencies to generate alerts based on the following setting:
@@ -202,20 +202,20 @@ Agencies may refer [here](https://support.envisioniot.com/docs/alert/en/latest/l
 - Alerts will be reflected if the threshold is met or device is offline
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/alert5.png"/>
+<img width="850" src="./images/onBoardDevice/alert5.png"/>
 </div>
 
 - Via Email
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/alert2.png"/>
+<img width="850" src="./images/onBoardDevice/alert2.png"/>
 </div>
 Via email
 
 - Via SMS
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/alert3.png"/>
+<img width="850" src="./images/onBoardDevice/alert3.png"/>
 </div>
 
 ?> The alerts setting available in DECADA are generic in nature. Agencies are advise to utilize the existing API should they require further customization. 
@@ -245,7 +245,7 @@ Logs in DECADA are categorized into two types as per the below.
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/LoggingMechanism.png"/>
+<img width="850" src="./images/onBoardDevice/loggingMechanism.png"/>
 </div>
 
 - **Device Logs:** Include information that are related to the device running state and processing logic. Note that devices need to support log reporting for logs to be viewed.
@@ -268,7 +268,7 @@ DECADA provides functions relating to Data Asset Management which allows Agencie
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/DataAssetManagement.png"/>
+<img width="850" src="./images/onBoardDevice/dataAssetManagement.png"/>
 </div>
 
 <!--
@@ -283,7 +283,7 @@ The data flow of real-time data in DECADA Data Asset Management can be viewed th
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/DataAssetManagementOverview.png"/>
+<img width="850" src="./images/onBoardDevice/dataAssetManagementOverview.png"/>
 </div>
 
 **<u>Before You Start</u>**
@@ -299,7 +299,7 @@ Powered by Apache SparkTM Streaming, DECADA Stream Analytics targets to meet the
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/StreamProcessing.png"/>
+<img width="850" src="./images/onBoardDevice/streamProcessing.png"/>
 </div>
 
 By leveraging on such service, Agencies will be ensured of the following:
@@ -316,7 +316,7 @@ Agencies may refer [here](https://www.envisioniot.com/docs/stream-processing/en/
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/StreamProcessingService.png"/>
+<img width="850" src="./images/onBoardDevice/streamProcessingService.png"/>
 </div>
 
 **<u>Via API Calls</u>**
@@ -335,7 +335,7 @@ Agencies may refer [here](https://www.envisioniot.com/docs/batch-processing/en/l
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/BatchProcessingServices.png"/>
+<img width="850" src="./images/onBoardDevice/batchProcessingServices.png"/>
 </div>
 
 **<u>Via API Calls</u>**
@@ -356,7 +356,7 @@ Agencies may refer [here](https://www.envisioniot.com/docs/time-series-data/en/l
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/TSDBFeature.png"/>
+<img width="850" src="./images/onBoardDevice/tsdbFeature.png"/>
 </div>
 
 **<u>Via API Calls</u>**
@@ -372,7 +372,7 @@ DECADA supports archiving and storing data from the real-time message channel, d
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/DataArchivingService.png"/>
+<img width="850" src="./images/onBoardDevice/dataArchivingService.png"/>
 </div>
 
 Agencies may refer [here](https://www.envisioniot.com/docs/data-archiving/en/latest/archive_policy.html)for more information.
@@ -389,7 +389,7 @@ Agencies may refer [here](https://www.envisioniot.com/docs/data-federation/en/la
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/DataFederationService.png"/>
+<img width="850" src="./images/onBoardDevice/DataFederationService.png"/>
 </div>
 
 **<u>Via API Calls</u>**
@@ -402,7 +402,7 @@ Agencies can subscribe to both the original and the calculated data, so that the
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/datasubscriptionservice_dataasset.png"/>
+<img width="850" src="./images/onBoardDevice/dataSubscriptionServiceDataAsset.png"/>
 </div>
 
 Agencies may refer [here](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2258043087) for more information.
@@ -444,7 +444,7 @@ The device integration functionality is a flow that allows Agencies to design an
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/deviceintegration.png"/>
+<img width="850" src="./images/onBoardDevice/deviceIntegration.png"/>
 </div>
 <!--Device Integration Overview-->
 
@@ -461,7 +461,7 @@ Agencies may refer [here](https://support.envisioniot.com/docs/device-integratio
 
 <div align=center>
 <name=Device Management Dashboard>
-<img width="850" src="./images/deviceintegration_portal.png"/>
+<img width="850" src="./images/onBoardDevice/deviceIntegrationPortal.png"/>
 </div>
 Device Integration - DECADA Management Portal
 

@@ -5,23 +5,23 @@ The chapter provides and introduce to what are the building blocks which makes u
 
 
 <div align=center>
-<img width="800" src="./images/buildingblock.png"/>
+<img width="800" src="./images/onBoardDevice/buildingBlock.png"/>
 </div>
 
 **<u>Device Lifecycle Management</u>**
 
 Agencies can use the following flow chart to have an overview of the DECADA usage from on-boarding to the management of their devices via DECADA:
 
+
 <div class="mermaid">
 flowchart TD
-%%{init: {"theme": "base", "themeVariables": { "fontSize": "16px", "flowchart": {"diagramPadding": 64, "useMaxWidth": true}}}}%%
-    A4-->B1
     B1-->C4
+    A4-->B1
     C4-->D1
     D1-->E1
     subgraph Decommission
     direction TB
-    E1[Decommission, Revocation Device credentials]-->E2[End]
+    E1[Decommission, Revocation Device credentials]-->E2{End}
     end
     subgraph Maintenance
     direction TB
@@ -43,12 +43,12 @@ flowchart TD
     end
     subgraph Planning/Design
     direction TB
-    A1[Start]-->A2[Determine Integration Mode of Devices]
+    A1{Start}-->A2[Determine Integration Mode of Devices]
     A2[Determine Integration Mode of Devices]-->A3[Connection Schemes]
     A3[Connection Schemes]-->A4[Data Format]
     end
     style A1 fill:##bbf,stroke:#333,stroke-width:1px
-    click A2 "http://localhost:3000/#/OnBoardDevice/Onboard?id=integration-with-decada" _blank
+    click A2 "./#/OnBoardDevice/Onboard?id=integration-with-decada" _blank
     style A2 fill:##bbf,stroke:#333,stroke-width:1px
     click A3 "http://localhost:3000/#/OnBoardDevice/Onboard?id=device-connectivity" _blank
     style A3 fill:##bbf,stroke:#333,stroke-width:1px
@@ -80,8 +80,10 @@ flowchart TD
     style E1 fill:##bbf,stroke:#333,stroke-width:1px,fontSize:18
     style E2 fill:##bbf,stroke:#333,stroke-width:1px
 </div>
-<!---Stream Process,Batch Processing,TSDB-->
 
+<script>mermaid.initialize({startOnLoad:true});</script>
+<!---Stream Process,Batch Processing,TSDB-->
+<!--%%{init: {"theme": "base", "themeVariables": { "fontSize": "16px", "flowchart": {"diagramPadding": 64, "useMaxWidth": true}}}}%%-->
 
 
 **<u>Planning & Design Phase:</u>**
@@ -152,7 +154,7 @@ OnBoardDevice/Maintenance?id=certificate-lifecycle-management   OnBoardDevice/On
 
 
 <div align=center>
-<img width="800" src="./images/DecadaLC2.png"/>
+<img width="800" src="./images/decadalc2.png"/>
 </div>
 -->
 
@@ -165,7 +167,7 @@ Existing API/SDK and the DECADA Management Portal are available for Agencies to 
 DECADA Console is a web-based Graphic User-Interface (GUI) created by GovTech for Agencies to interact with resources within DECADA. The following figure shows a configuration interface in the DECADA Console.
 
 <div align=center>
-<img width="900" src="./images/Decada_home.png"/>
+<img width="900" src="./images/onBoardDevice/decadaHome.png"/>
 </div>
 
 **<u>2. DECADA API/SDK</u>**

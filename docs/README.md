@@ -9,14 +9,14 @@
 <center><font size ="80"><bold>DECADA PlayBook</bold></font></center>-->
 
 <div align=center>
-<img width="900" src="https://decada-playbook.siot.local/images/topbar1.png"/>
+<img width="900" src="./images/home/topBar.png"/>
 </div>
 <div align=center>
-<img width="900" src="https://decada-playbook.siot.local/images/decada_home.png"/>
+<img width="900" src="./images/home/decadaHome.png"/>
 </div>
 
 <div align=center>
-<img width="900" src="https://decada-playbook.siot.local/images/bottombar1.png"/>
+<img width="900" src="./images/home/bottomBar.png"/>
 </DIV>
 <DIV>
 <!--

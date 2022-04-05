@@ -1,60 +1,61 @@
 <!-- docs/sidebar -->
 
 - [**Home**](/#docs)
-- [**Release History**](Release.md)
-- [**About The Playbook**](aboutplaybook.md)
+- [**Release History**](release.md)
+- [**About The Playbook**](aboutPlaybook.md)
 - **Introduction to DECADA**<!--(Overview/intro.md)-->
-     * [DECADA Overview](Overview/Overview.md)
-     * [DECADA Pricing Model](Overview/Pricing.md)
-     * [Roles and Responsibility](Overview/Table_Role.md)
-     * [Service Level Agreement for DECADA](OnBoardDevice/SLA.md)
+     * [DECADA Overview](overview/overview.md)
+     * [DECADA Pricing Model](overview/pricing.md)
+     * [Roles and Responsibility](overview/tableRole.md)
+     * [Service Level Agreement for DECADA](overview/sla.md)
  
- - [**Technical Architecture**](Overview/HighNet.md)
+ - [**Technical Architecture**](overview/highNet.md)
 
 - **On-Boarding Devices**
-     * [Overview](OnBoardDevice/Overview.md)
-     * [Planning and Provisioning](OnBoardDevice/Onboard.md)
-     * [Service Phase](OnBoardDevice/Service.md)
-     * [Maintenance Phase](OnBoardDevice/Maintenance.md)
-     * [Decommissioning Phase](OnBoardDevice/Decommis.md)
-     * [Test Page: Overview with DrawIo](OnBoardDevice/overview2.md)
-     * [Test Page: Responsive Image Map Example](Responsive.html)
+     * [Overview](onBoardDevice/overview.md)
+     * [Planning and Provisioning](onBoardDevice/onboard.md)
+     * [Service Phase](onBoardDevice/service.md)
+     * [Maintenance Phase](onBoardDevice/maintenance.md)
+     * [Decommissioning Phase](onBoardDevice/decommission.md)
+ <!--* [Test Page: Overview with DrawIo](onBoardDevice/overview2.md)
+     * [Test Page: Responsive Image Map Example](responsive.html) -->
      
 - **On-Boarding Applications**
-     * [Overview on Application](OnboardingApplication/overview.md)
-     * [Integration with WOG Smart Nation Sensors Platform](OnboardingApplication/wog_snsp.md)
-     * [Integration with 3rd Party Application](OnboardingApplication/3rd_party_application.md)
+     * [Overview on Application](onBoardingApplication/overview.md)
+     * [Integration with WOG Smart Nation Sensors Platform](onBoardingApplication/wogSnsp.md)
+     * [Integration with 3rd Party Application](onBoardingApplication/3rdPartyApplication.md)
 
 - **DECADA SDK & API**
-     * [Introduction](SDK_API/Introduction.md)
-     * [DECADA SDK](SDK_API/SDK.md)
-     * [DECADA API](SDK_API/API.md)
+     * [Introduction](sdkApi/introduction.md)
+     * [DECADA SDK](sdkApi/sdk.md)
+     * [DECADA API](sdkApi/api.md)
 
 - **Security**
-     * [Introduction](Security/Introduction.md)
-     * [Secure Connection](Security/Secure_Connection.md)
-     * [Device Security](Security/Device_Security.md)
-     * [Application Security](Security/Application_Security.md)
-     * [Cloud Infrastructure Security](Security/Cloud_Infrastructure_Security.md)
-     * [Data Security](Security/Data_Security.md)
-     * [Role-Based Access Control](Security/Role-Based_Access_Control.md)
-     * [Logging and Auditing](Security/Logging_and_Auditing.md)
-     * [Security Incident Management](Security/Security_Incident_Management.md)
+     * [Introduction](security/introduction.md)
+     * [Secure Connection](security/secureConnection.md)
+     * [Device Security](security/deviceSecurity.md)
+     * [Application Security](security/applicationSecurity.md)
+     * [Cloud Infrastructure Security](security/cloudInfrastructureSecurity.md)
+     * [Data Security](security/dataSecurity.md)
+     * [Role-Based Access Control](security/roleBasedAccessControl.md)
+     * [Logging and Auditing](security/loggingAndAuditing.md)
+     * [Security Incident Management](security/securityIncidentManagement.md)
 
 - **Use Case**
-     * [Introduction](Use_Case/Introduction.md)
-     * [Air Sensors](Use_Case/Air_Sensor.md)
-     * [Solar Panel](Use_Case/Solar_Panel.md)
-     * [Power Meter](Use_Case/Power_Meter.md)
+     * [Introduction](useCase/introduction.md)
+     * [Air Sensors](useCase/airSensor.md)
+     * [Solar Panel](useCase/solarPanel.md)
+     * [Power Meter](useCase/powerMeter.md)
+     * [DECADA Starter Kit](useCase/decadaStarterKit.md)
 
 - **FAQ**
-     * [On-Boarding Device Related](FAQ/On_Boarding_Phase.md)
-     * [On-Boarding Applications Related](FAQ/On_Boarding_Applications.md)
-     * [SDK & API Related](FAQ/decada_sdk_api.md)
-     * [Security Related](FAQ/Security.md)
-     * [Others](FAQ/Others.md)
+     * [On-Boarding Device Related](faq/onBoardingPhase.md)
+     * [On-Boarding Applications Related](faq/onBoardingApplications.md)
+     * [SDK & API Related](faq/decadaSdkApi.md)
+     * [Security Related](faq/security.md)
+     * [Others](faq/others.md)
 
-- [**Terminalogy**](Overview/Terminology.md)
+- [**Terminalogy**](overview/terminology.md)
 <!--
 Additional Info (not in Playbook)
 - [Technical Architechture](Overview/HighNet.md)

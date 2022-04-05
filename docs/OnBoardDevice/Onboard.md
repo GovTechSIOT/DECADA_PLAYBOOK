@@ -10,7 +10,7 @@ DECADA provides several connection solutions for Agencies to connect sensors to 
 Communications to DECADA can be done via any one of the following methods:
 
 <div align=center>
-<img width="850" src="./images/integration_with_decada.png"/>
+<img width="850" src="./images/onBoardDevice/integrationWithDecada.png"/>
 </div>
 Integration Methodology
 
@@ -33,7 +33,7 @@ Agencies can leverage on this mode of connection if they have an existing applic
 Agencies can use the following flow chart to the determine which mode of connection to use to on-board their devices to DECADA
 
 <div align=center>
-<img src="./images/Integration_FlowChart.png"/>
+<img src="./images/onBoardDevice/integrationFlowchart.png"/>
 </div>
 
 **<u>Comparison on the Mode of Connections </u>**
@@ -51,7 +51,7 @@ Agencies can consider the following when selecting the Mode of Connections:
 Agencies can use the following flow chart to the determine which mode of connection to use to on-board their devices to DECADA
 
 <div align=center>
-<img width="850" src="./images/integration_fc1.png"/>
+<img width="850" src="./images/onBoardDevice/integrationFC.png"/>
 </div>
 
  
@@ -61,7 +61,7 @@ Agencies can use the following flow chart to the determine which mode of connect
 ### Direct Connection
 
 <div align=center>
-<img width="850" src="./images/snsp.png"/>
+<img width="850" src="./images/onBoardDevice/snsp.png"/>
 </div>
 
 
@@ -71,7 +71,6 @@ Direct connection can be made via the use of GovTech provided SDKs which are ava
 Java, Python 2/3 and C/C++. The device SDKs encapsulate protocols for data transmission and provide features such as device registration, device data ingestion and device control.
 
 Supported platforms include x86 and ARM. DECADA’s SDKs are all open source in nature, and are available for reference [here](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2263220229/DECADA+SDK+API). 
-***[Need to confirm this link. Faultly link(!) will be fixed]***
 
 This option is applicable only for sensors with the capability for direct access. There are a few scenarios for direct connection:
   - Connected device is registered, and the device is burned with a **unique** product and device keys provided by DECADA portal. This scenario is mainly for **small number of devices**, and the device is burned with device triple (product key, device key and device secret key) through cloud registration.
@@ -100,7 +99,7 @@ Details of implementation can be found [here](https://support.envisioniot.com/do
 Agencies to use the following flow chart to determine which protocol the sensors should use to connect to DECADA:
 
 <div align=center>
-<img width="850" src="./images/flowchart_protocol.png"/>
+<img width="850" src="./images/onBoardDevice/flowchartProtocol.png"/>
 </div>
 
 <!--Agencies can refer to the [Appendix](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2264956988/Appendix) for more information.-->
@@ -108,7 +107,7 @@ Agencies to use the following flow chart to determine which protocol the sensors
 **<u>Protocol Comparison</u>**
 
 <div align=center>
-<img src="./images/DirectConnection_ProtocolComparison.png"/>
+<img src="./images/onBoardDevice/directConnectionProtocolComparison.png"/>
 </div>
 
 <!--
@@ -139,7 +138,7 @@ Agencies to use the following flow chart to determine which protocol the sensors
 ### Connection via Edge
 
 <div align=center>
-<img width="850" src="./images/snsp2.png"/>
+<img width="850" src="./images/onBoardDevice/snsp2.png"/>
 </div>
 DECADA Edge is a GovTech provided software solution which can be deployed on a x86/ARM
 architecture either on-premises or as a virtual instance on the cloud. 
@@ -176,7 +175,7 @@ The **recommended** hardware requirements for edge hardware for the edge softwar
  ### Cloud-to-Cloud Connection with DECADA
 
 <div align=center>
-<img width="850" src="./images/snsp3.png"/>
+<img width="850" src="./images/onBoardDevice/snsp3.png"/>
 </div>
 
 In the event where direct link to DECADA is not possible, Cloud-to-Cloud connection is possible via a myriad of mechanism.
@@ -195,7 +194,7 @@ In general, both teams will have to minimally agree to provide APIs for the foll
  - Access to sensor device measure points via a unique identifier.
 
  <div align=center>
-<img width="850" src="./images/external.png"/>
+<img width="850" src="./images/onBoardDevice/external.png"/>
 </div>
 
 ?> To register the applications onto DECADA, Agencies will need to have an account and write access to the Application Management Layer. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
@@ -260,7 +259,7 @@ DECADA Cloud Platform is hosted in GCC Azure and is connectable via:
 
 
 <div align=center>
-<img width="850" src="./images/High Level Net Arch.png"/>
+<img width="850" src="./images/onBoardDevice/highLevelNetArch.png"/>
 </div>
 
 <!--
@@ -280,7 +279,7 @@ For devices on-boarding directly to DECADA. there are two ways of connection:
 2. On-boarding non-smart devices to DECADA
 
 <div align=center>
-<img width="850" src="./images/deviceregistration.png"/>
+<img width="850" src="./images/onBoardDevice/deviceRegistration.png"/>
 </div>
 
 
@@ -317,7 +316,7 @@ Register devices to obtain the device identities
 A model is an abstraction of the product’s features, and defines what the product is, what it can do, and what services it can provide. This section shows how to create a model and define custom features for the model.
 
 <div align=center>
-<img width="850" src="./images/createmodel.png"/>
+<img width="850" src="./images/onBoardDevice/createModel.png"/>
 </div>
 
 <!--
@@ -340,7 +339,7 @@ A product is a collection of devices with the same features. Using the device mo
 Creation of end-points (sensors)
 -->
 <div align=center>
-<img width="850" src="./images/creategateway.png"/>
+<img width="850" src="./images/onBoardDevice/createGateway.png"/>
 </div>
 <!--
 On device security, Agencies may select the mode of authentication accordingly to their needs:
@@ -358,7 +357,7 @@ Agencies can refer [here](https://www.envisioniot.com/docs/device-connection/en/
 A device is the instance of a product. It is created from a product so that it inherits not only the basic features of the model, but also the communication features of the product (for example, the device key-secret pair and device certificate used for secure communication).
 
 <div align=center>
-<img width="850" src="./images/newdevice.png"/>
+<img width="850" src="./images/onBoardDevice/newDevice.png"/>
 </div>
 
 <!--
@@ -411,7 +410,7 @@ The sample codes below show the devices is generated randomized measurement poin
 
 <!--Measurement points received from devices can be seen from DECADA-->
 <div align=center>
-<img width="850" src="./images/newdevice.png"/>
+<img width="850" src="./images/onBoardDevice/newDevice.png"/>
 </div>
 <!--
 <div align=center>
@@ -462,7 +461,7 @@ To create an asset tree, Agencies will need to have an account and write access 
 Agencies may refer [here](https://www.envisioniot.com/docs/device-connection/en/latest/howto/asset_tree/assettree_overview) for the details to create and utilize the assets tree via the DECADA Management Portal.
 
 <div align=center>
-<img width="850" src="./images/asset_trees2.png"/>
+<img width="850" src="./images/onBoardDevice/assetTrees.png"/>
 </div>
 
 **<u>Via API Calls</u>**
@@ -492,7 +491,7 @@ In the event that Agencies are unable to ingest data via the standard JSON forma
 Agencies are preferable to transmit data using the DECADA standard JSON format.
 
  <div align=center>
-<img width="850" src="./images/endpoint.jpeg"/>
+<img width="850" src="./images/onBoardDevice/endPoint.jpeg"/>
 </div>
 
 The sample codes below show the standard data format used for uploading data into DECADA:
@@ -546,7 +545,7 @@ In the above-mentioned sample codes:
 The JSON format-based data communication with DECADA is not suitable for the endpoints with lower configurations and limited resources or those with special requirements on networking traffic. In this case, Agencies can pass the data to DECADA where DECADA will runs the parsing scripts to convert the data into the JSON format defined by DECADA. When the DECADA sends the control commands to the endpoints , the scripts may also be used to convert the JSON format defined by DECADA into the binary data that the endpoints is able to parse for issuing purpose.
 
 <div align=center>
-<img width="850" src="./images/endpoint2.jpeg"/>
+<img width="850" src="./images/onBoardDevice/endPoint2.jpeg"/>
 </div>
 
 For the endpoints that transmit the data by means of pass-through or in the custom format, Agencies may compile scripts in DECADA to parse the data from the endpoints. The parsing scripts support JavaScript-based development.

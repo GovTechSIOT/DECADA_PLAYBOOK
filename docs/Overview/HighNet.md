@@ -2,7 +2,7 @@
 
 **<u>Enterprise Architecture</u>** <!--## Emterprise Architecture-->
 <div align=center>
-<img width="850" src="./images/techarch.png"/>
+<img width="850" src="./images/overview/techArch.png"/>
 </div>
 <!--
 ## Backend Architecture
@@ -24,7 +24,7 @@
 
 **<u>Data Flow</u>** <!--## Data Flow-->
 <div align=center>
-<img width="850" src="./images/dataflow.png"/>
+<img width="850" src="./images/overview/dataFlow.png"/>
 </div>
 
 <!--
@@ -35,7 +35,7 @@
 
 **<u>Batch Processing</u>** <!--## Batch Processing-->
 <div align=center>
-<img width="850" src="./images/batchprocessing.png"/>
+<img width="850" src="./images/overview/batchProcessing.png"/>
 </div>
 
 

@@ -7,7 +7,7 @@
 Under The maintenance phase, Agencies can leverage on the Over-The-Air (OTA) feature offered by DECADA portal to manage and perform device firmware upgrade(i.e. creating new firmware versions, setting upgrade policies, and deleting firmware versions).
 
  <div align=center>
-<img width="850" src="./images/otacopy.png"/>
+<img width="850" src="./images/onBoardDevice/ota.png"/>
 </div>
 
 **<u>Device SDK for OTA</u>**
@@ -25,7 +25,7 @@ DECADA supports the following firmware upgrade modes:
 **Cloud initiated OTA process:** DECADA pushes the upgrade to the device, upgrading the device to a specified version.
 
 <div align=center>
-<img width="700" src="./images/ota2copy.png"/>
+<img width="700" src="./images/onBoardDevice/ota2.png"/>
 </div>
 
 The devices will start the OTA upgrade process once they receive the request and report their new versions after rebooting. However, whether to perform the OTA upgrade depends on the device settings. Agencies can still add an upgrade confirmation for the downloaded OTA firmware on devices so that they can choose whether to proceed with the upgrading. The partition storing the new firmware is activated only after confirmation.
@@ -33,7 +33,7 @@ The devices will start the OTA upgrade process once they receive the request and
 **Upon device request:** Devices initiate the OTA request and DECADA provides the list of available firmware. The device will then proceed with the OTA upgrade.
 
 <div align=center>
-<img width="1500" src="./images/ota3copy.png"/>
+<img width="1500" src="./images/onBoardDevice/ota3.png"/>
 </div>
 
 OTA upgrade can be initiated by devices. When devices send the upgrade requests to DECADA, DECADA decides whether the devices fall into any upgrade list. If the device can be upgraded, DECADA sends available firmware to the devices. The upgrade starts after the device confirms the upgrade. Upon device request upgrades require manual intervention and confirmation steps; this provides more flexibility for Agencies to decide whether to upgrade the devices.
@@ -46,7 +46,7 @@ To conduct OTA updates to devices via DECADA, Agencies will need to have an acco
 
 Agencies can leverage on the existing OTA feature on DECADA to manage their on-boarded devices:
 <div align=center>
-<img width="1500" src="./images/firmwareupgradeprocess.png"/>
+<img width="1500" src="./images/onBoardDevice/firmwareUpgradeProcess.png"/>
 </div>
 
 Agencies may refer [here](https://support-cn5.envisioniot.com/docs/device-connection/en/latest/howto/ota/developing_device_ota) for the implementation details via the DECADA Management Portal.
@@ -80,7 +80,7 @@ The following diagram illustrate the process of secure communication between the
 <u>Deployment Phase</u>
 
 <div align=center>
-<img width="1500" src="./images/certificate_deploymentphase.png"/>
+<img width="1500" src="./images/onBoardDevice/certificateDeploymentPhase.png"/>
 </div>
 
 2a. Agencies provision the edge with the necessary information such as the product key, product secret, serial number, and license and uses these parameters to create the device in DECADA.
@@ -99,7 +99,7 @@ The following diagram illustrate the process of secure communication between the
 
 - On DECADA after Provisioning the self-signed certificate
 <div align=center>
-<img width="1500" src="./images/certificate_deploymentphase_portal.png"/>
+<img width="1500" src="./images/onBoardDevice/certificateDeploymentPhasePortal.png"/>
 </div>
 
 <u>Communication Phase</u>
@@ -108,7 +108,7 @@ During peacetime after the initial certificate has been provisioned:
 
 - Edge Communicates with the IoT Hub Using the Certificate-based Bi-directional Authentication
 <div align=center>
-<img width="1500" src="./images/certificate_communicationphase.png"/>
+<img width="1500" src="./images/onBoardDevice/certificateCommunicationPhase.png"/>
 </div>
 
 3a. The edge validates the certificate of DECADA.
@@ -128,7 +128,7 @@ As the current certificate validity period is set to 2-Years validity,  Agencies
 Under some circumstances, Agencies needs to revoke the X.509 certificate of the edge
 
 <div align=center>
-<img width="1500" src="./images/certificate_revocationphase.png"/>
+<img width="1500" src="./images/onBoardDevice/certificateRevocationPhase.png"/>
 </div>
 
 4a. DECADA calls the revocation API to revoke the X.509 certificate with the serial number of the certificate.
@@ -147,7 +147,7 @@ To authenticate the devices to DECADA via certificate-basis, Agencies will need 
 
 Once the certificate has been installed on the devices, Agencies can utilize the management portal to manage the lifecycle of the installed certificate.
 <div align=center>
-<img width="1500" src="./images/certificate_portal.png"/>
+<img width="1500" src="./images/onBoardDevice/certificatePortal.png"/>
 </div>
 
 ?> Agencies will have to create an application via the “application registration” for the access and secret keys with the appropriate access roles in order to generate the relevant certificate files.

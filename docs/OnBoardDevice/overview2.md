@@ -2,7 +2,7 @@
 The chapter provides and introduce to what are the building blocks which makes up DECADA. This chapter will provide Agencies insights on what is DECADA (i.e Device Management & Data Management) and how Agencies can leverage on DECADA to manage and provision their devices and to have a holistic view via their application.</p>
 	
 <div>
-<img width="1200" src="./images/buildingblock.png"/>
+<img width="1200" src="./images/onBoardDevice/buildingBlock.png"/>
 </div>
 	
 
@@ -12,7 +12,7 @@ The chapter provides and introduce to what are the building blocks which makes u
 Agencies can use the following flow chart to have an overview of the DECADA usage from on-boarding to the management of their devices via DECADA:
 
 <div>
-	<img src="./images/decada_flow.png" width="1362px" height="1452px" usemap="#m_Map">
+	<img src="./images/onBoardDevice/decadaFlow.png" width="1362px" height="1452px" usemap="#m_Map">
 	<map name="m_Map">
 		<area name="Integrate" shape="rect" coords="57,288,240,380" href="./#/Dev_Con/Onboard?id=integration-with-decada" title="Integration">
 	 </map>
@@ -30,6 +30,59 @@ $(document).ready(function(e) {
 	});
 });
 </script>
+
+<div class="mermaid">
+graph LR
+%%{wrap}%%
+    subgraph Decommission.
+    direction LR
+    sq[Square shape] --> ci((Circle shape))
+    end
+    subgraph Maintenance.
+    direction LR
+        od>Odd shape]-- Two line<br/>edge comment --> ro
+        di{Diamond with <br/> line break} -.-> ro(Rounded<br>square<br>shape)
+        di==>ro2(Rounded square shape)
+    end
+    %% Notice that no text in shape are added here instead that is appended further down
+    subgraph Service.
+    direction TB
+    s1[Alerts]<-->|optional|s2[Remote Controlling</br> of Devices]
+    s2<-->|optional|s3[Dashboard-Enabling/</br>Disabling of Devices]
+    s3<-->|optional|s4[Multi-Tenancy.]
+    s1<-->|optional|s5[Logginmg Mechanism.]
+    s5<-->|optional|s6[Data Asset Management.]
+    s6<-->|optional|s7[Device Integration.]
+    end
+    %% Comments after double percent signs
+    subgraph Provision.
+    P1[Device Registration.]<-->|optional|P2[Asset Tree Management.]
+    end
+    subgraph Planning/Design.  
+    cyr{Start}-->cyr2[Determine Integration. <br> Mode of Devices<br>]
+    cyr2-->cyr3[Determine</br> Connectivity Scheme  _]
+    cyr3-->cyr4[Data Format  ]
+    end
+    cyr4-->P1
+    P1-->|optional|s1
+    s1-->di
+    di-->sq
+     classDef green fill:#9f6,stroke:#333,stroke-width:4px
+     classDef orange fill:#f96,stroke:#333,stroke-width:4px
+     classDef blue fill:#89CFF0,stroke:#333,stroke-width:4px
+     class sq,e green
+     class di orange
+     class cyr orange
+     class P1,P2 green
+     click cyr2 "http://localhost:3000/#/OnBoardDevice/Onboard?id=integration-with-decada" _blank
+     style cyr2 fill:##bbf,stroke:#333,stroke-width:4px
+     click cyr3 "http://localhost:3000/#/OnBoardDevice/Onboard?id=device-connectivity" _blank
+     style cyr3 fill:##bbf,stroke:#333,stroke-width:4px
+     click cyr4 "http://localhost:3000/#/OnBoardDevice/Onboard?id=data-format" _blank
+     style cyr4 fill:##bbf,stroke:#333,stroke-width:4px
+    
+</div>
+<!--e((Inner / circle<br>and some odd <br>special characters))od3>Really long text with linebreak<br>in an Odd shape-->
 <div class="mermaid">
 %%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '26px'}}}%%
 flowchart LR
@@ -99,23 +152,24 @@ flowchart LR
 <!---Stream Process,Batch Processing,TSDB-->
 
 <div class="mermaid">
-%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': 40, 'background': '#f4f4f4'}}}%%
+%%{init: {'theme': 'dark', 'themeVariables': { 'fontSize': 16, 'background': '#f4f4f4'}}}%%
 flowchart TD
 %%{config: { 'fontFamily': 'Menlo', 'fontSize': 18, 'fontWeight': 400} }%%
-    Start-->A[Determine the Mode of integration of devices]
+    A1{Start}-->A[Determine the Mode of integration of devices]
     A-->B[Determine the Connection Scheme]
     B-->C[Data Format]
     C-->D[Device Registration]
     D<-->|Optional| E[Asset Tree Management]
     D-->F[Alerts]
-    F<-->|Optional| G[Remote Controlling of Devices]
-    G<-->|Optional| H[Dashboards]
-    H<-->|Optional| I[Multi-Tenancy]
+    F-->|Optional| G[Remote Controlling of Devices]
+    G-->|Optional| H[Dashboards]
+    H-->|Optional| I[Multi-Tenancy]
     F-->J[Logging Mechanism]
     J-->K[Data Asset Management]
     K-->|Optional| L[Device Integration]
     F-->|Optional| M[Over-The-Air Updates-OTA]
     M<-->|Optional| N[Certificate Lifecycle Management]
+    M<-->|Optional|O
     F-->|Optional| O[Decommission Devices and Revocation of Credentials]
     D-->O
     O-->P[End]
@@ -125,30 +179,43 @@ flowchart TD
     click D href "http://www.github.com" "Open this in a new tab" _blank
     style Start fill:#f9f,stroke:#333,stroke-width:4px, 
     style P fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5
-    subgraph Planning
-    Start
-    A
-    B
-    C
+    subgraph .
+      subgraph Planning/Design
+        direction TB
+        A1
+        A
+        B
+        C
+      end
     end
     subgraph Provision
+    direction TB  
     D
     E
     end
     subgraph Service
-    I
-    H
-    G
-    F
-    J
-    K
-    L
+       subgraph ZZZ
+       direction BT
+       F
+       G
+       H
+       I
+       end
+       subgraph YYY
+       direction TB
+       F
+       J
+       K
+       L
+       end
     end
     subgraph Maintenance
+    direction TB
     M
     N
     end
     subgraph Decommission
+    direction TB
     O
     P
     end
