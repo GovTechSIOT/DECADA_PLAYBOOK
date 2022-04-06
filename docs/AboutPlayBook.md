@@ -9,7 +9,7 @@ Target audience can navigate to the proposed section based on their interest:
 1. For users whom requires information on the benefit/cost of DECADA & user guide for basic functionality on DECADA
 - [Introduction of DECADA](onBoardDevice/overview.md)
 - [Pricing Model](overview/pricing.md)
-- [Roles & Responsibility](overview/role.md)
+- [Roles & Responsibility](overview/tablerole.md)
 - [Service Level Agreement for DECADA](overview/sla.md)
 - [DECADA Use-Case](useCase/introduction.md)
 

@@ -10,9 +10,7 @@ The chapter provides and introduce to what are the building blocks which makes u
 
 **<u>Device Lifecycle Management</u>**
 
-Agencies can use the following flow chart to have an overview of the DECADA usage from on-boarding to the management of their devices via DECADA:
-
-
+Agencies can use the following flow chart to have an overview of the DECADA usage from on-boarding to the management of their devices via DECADA. (Click on flowchart boxes to navigate to the relevant webpage):
 <div class="mermaid">
 flowchart TD
     B1-->C4
@@ -48,35 +46,35 @@ flowchart TD
     A3[Connection Schemes]-->A4[Data Format]
     end
     style A1 fill:##bbf,stroke:#333,stroke-width:1px
-    click A2 "./#/OnBoardDevice/Onboard?id=integration-with-decada" _blank
+    click A2 "./#/OnBoardDevice/onboard?id=integration-with-decada" _blank
     style A2 fill:##bbf,stroke:#333,stroke-width:1px
-    click A3 "http://localhost:3000/#/OnBoardDevice/Onboard?id=device-connectivity" _blank
+    click A3 "./#/OnBoardDevice/onboard?id=device-connectivity" _blank
     style A3 fill:##bbf,stroke:#333,stroke-width:1px
-    click A4 "http://localhost:3000/#/OnBoardDevice/Onboard?id=data-format" _blank
+    click A4 "./#/OnBoardDevice/onboard?id=data-format" _blank
     style A4 fill:##bbf,stroke:#333,stroke-width:1px
-    click B1 "http://localhost:3000/#/OnBoardDevice/Onboard?id=device-registration" _blank
+    click B1 "./#/OnBoardDevice/onboard?id=device-registration" _blank
     style B1 fill:##bbf,stroke:#333,stroke-width:1px
-    click B2 "http://localhost:3000/#/OnBoardDevice/Onboard?id=managing-asset-tree" _blank
+    click B2 "./#/OnBoardDevice/onboard?id=managing-asset-tree" _blank
     style B2 fill:##bbf,stroke:#333,stroke-width:1px
-    click C1 "http://localhost:3000/#/OnBoardDevice/Service?id=multi-tenancy" _blank
+    click C1 "./#/OnBoardDevice/service?id=multi-tenancy" _blank
     style C1 fill:##bbf,stroke:#333,stroke-width:1px
-    click C2 "http://localhost:3000/#/OnBoardDevice/Service?id=dashboard" _blank
+    click C2 "./#/OnBoardDevice/service?id=dashboard" _blank
     style C2 fill:##bbf,stroke:#333,stroke-width:1px
-    click C3 "http://localhost:3000/#/OnBoardDevice/Service?id=remote-controlling-of-devices" _blank
+    click C3 "./#/OnBoardDevice/service?id=remote-controlling-of-devices" _blank
     style C3 fill:##bbf,stroke:#333,stroke-width:1px
-    click C4 "http://localhost:3000/#/OnBoardDevice/Service?id=alerts" _blank
+    click C4 "./#/OnBoardDevice/service?id=alerts" _blank
     style C4 fill:##bbf,stroke:#333,stroke-width:1px
-    click C5 "http://localhost:3000/#/OnBoardDevice/Service?id=logging-mechanism" _blank
+    click C5 "./#/OnBoardDevice/service?id=logging-mechanism" _blank
     style C5 fill:##bbf,stroke:#333,stroke-width:1px
-    click C6 "http://localhost:3000/#/OnBoardDevice/Service?id=data-asset-management" _blank
+    click C6 "./#/OnBoardDevice/service?id=data-asset-management" _blank
     style C6 fill:##bbf,stroke:#333,stroke-width:1px
-    click C7 "http://localhost:3000/#/OnBoardDevice/Service?id=device-integration" _blank
+    click C7 "./#/OnBoardDevice/service?id=device-integration" _blank
     style C7 fill:##bbf,stroke:#333,stroke-width:1px
-    click D1 "http://localhost:3000/#/OnBoardDevice/Maintenance?id=over-the-air-ota-upgrade" _blank
+    click D1 "./#/OnBoardDevice/maintenance?id=over-the-air-ota-upgrade" _blank
     style D1 fill:##bbf,stroke:#333,stroke-width:1px
-    click D2 "http://localhost:3000/#/OnBoardDevice/Maintenance?id=certificate-lifecycle-management" _blank
+    click D2 "./#/OnBoardDevice/maintenance?id=certificate-lifecycle-management" _blank
     style D2 fill:##bbf,stroke:#333,stroke-width:1px
-    click E1 href "http://localhost:3000/#/OnBoardDevice/Decommis"
+    click E1 href "./#/OnBoardDevice/decommis"
     style E1 fill:##bbf,stroke:#333,stroke-width:1px,fontSize:18
     style E2 fill:##bbf,stroke:#333,stroke-width:1px
 </div>
@@ -154,7 +152,7 @@ OnBoardDevice/Maintenance?id=certificate-lifecycle-management   OnBoardDevice/On
 
 
 <div align=center>
-<img width="800" src="./images/decadalc2.png"/>
+<img width="800" src="./images/overview/decadalc2.png"/>
 </div>
 -->
 

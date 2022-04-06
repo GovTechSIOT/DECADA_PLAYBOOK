@@ -6,19 +6,21 @@
 - **Introduction to DECADA**<!--(Overview/intro.md)-->
      * [DECADA Overview](overview/overview.md)
      * [DECADA Pricing Model](overview/pricing.md)
-     * [Roles and Responsibility](overview/tableRole.md)
+     * [Roles and Responsibility](overview/tablerole.md)
      * [Service Level Agreement for DECADA](overview/sla.md)
  
  - [**Technical Architecture**](overview/highNet.md)
 
 - **On-Boarding Devices**
-     * [Overview](onBoardDevice/overview.md)
-     * [Planning and Provisioning](onBoardDevice/onboard.md)
-     * [Service Phase](onBoardDevice/service.md)
-     * [Maintenance Phase](onBoardDevice/maintenance.md)
-     * [Decommissioning Phase](onBoardDevice/decommission.md)
- <!--* [Test Page: Overview with DrawIo](onBoardDevice/overview2.md)
-     * [Test Page: Responsive Image Map Example](responsive.html) -->
+     * [**Overview** by Mermaid](onBoardDevice/overview.md)
+     * [Mermaid Examples](onBoardDevice/overviewdiffmermaid.md)
+     * [**Overview** by DrawIo](onBoardDevice/intro.md)
+     * [DECADA FlowChart](onBoardDevice/flowchart.html)
+     * [Device LifeCycle Phases](onBoardDevice/overview2.md)
+        - [Planning and Provisioning](onBoardDevice/onboard.md)
+        - [Service Phase](onBoardDevice/service.md)
+        - [Maintenance Phase](onBoardDevice/maintenance.md)
+        - [Decommissioning Phase](onBoardDevice/decommission.md)
      
 - **On-Boarding Applications**
      * [Overview on Application](onBoardingApplication/overview.md)
@@ -56,15 +58,3 @@
      * [Others](faq/others.md)
 
 - [**Terminalogy**](overview/terminology.md)
-<!--
-Additional Info (not in Playbook)
-- [Technical Architechture](Overview/HighNet.md)
-- [DECADA ONBOARDING OLD OVERVIEW]((OnBoardDevice/Lifecycle.md))
-- [High Level Key Features](Overview/Price.md)
-- [Accessing Decada](Overview/AccessingEnOS.md)
-- [Overview Details](Overview/Overview2.md)
-- [Direct Device Connection](OnBoardDevice/Dev_DDC.md)
-- [Edge Gateway](OnBoardDevice/Edge.md)
-- [API Connection](OnBoardDevice/API.md) 
-- [**Appendix**](OnBoardDevice/Appendix.md)       
--->
