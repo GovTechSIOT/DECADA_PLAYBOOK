@@ -7,5 +7,5 @@ The chapter provides and introduction to how DECADA implements a secured IoT Sol
 DECADA is a full IM8 compliant and has gone through audit and penetration testing by GovTech’s CSG (Cyber Security Group) in conjunction with CSA.
 
 <div align=center>
-<img src="./images/DecadaSystemDiagram.png"/>
+<img src="./images/security/decadaSystemDiagram.png"/>
 </div>
