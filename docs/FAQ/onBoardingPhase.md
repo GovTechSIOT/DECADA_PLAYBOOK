@@ -8,7 +8,7 @@ This page listed the frequently asked questions about DECADA services during the
 
 **Q1**: How to select my device connection scheme?
 
-**A1**: The choice depends on the capability of your devices, your business scenario and requirements. Refer to [Integration with DECADA](https://decada-playbook.siot.local/#/Dev_Con/Onboard?id=integration-with-decada)
+**A1**: The choice depends on the capability of your devices, your business scenario and requirements. Refer to [Integration with DECADA](Dev_Con/Onboard?id=Integration-with-decada)
 
 **Q2**: Is there any limit on the basic information fields of model, product, asset, and asset tree?
 
