@@ -7,21 +7,21 @@ The playbook is written as sections that can be read independently covering topi
 Target audience can navigate to the proposed section based on their interest:
 
 1. For users whom requires information on the benefit/cost of DECADA & user guide for basic functionality on DECADA
-- [Introduction of DECADA](onBoardDevice/overview.md)
-- [Pricing Model](overview/pricing.md)
-- [Roles & Responsibility](overview/tablerole.md)
-- [Service Level Agreement for DECADA](overview/sla.md)
-- [DECADA Use-Case](useCase/introduction.md)
+- [Introduction of DECADA](OnBoardDevice/overview.md)
+- [Pricing Model](Overview/pricing.md)
+- [Roles & Responsibility](Overview/tablerole.md)
+- [Service Level Agreement for DECADA](Overview/sla.md)
+- [DECADA Use-Case](UseCase/introduction.md)
 
 2. For users whom requires technical information to evaluate DECADA as a solution (i.e. Agencies IT consultants)
-- [Technical Architecture](overview/highNet.md)
-- [On-boarding of devices to DECADA](onBoardDevice/overview.md)
-- [On-boarding of application to DECADA](onboardingApplication/overview.md)
-- [Security](security/introduction.md)
+- [Technical Architecture](Overview/highNet.md)
+- [On-boarding of devices to DECADA](OnBoardDevice/overview.md)
+- [On-boarding of application to DECADA](OnboardingApplication/overview.md)
+- [Security](Security/introduction.md)
 
 3. For users whom requires comprehensive technical guide on how to integration with/build on DECADA (i.e. Industry Partners)
-- [On-boarding of devices to DECADA](onBoardDevice/overview.md)
-- [On-boarding of application to DECADA](onboardingApplication/overview.md)
-- [DECADA SDK/API](sdkApi/introduction.md)
+- [On-boarding of devices to DECADA](OnBoardDevice/overview.md)
+- [On-boarding of application to DECADA](OnboardingApplication/overview.md)
+- [DECADA SDK/API](SDKAPI/introduction.md)
 
 Alternative, users who are familiar with DECADA may navigate to the topics directly from this site’s navigation menu.

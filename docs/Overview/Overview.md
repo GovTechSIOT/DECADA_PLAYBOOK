@@ -63,8 +63,8 @@ DECADA Cloud Platform is hosted in GCC Azure and is accessible via Internet, pri
 
 DECADA is made up of 2 main building blocks:
 
-1. [Device Management and Connectivity](./#/onBoardDevice/overview.md)
-2. [Data Management](./#/onBoardDevice/Service?id=data-asset-management)
+1. [Device Management and Connectivity](./#/OnBoardDevice/overview.md)
+2. [Data Management](./#/OnBoardDevice/Service?id=data-asset-management)
 
 <div align=center>
 <img src="./images/overview/decadaService.png"/>
