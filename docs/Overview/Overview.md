@@ -63,8 +63,8 @@ DECADA Cloud Platform is hosted in GCC Azure and is accessible via Internet, pri
 
 DECADA is made up of 2 main building blocks:
 
-1. [Device Management and Connectivity](./#/onBoardDevice/overview.md)
-2. [Data Management](./#/onBoardDevice/Service?id=data-asset-management)
+1. [Device Management and Connectivity](./#/OnBoardDevice/Overview.md)
+2. [Data Management](./#/OnBoardDevice/Service?id=data-asset-management)
 
 <div align=center>
 <img src="./images/overview/decadaService.png"/>
@@ -110,7 +110,7 @@ Features Elaboration where is accessible from DECADA Console Portal and API:
 **<u>DECADA Use-Cases</u>**
 
 Some general use-cases are featured in below diagrams. 
-For more examples, refer [here](Dev_Con/usedcase.md).
+For more examples, refer [here](UseCase/Introduction.md).
 
 Use-Case 1: Smart Nation Sensor Platform (SNSP) will send sensor data to Agency Application Server
 
