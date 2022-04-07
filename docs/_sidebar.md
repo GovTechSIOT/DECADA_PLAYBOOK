@@ -1,6 +1,4 @@
 <!-- docs/sidebar -->
-
-
 - [**Home**](README.md)
 
 - [**Release History**](Release.md)
