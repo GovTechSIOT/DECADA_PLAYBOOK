@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Lato|Roboto+Slab&display=swap" rel="stylesheet">-->
+    <meta charset="UTF-8">
+    <title>DECADA Playbook</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="DECADA USER GUIDE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!-- 1. Theme -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css">-->
+    <!--<link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+      title="DECADA"
+    />-->
+    <!--link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@docs-gov-sg/doc-theme-default/public/dist/doc.css"/-->
+    <!--<link ref="stylesheet" href="//cdn.jsdelivr.net/npm/@docs-gov-sg/doc-theme-default/public/dist/doc.css">-->
+    <!--link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple-dark.css">-->
+    <!--link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-defaults.css"> -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@docs-gov-sg/doc-theme-default/public/dist/doc.css" />
+    <!--link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">-->
+</head>
+
+<body style="position: relative">
+    <div class="sgds-masthead" style="z-index: 21;">
+        <div class="sgds-container is-fluid">
+            <a href="https://www.gov.sg" target="_blank">
+                <img src="/images/singapore_government_log.png" alt="documentation service logo" style="width:16px;height:20px;">
+              <!--<span class="sgds-icon sgds-icon-sg-crest"></span>-->
+                <span class="is-text">A Singapore Government Agency Website</span>
+            </a>
+        </div>
+    </div>  <nav class="sgds-navbar" role="navigation">
+        <div class="sgds-container is-fluid">
+            <div class="sgds-navbar-brand">
+                <a class="sgds-navbar-item" href="/">
+                    <img src="/images/logo_color.svg" alt="documentation service logo">
+
+                </a>
+                <div class="sgds-navbar-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="sgds-navbar-menu">
+                <div class="sgds-navbar-start">
+                    <div class="sgds-navbar-item is-hidden-desktop">
+                        <div class="search-app" data-is-authenticated-raw="false" data-page-type=doc></div>
+                    </div>
+                    <a class="sgds-navbar-item " href="https://docs.developer.tech.gov.sg/about">
+                        About
+                    </a>
+                    <a class="sgds-navbar-item is-active" href="https://docs.developer.tech.gov.sg/docs">
+                        Documentation
+                    </a>
+                </div>
+                <div class="sgds-navbar-end">
+                    <div class="sgds-navbar-item">
+                        <a class="sgds-button is-primary" id="navLoginBtn" href="https://login.microsoftonline.com/db5e17b0-dc06-468e-a1ca-956f989dfdd2/oauth2/v2.0/authorize?response_type=code&client_id=e8fe4cd4-9efd-4bd6-beec-a65d3bbd237a&redirect_uri=https%3A%2F%2Fdocs.developer.tech.gov.sg%2Fauth%2Fcallback&scope=openid%20openid%20profile%20email&code_challenge=tCUBrcCiHja50PNm1f1DEoCkzSQ4JAkwJwWBpFEaK8k&code_challenge_method=S256&state=%7B%22handle%22%3A%22qIn0Mx1q%2BIQx3Fx6D0jVub5h%22%2C%22originalReqProp%22%3A%7B%22originalPath%22%3A%22%2Fdocs%2Fdocumentation-portal-publisher-guide%2F%23%2F%22%7D%7D">Log in with TechPass</a>
+                    </div>
+                    <div class="sgds-navbar-item is-hidden-touch">
+                        <div class="search-app" data-is-authenticated-raw="false" data-page-type=doc></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script async defer src="/searchApp.cae8cb92.bundle.js"></script>
+
+    <script nonce="0a2f6ea947ac56c8">
+        const navLogInBtn = document.getElementById("navLoginBtn")
+        if (navLogInBtn) {
+            navLogInBtn.href += "?originalPath=" + encodeURIComponent(window.location.pathname + window.location.search + window.location.hash)
+        }
+    </script>
+<script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+<div id="app">Please wait...</div>
+    <script>
+        window.$docsify = {
+            name: 'DECADA Playbook',
+            //repo: "https://github.com",
+            basepath: "",
+            hideSidebar: false,
+            homepage: "README.md",
+            loadSidebar: true,
+            auto2top: true,
+            maxLevel: 3,
+            subMaxLevel: 3,
+            loadNavbar: false,
+            mergeNavbar: false,
+            formatUpdated: '{MM}/{DD}/{YYYY}',
+
+
+            // 5. docsify-themeable
+            themeable: {
+                readyTransition: true,
+                responsiveTables: true,
+            },
+            markdown: {
+              renderer: {
+
+                code: function (code, lang) {
+                  if (lang === 'drawio') {
+                    if (window.drawioConverter) {
+                      console.log('drawio 转化中')
+                        return window.drawioConverter(code)
+                    } else {
+                        return `<div class='drawio-code'>${code}</div>`
+                    }
+                  } else {
+                      return this.origin.code.apply(this, arguments);
+                    }
+                  }
+                }
+            },
+            //	noCompileLinks: [
+            //		'/foo',
+            //		'/bar/.*'
+            //	],
+            // search things
+            //		search: {
+            //			maxAge: 10000, // Expiration time, milliseconds, 10s now.
+            //			paths: 'auto', // or 'auto' or []
+            //			placeholder: 'Type to search',
+            //			hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+            //	  	},
+            //        copyCode: {
+            //            buttonText : 'Copy to clipboard',
+            //           errorText  : 'Error',
+            //            successText: 'Copied'}
+
+            tabs: {
+                persist: true,      // default
+                sync: true,      // default
+                theme: 'classic', // default
+                tabComments: false,      // default
+                tabHeadings: true       // default
+            }
+            
+        }
+
+    </script>
+    <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});
+    </script>
+
+    <!-- Required: Docsify + Docsify-themeable -->
+    <!--script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>-->
+    <script src="https://unpkg.com/docsify-themeable"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-drawio/viewer.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/docsify-drawio/drawio.js'></script>
+    <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+    <!-- Docsify Plugins -->
+    <!-- docsify-tabs (latest v1.x.x) -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>-->
+    <script src="https://unpkg.com/docsify/lib/plugins/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+    <!--<script src="https://unpkg.com/docsify-copy-code"></script>-->
+    <script src="https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="https://unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+    <!-- <script src="//unpkg.com/docsify-edit-on-github/index.js"></script> -->
+    <!-- gitter -->
+    <!-- Docsify v4 -->
+
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <style>
+        :root {
+            /* Cover   */
+            --cover-color:black;
+            --cover-margin: 0;
+            --cover-max-width: 60em;
+            --cover-text-align: center;
+            /* Change the theme color hue */
+            --theme-hue: 625;
+            /* Change the sidebar bullets */
+            /*--sidebar-nav-link-before-content:   '😀'; '-->';*/
+            --sidebar-width: 30rem;
+            --base-font-size: 15px;
+            --theme-color: rgb(5, 163, 255);
+            /* Tab blocks */
+            --docsifytabs-border-color: #24d8f8;
+            --docsifytabs-border-px: 1px;
+            --docsifytabs-border-radius-px:1px;
+            --docsifytabs-margin: 1.5em 0;
+            /* Tabs */
+            --docsifytabs-tab-background: #f8f8f8;
+            --docsifytabs-tab-background--active: var(--docsifytabs-content-background);
+            --docsifytabs-tab-color: rgba(20, 4, 252, 0.342);
+            --docsifytabs-tab-color--active: inherit;
+            --docsifytabs-tab-highlight-px: 3px;
+            --docsifytabs-tab-highlight-color: var(--theme-color, currentColor);
+            --docsifytabs-tab-padding: 0.6em 1em;
+            /* Tab content */
+            --docsifytabs-content-background: inherit;
+            --docsifytabs-content-padding: 1.5rem;
+            /* Tables */
+            --table-body-border-color:black;
+            --table-body-border-width:1px;
+            --table-cell-border-color:black;
+            --table-cell-border-width:1px;
+            --table-cell-padding: 0.75em 0.5em;
+            --table-head-background:has-background-white;
+            --table-head-border-color: var(--table-cell-border-color);
+            --table-head-border-width:1px;
+            --table-head-font-weight: var(--mono-tint3);
+            --table-row-even-background:grey;
+            --table-row-odd-background: var(--mono-tint3);
+        }
+    </style>
+    <!--
+    <main>
+        <div class="masthead-container has-background-white" id="sgds-navbar">
+            <div class="sgds-masthead">
+                <div class="sgds-container">
+                    <a href="https://www.gov.sg" target="_blank">
+                        <div>
+                            <span class="sgds-icon sgds-icon-sg-crest"></span>
+                            <span class="is-text">A Singapore Government Agency Website</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    -->
+</body>
+</html>
