@@ -29,7 +29,13 @@ pipeline {
             script {
                 def commitHash = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
                 def message = sh(returnStdout: true, script:'git log -1 --pretty=%B').trim()
-                telegramSend(message: 'Docsify-web-application build failure\nCommit Hash: ' + commitHash + '\nChanges:\n' + message + '\n', chatId: -493941087)
+                telegramSend(message: 'Docsify-web-application build failure\nCommit Hash: ' + commitHash + '\nChanges:\n' + message + '\n', chatId: -499610385)
+            }
+        }
+        // TEST PORTAINER WEBHOOK
+        success {
+            script{
+                def response = sh(script: 'curl -X POST -k https://portainer.siot.local/api/webhooks/93da6a3e-153b-41d1-86e2-98aaaf77522e', returnStdout: true)      
             }
         }
     }

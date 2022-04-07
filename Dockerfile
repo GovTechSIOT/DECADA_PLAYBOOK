@@ -1,6 +1,6 @@
 ## Container base
 FROM harbor.siotgov.tech/base_images/openjdk11:latest
-RUN apk update && apk upgrade && apk add curl && apk add npm
+RUN apk update && apk upgrade && apk add curl && apk add npm && apk add --no-cache tini
 ENV TZ="Asia/Singapore"
 
 ## Container LABELs
@@ -13,20 +13,11 @@ LABEL docker_docsify_version="1.0.0.1"
 
 ## Container setup
 RUN npm install -g docsify-cli@latest
-WORKDIR /usr/local/docsify
+
 COPY . .
-RUN chmod +x ./docs
-
-
-## Container environment variables
-ENV DEBUG 0
-ENV PORT 3000
-ENV DOCSIFY_VERSION latest
-ENV NODE_VERSION alpine
-
-## Container RUNtime configuration
+WORKDIR /docs
+RUN ls
 EXPOSE 3000
 
-## Container entry point
-ENTRYPOINT [ "docsify", "serve","./docs", "--port", "3000" ]
-
+ENTRYPOINT ["/sbin/tini", "--"]
+CMD [ "docsify", "serve", "." ]
