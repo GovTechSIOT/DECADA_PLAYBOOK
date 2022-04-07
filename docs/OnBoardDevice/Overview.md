@@ -74,7 +74,7 @@ flowchart TD
     style D1 fill:##bbf,stroke:#333,stroke-width:1px
     click D2 "./#/OnBoardDevice/maintenance?id=certificate-lifecycle-management" _blank
     style D2 fill:##bbf,stroke:#333,stroke-width:1px
-    click E1 href "./#/OnBoardDevice/decommis"
+    click E1 href "./#/OnBoardDevice/decommis" _blank
     style E1 fill:##bbf,stroke:#333,stroke-width:1px,fontSize:18
     style E2 fill:##bbf,stroke:#333,stroke-width:1px
 </div>
