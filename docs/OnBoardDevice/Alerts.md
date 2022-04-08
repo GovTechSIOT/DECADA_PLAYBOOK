@@ -1,6 +1,4 @@
-## Alerts
-
-**<u>Overview</u>**
+<h1>Alerts</h1>
 
 DECADA has available alert services which Agencies can use to monitor alerts on devices as defined by the alert triggering rules against real-time measure point telemetry. 
 

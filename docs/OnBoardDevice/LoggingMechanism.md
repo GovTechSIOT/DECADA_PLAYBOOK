@@ -1,4 +1,4 @@
-**Logging Mechanism**
+<h1>Logging Mechanism</h1>
 
 DECADA provides logging mechanism which allows Agencies to retrieve both system and devices logs to identify and analyze issue early and ensure that the intended functions are running smoothly. 
 

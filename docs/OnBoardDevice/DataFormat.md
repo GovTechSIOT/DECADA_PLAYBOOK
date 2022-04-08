@@ -1,4 +1,4 @@
-**Data Format**
+<h1>Data Format</h1>
 
 The endpoints transmit data to the cloud as per the attributes, measurement points, events, and services defined in the model. DECADA supports the data in both DECADA standard JSON format and custom format.
 

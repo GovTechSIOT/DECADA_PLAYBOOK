@@ -1,4 +1,4 @@
-**Device Integration**
+<h1>Device Integration</h1>
 
 The device integration functionality is a flow that allows Agencies to design and deploy process in a seamless manner. This will provides Agencies the functionality to schedule, automate, and orchestrate integration flows when they need to integrate device data across enterprises or organizations. 
 

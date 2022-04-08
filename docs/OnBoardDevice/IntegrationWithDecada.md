@@ -1,4 +1,4 @@
-**Integration with DECADA**
+<h1>Integration with DECADA</h1>
 
 DECADA provides several connection solutions for Agencies to connect sensors to the platform.
 Communications to DECADA can be done via any one of the following methods:
