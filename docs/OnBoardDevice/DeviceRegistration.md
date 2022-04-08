@@ -1,4 +1,4 @@
-<h1>Device Registration</h1>
+**Device Registration**
 
 In the provisioning phase, Agencies will need to plan and design on ways to manage the endpoints. DECADA allows user to determine the **model** of the devices such as attributes and measure points for the device information, and also determine the device's **hierarchy** if required. DECADA also determines the **connection** scheme of the devices based on device's hardware designs, deployment methods or security requirements.
 

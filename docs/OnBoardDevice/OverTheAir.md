@@ -1,4 +1,4 @@
-<h1>Over-The-Air (OTA) Upgrade</h1>
+**Over-The-Air (OTA) Upgrade**
 
 Under The maintenance phase, Agencies can leverage on the Over-The-Air (OTA) feature offered by DECADA portal to manage and perform device firmware upgrade(i.e. creating new firmware versions, setting upgrade policies, and deleting firmware versions).
 

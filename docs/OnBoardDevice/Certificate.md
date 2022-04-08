@@ -1,4 +1,4 @@
-<h1>Certificate Lifecycle Management</h1>
+**Certificate Lifecycle Management**
 
 DECADA provides certificate lifecycle management feature which allows Agencies to deploy and renew certificates used for authentication upon connection.
 

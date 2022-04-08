@@ -6,14 +6,14 @@
 - **Introduction to DECADA**<!--(Overview/intro.md)-->
   - [DECADA Overview](Overview/Overview.md)
   - [DECADA Pricing Model](Overview/Pricing.md)
-  - [Roles and Responsibility](Overview/TR.md)
+  - [Roles and Responsibility](Overview/Tablerole.md)
   - [Service Level Agreement for DECADA](Overview/sla.md)
 
 - [**Technical Architecture**](Overview/HighNet.md)
 
 - **On-Boarding Devices**
   - [**Overview**](OnBoardDevice/Intro.md)
-  - [DECADA FlowChart](OnBoardDevice/DrawIO.html)
+  - [DECADA FlowChart](OnBoardDevice/Flowchart.html)
   - [Device LifeCycle Phases](OnBoardDevice/Overview2.md)
     - Planning and Provisioning
       - [Integration with DECADA](OnBoardDevice/IntegrationWithDecada.md)

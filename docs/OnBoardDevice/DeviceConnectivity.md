@@ -1,4 +1,4 @@
-<h1>Device Connectivity</h1>
+**Device Connectivity**
 
 DECADA Cloud Platform is hosted in GCC Azure and is connectable via:
 1. Internet

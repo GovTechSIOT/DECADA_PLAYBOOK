@@ -1,4 +1,4 @@
-<h1>Decommissioning Phase</h1>
+# Decommissioning Phase
 
 In the decommissioning phase, Agencies can:
 

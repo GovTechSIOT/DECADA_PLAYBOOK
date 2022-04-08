@@ -1,4 +1,6 @@
-<h1>Dashboard</h1>
+## Dashboard
+
+**<u>Overview</u>**
 
 Once the devices has been provision on DECADA, Agencies can:-
 - Gain an overview of their device inventory and message dynamics (i.e. real-time statistics of device behaviors and connections such as device event reporting  failures, number of message sent by and the network status of devices)

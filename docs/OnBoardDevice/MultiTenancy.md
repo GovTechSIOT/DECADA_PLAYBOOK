@@ -1,4 +1,4 @@
-<h1>Multi-Tenancy</h1>
+**Multi-Tenancy**
 
 DECADA Identity and Access Management (IAM) allows Agencies to manage user identities and control access to your resources in DECADA. It allows Agencies to manage user account lifecycles, authenticate user identities, and control the access rights to the resources. 
 
