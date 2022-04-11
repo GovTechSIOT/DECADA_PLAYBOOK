@@ -1,5 +1,4 @@
-
-# LifeCycle Phases
+<h>LifeCycle Phases</h1>
 **<u>Planning & Design Phase:</u>**
 
 In the planning and design phase, Agencies will determine how to abstract their device models and manage the asset hierarchy. They will also determine the connection scheme and data format to use based on the type of devices to connect, the device deployment conditions, and the required security requirements.

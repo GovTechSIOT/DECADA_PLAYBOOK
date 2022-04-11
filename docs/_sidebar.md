@@ -13,7 +13,7 @@
 
 - **On-Boarding Devices**
   - [**Overview**](OnBoardDevice/Intro.md)
-  - [DECADA FlowChart](OnBoardDevice/Flowchart.html)
+  - [DECADA FlowChart](OnBoardDevice/decada_flowch.html)
   - [Device LifeCycle Phases](OnBoardDevice/Overview2.md)
     - Planning and Provisioning
       - [Integration with DECADA](OnBoardDevice/IntegrationWithDecada.md)
@@ -26,6 +26,8 @@
       - [Dashboards](OnBoardDevice/Dashboard.md)
       - [Remote Control of Device](OnBoardDevice/RemoteControlDevice.md)
       - [Alerts](OnBoardDevice/Alerts.md)
+      - [Logging Mechanism](onBoardDevice/LoggingMechanism.md)
+      - [Data Asset Management](onBoardDevice/DataAssetMgmt.md)
       - [Device Integration](OnBoardDevice/DeviceIntegration.md)
     - Maintenance Phase
       - [Over-The-Air Upgrade](OnBoardDevice/OverTheAir.md)

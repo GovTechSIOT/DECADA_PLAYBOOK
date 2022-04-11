@@ -1,5 +1,4 @@
-# Decommissioning Phase
-
+<h1>Decommissioning Phase</h1>
 
 ## DECADA SDK
 
