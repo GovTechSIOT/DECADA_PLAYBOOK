@@ -6,7 +6,7 @@
 - **Introduction to DECADA**<!--(Overview/intro.md)-->
   - [DECADA Overview](Overview/Overview.md)
   - [DECADA Pricing Model](Overview/Pricing.md)
-  - [Roles and Responsibility](Overview/Tablerole.md)
+  - [Roles and Responsibility](Overview/Tableroleresp.md)
   - [Service Level Agreement for DECADA](Overview/sla.md)
 
 - [**Technical Architecture**](Overview/HighNet.md)
