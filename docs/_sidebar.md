@@ -63,7 +63,7 @@
   - [Air Sensors](UseCase/AirSensor.md)
   - [Solar Panel](UseCase/SolarPanel.md)
   - [Power Meter](UseCase/PowerMeter.md)
-  - [DECADA Starter Kit](UseCase/DecadaStarterKit.md)
+<!--[DECADA Starter Kit](UseCase/DecadaStarterKit.md)-->
 
 - **FAQ**
   - [On-Boarding Device Related](FAQ/OnBoardingPhase.md)

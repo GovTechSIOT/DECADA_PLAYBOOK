@@ -2,6 +2,7 @@
 
 DECADA provides functions relating to Data Asset Management which allows Agencies to manage, consume and store data according to their business needs.
 
+
 <div align=center>
 <name=Device Management Dashboard>
 <img width="850" src="./images/onBoardDevice/dataAssetManagement.png"/>

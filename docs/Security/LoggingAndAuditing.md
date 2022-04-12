@@ -15,11 +15,11 @@ Agencies may refer [here](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2
 DECADA also utilize the  collected logs for audit purpose. This allows Agencies to trace the resource access activities of all users that are registered in IAM to decide whether users are assigned properly to roles and what kind of activities a particular user has performed (events).
 
 <div align=center>
-<img src="./images/security/activitiesonIoTHub.png"/>
+<img src="./images/security/activitiesonIoTHub2.png"/>
 </div>
 
 <div align=center>
-<img src="./images/security/eventsOccuringatTSDB.png"/>
+<img src="./images/security/eventsOccuringAtTSDB.png"/>
 </div>
 
 Accounts with proper privileges may access authorized resources via DECADA service APIs and portal. Access validation is performed for each access attempt. Success or failure attempts are recorded in IAM logs for auditing and abnormality detection purposes.
