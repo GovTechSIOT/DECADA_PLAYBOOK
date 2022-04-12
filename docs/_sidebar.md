@@ -34,9 +34,10 @@
       - [Certificate Lifecycle Management](OnBoardDevice/Certificate.md)
     - Decommissioning Phase
       - [Decommission](OnBoardDevice/Decommission.md)
+  <!--    
   - [TBC:**Overview** by Mermaid](OnBoardDevice/Overview.md)
   - [TBC:Mermaid Examples](OnBoardDevice/Overviewdiffmermaid.md)
-
+  -->
 - **On-Boarding Applications**
   - [Overview on Application](OnBoardingApplication/Overview.md)
   - [Integration with WOG Smart Nation Sensors Platform](OnBoardingApplication/WogSnsp.md)
