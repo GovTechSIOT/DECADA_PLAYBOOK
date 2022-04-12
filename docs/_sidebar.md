@@ -13,7 +13,7 @@
 
 - **On-Boarding Devices**
   - [**Overview**](OnBoardDevice/Intro.md)
-  - [DECADA FlowChart](OnBoardDevice/decada_flowch.html)
+  - [DECADA FlowChart](./OnBoardDevice/decada_flowch.html)
   - [Device LifeCycle Phases](OnBoardDevice/Overview2.md)
     - Planning and Provisioning
       - [Integration with DECADA](OnBoardDevice/IntegrationWithDecada.md)
