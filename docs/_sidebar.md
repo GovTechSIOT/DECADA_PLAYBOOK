@@ -34,10 +34,7 @@
       - [Certificate Lifecycle Management](OnBoardDevice/Certificate.md)
     - Decommissioning Phase
       - [Decommission](OnBoardDevice/Decommission.md)
-  <!--    
-  - [TBC:**Overview** by Mermaid](OnBoardDevice/Overview.md)
-  - [TBC:Mermaid Examples](OnBoardDevice/Overviewdiffmermaid.md)
-  -->
+
 - **On-Boarding Applications**
   - [Overview on Application](OnBoardingApplication/Overview.md)
   - [Integration with WOG Smart Nation Sensors Platform](OnBoardingApplication/WogSnsp.md)
@@ -64,7 +61,6 @@
   - [Air Sensors](UseCase/AirSensor.md)
   - [Solar Panel](UseCase/SolarPanel.md)
   - [Power Meter](UseCase/PowerMeter.md)
-<!--[DECADA Starter Kit](UseCase/DecadaStarterKit.md)-->
 
 - **FAQ**
   - [On-Boarding Device Related](FAQ/OnBoardingPhase.md)
@@ -74,3 +70,7 @@
   - [Others](FAQ/Others.md)
 
 - [**Terminalogy**](Overview/Terminology.md)
+<!--    
+  - [TBC:**Overview** by Mermaid](OnBoardDevice/Overview.md)
+  - [TBC:Mermaid Examples](OnBoardDevice/Overviewdiffmermaid.md)-->
+<!--[DECADA Starter Kit](UseCase/DecadaStarterKit.md)-->
