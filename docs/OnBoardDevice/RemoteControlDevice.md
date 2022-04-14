@@ -1,4 +1,4 @@
-**Remote Controlling of Devices**
+<h1>Remote Controlling of Devices</h1>
 
 DECADA also has the functions which allows Agencies to control their devices remotely from:
 - Directly from DECADA

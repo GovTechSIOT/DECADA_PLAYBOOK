@@ -1,4 +1,4 @@
-**Integration with DECADA**
+<h1>Integration with DECADA</h1>
 
 DECADA provides several connection solutions for Agencies to connect sensors to the platform.
 Communications to DECADA can be done via any one of the following methods:
@@ -27,7 +27,7 @@ Agencies can leverage on this mode of connection if they have an existing applic
 Agencies can use the following flow chart to the determine which mode of connection to use to on-board their devices to DECADA
 
 <div align=center>
-<img src="./images/onBoardDevice/integrationFlowchart.png"/>
+<img src="./images/onBoardDevice/IntegrationFlowchart.png"/>
 </div>
 
 **<u>Comparison on the Mode of Connections </u>**

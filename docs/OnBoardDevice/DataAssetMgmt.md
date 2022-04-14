@@ -1,8 +1,7 @@
-## Data Asset Management
-
-**<u>Overview</u>**
+<h1>Data Asset Management</h1>
 
 DECADA provides functions relating to Data Asset Management which allows Agencies to manage, consume and store data according to their business needs.
+
 
 <div align=center>
 <name=Device Management Dashboard>
@@ -139,67 +138,3 @@ Agencies can subscribe to both the original and the calculated data, so that the
 </div>
 
 Agencies may refer [here](https://siotteam.atlassian.net/wiki/spaces/DUG/pages/2258043087) for more information.
-
-<!--## Data Analytics
-
-**Overview**
-
-DECADA provides functions relating to Data Analytics which allows Agencies to obtain insights from data which are stored via batch processing.
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dataanalytics1.png"/>
-</div>
-Data Analytics
-
-It provides an end-to-end tooling for:
-- Simple data transformation
-- Complete ETL (Extract-Transform-Load) Pipeline
-- Further interactive exploration
-- Providing the modeling-ready data for machine learning, or writing the data to a data store that is optimized for analytics and visualization. 
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/dataanalytics2.png"/>
-</div>
-
-
-
-
-Note to Team:
-To mentioned about ML?
--->
-
-## Device Integration
-
-**<u>Overview</u>**
-
-The device integration functionality is a flow that allows Agencies to design and deploy process in a seamless manner. This will provides Agencies the functionality to schedule, automate, and orchestrate integration flows when they need to integrate device data across enterprises or organizations. 
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/onBoardDevice/deviceIntegration.png"/>
-</div>
-<!--Device Integration Overview-->
-
-**<u>Before You Start</u>**
-
-To utilize the services, Agencies will need to have an account and access to the Device Integration resources. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
-
-**<u>Before you Start</u>**
-To utilize the services, Agencies will need to have an account and access to the Device Integration resources. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
-
-**<u>Via DECADA Management Portal</u>**
-
-Agencies may refer [here](https://support.envisioniot.com/docs/device-integration/en/latest/howto/gettingstarted_storing_data.html) for the implementation details via the DECADA Management Portal.
-
-<div align=center>
-<name=Device Management Dashboard>
-<img width="850" src="./images/onBoardDevice/deviceIntegrationPortal.png"/>
-</div>
-Device Integration - DECADA Management Portal
-
-**<u>Use Case</u>**
-
-Agencies can learn how to set up a user account in a particular organization:
-
--[PC Device Data Integration](https://support.envisioniot.com/docs/device-integration/en/latest/howto/tutorial_pc_device_mgmt.html)

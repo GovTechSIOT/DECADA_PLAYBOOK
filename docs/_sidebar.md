@@ -6,14 +6,14 @@
 - **Introduction to DECADA**<!--(Overview/intro.md)-->
   - [DECADA Overview](Overview/Overview.md)
   - [DECADA Pricing Model](Overview/Pricing.md)
-  - [Roles and Responsibility](Overview/Tablerole.md)
+  - [Roles and Responsibility](Overview/TableRole.md)
   - [Service Level Agreement for DECADA](Overview/sla.md)
 
 - [**Technical Architecture**](Overview/HighNet.md)
 
 - **On-Boarding Devices**
   - [**Overview**](OnBoardDevice/Intro.md)
-  - [DECADA FlowChart](OnBoardDevice/Flowchart.html)
+  - [DECADA FlowChart](OnBoardDevice/decada_flowch.html)
   - [Device LifeCycle Phases](OnBoardDevice/Overview2.md)
     - Planning and Provisioning
       - [Integration with DECADA](OnBoardDevice/IntegrationWithDecada.md)
@@ -26,14 +26,14 @@
       - [Dashboards](OnBoardDevice/Dashboard.md)
       - [Remote Control of Device](OnBoardDevice/RemoteControlDevice.md)
       - [Alerts](OnBoardDevice/Alerts.md)
+      - [Logging Mechanism](OnBoardDevice/LoggingMechanism.md)
+      - [Data Asset Management](OnBoardDevice/DataAssetMgmt.md)
       - [Device Integration](OnBoardDevice/DeviceIntegration.md)
     - Maintenance Phase
       - [Over-The-Air Upgrade](OnBoardDevice/OverTheAir.md)
       - [Certificate Lifecycle Management](OnBoardDevice/Certificate.md)
     - Decommissioning Phase
       - [Decommission](OnBoardDevice/Decommission.md)
-  - [TBC:**Overview** by Mermaid](OnBoardDevice/Overview.md)
-  - [TBC:Mermaid Examples](OnBoardDevice/Overviewdiffmermaid.md)
 
 - **On-Boarding Applications**
   - [Overview on Application](OnBoardingApplication/Overview.md)
@@ -61,7 +61,6 @@
   - [Air Sensors](UseCase/AirSensor.md)
   - [Solar Panel](UseCase/SolarPanel.md)
   - [Power Meter](UseCase/PowerMeter.md)
-  - [DECADA Starter Kit](UseCase/DecadaStarterKit.md)
 
 - **FAQ**
   - [On-Boarding Device Related](FAQ/OnBoardingPhase.md)
@@ -71,3 +70,7 @@
   - [Others](FAQ/Others.md)
 
 - [**Terminalogy**](Overview/Terminology.md)
+<!--    
+  - [TBC:**Overview** by Mermaid](OnBoardDevice/Overview.md)
+  - [TBC:Mermaid Examples](OnBoardDevice/Overviewdiffmermaid.md)-->
+<!--[DECADA Starter Kit](UseCase/DecadaStarterKit.md)-->
