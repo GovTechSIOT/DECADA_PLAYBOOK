@@ -63,7 +63,7 @@ A device is the instance of a product. It is created from a product so that it i
 <img width="850" src="./images/onBoardDevice/newDevice.png"/>
 </div>
 
-Agencies can refer [here](https://www.envisioniot.com/docs/device-connection/en/latest/howto/device/creating_product.html) for more information.
+Agencies can refer [here](https://www.envisioniot.com/docs/device-connection/en/latest/howto/device/creating_device.html) for more information.
 
 Use device SDKs to perform device-end development so that devices are authenticated to the cloud and start to transmit data.
 The sample codes below shows the connection initiated from devices to be connected to DECADA:
