@@ -1,5 +1,7 @@
 <h1>Alerts</h1>
 
+**<u>Overview</u>**
+
 DECADA has available alert services which Agencies can use to monitor alerts on devices as defined by the alert triggering rules against real-time measure point telemetry. 
 
 <div align=center>
@@ -57,5 +59,4 @@ Agencies may refer below for the implementation details via the existing API cal
 Agencies can learn how to create the Alert ID to generate alerts based on the pre-set conditions:
 
  - [Quick Start: Setting Different Alert Thresholds for Devices of the Same Model](https://support.envisioniot.com/docs/alert/en/latest/howto/set_alert_rule_for_device.html)
-
 

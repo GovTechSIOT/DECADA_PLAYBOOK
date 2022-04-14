@@ -3,7 +3,6 @@
 DECADA provides logging mechanism which allows Agencies to retrieve both system and devices logs to identify and analyze issue early and ensure that the intended functions are running smoothly. 
 
 Logs in DECADA are categorized into two types as per the below.
-
 - **Cloud Logs:** Include upstream and downstream messages such as device onboarding, firmware upgrades, file uploads and downloads, data parsing, data reporting, data storage, commands, etc. Logs of upstream messages are messages sent by the device to the message queue, messages flowed from the topic queue to the rule engine, and messages forwarded from the rule engine to other products and services in DECADA, while logs of downstream messages are messages sent from the cloud to the device.
 
 <div align=center>
