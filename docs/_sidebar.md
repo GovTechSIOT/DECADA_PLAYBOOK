@@ -13,7 +13,7 @@
 
 - **On-Boarding Devices**
   - [**Overview**](OnBoardDevice/Intro.md)
-  - [DECADA FlowChart](OnBoardDevice/decada_flowch.html)
+  - [DECADA FlowChart](OnBoardDevice/FlowChart.html)
   - [Device LifeCycle Phases](OnBoardDevice/Overview2.md)
     - Planning and Provisioning
       - [Integration with DECADA](OnBoardDevice/IntegrationWithDecada.md)
@@ -70,6 +70,7 @@
   - [Others](FAQ/Others.md)
 
 - [**Terminalogy**](Overview/Terminology.md)
+
 <!--    
   - [TBC:**Overview** by Mermaid](OnBoardDevice/Overview.md)
   - [TBC:Mermaid Examples](OnBoardDevice/Overviewdiffmermaid.md)-->
