@@ -4,6 +4,10 @@
 
 DECADA provide REST APIs where Agencies can access resources within DECADA system to develop various applications.
 
+Agencies will need to set the following parameters of the DECADA API Gateway in their codes for the intended resources to communicate with DECADA. The API Gateway is the unified entry for all API requests, through which resources can be created, retrieved, updated, deleted, etc.
+
+- Address: http://ag.decada.gov.sg/
+
 Below are some API Services DECADA provides:
 
 **Functionality**|**Purpose**|**API Calls**
