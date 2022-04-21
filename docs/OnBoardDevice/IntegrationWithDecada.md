@@ -59,7 +59,7 @@ Agencies can use the following flow chart to the determine which mode of connect
 </div>
 
 
-**Using Device SDK**
+**<u>Using Device SDK</u>**
 
 Direct connection can be made via the use of GovTech provided SDKs which are available in
 Java, Python 2/3 and C/C++. The device SDKs encapsulate protocols for data transmission and provide features such as device registration, device data ingestion and device control.
@@ -72,23 +72,46 @@ This option is applicable only for sensors with the capability for direct access
   - Connected devices are registered, and devices are burned with the **same** product information (product key and product secret key) in batch. Agencies to call the REST API to register the devices in batch and once they are connected to the network they will be automatically connect to the cloud.
 
 
-**Non-SDK Methods**
+**<u>Non-SDK Methods</u>**
 
-If the device SDKs provided by GovTech cannot meet Agencies’s requirements, Agencies can choose to send telemetries based on DECADA's device protocol standards. The supported protocols are as follows:
+If the device SDKs provided by GovTech cannot meet Agencies’s requirements, Agencies can choose to send telemetries based on DECADA's device protocol standards.
 
-  - <u>MQTT Based Protocol:</u>
-  Device Protocol for MQTT defines the data format of the MQTT-based transmission between devices and DECADA.
-    Agencies need to ensure that the MQTT clients running on their devices support minimally MQTT v3.1.1, secret-based one-way authentication for unclassified data and certificate-based two-way authentication for restricted data.
-Details of implementation can be found [here](https://support.envisioniot.com/docs/device-connection/en/latest/learn/connection_protocols/enos_mqtt).
+**Type of Protocols**
 
-  - <u>CoAP Based Protocol:</u>
-    The Constrained Application Protocol is a protocol designed for use in low-power embedded environments. DECADA exposes a set of APIs which can be accessed via CoAP and devices can connect into the DECADA cloud platform as long as the data format conforms to the standard.
-Details of implementation can be found [here](https://support.envisioniot.com/docs/device-connection/en/latest/learn/connection_protocols/enos_coap).
+The supported protocols are as follows:
 
-   - <u>RESTful API via HTTPS:</u>
-     Used commonly in the Web Technology world, connection with DECADA can be performed through a comprehensive set of RESTful APIs which can be easily accessed via HTTPS. Details of implementation can be found [here](https://support.envisioniot.com/docs/device-connection/en/latest/learn/connection_protocols/enos_http).
+1. RESTful API via HTTPS
+    - Used commonly in the Web Technology world, connection with DECADA can be performed through a comprehensive set of RESTful APIs which can be easily accessed via HTTPS.
+    - Details of implementation can be found [here](https://support.envisioniot.com/docs/device-connection/en/latest/learn/connection_protocols/enos_http)
 
-     Flow Chart for the selection of protocols
+2. MQTT Based Protocol
+    - Device Protocol for MQTT defines the data format of the MQTT-based transmission between devices and DECADA.
+    - Agencies need to ensure that the MQTT clients running on their devices support minimally MQTT v3.1.1, secret-based one-way authentication for unclassified data and certificate-based two-way authentication for restricted data.
+    - Details of implementation can be found [here](https://support.envisioniot.com/docs/device-connection/en/latest/learn/connection_protocols/enos_mqtt).
+
+3. CoAP Based Protocol
+    - The Constrained Application Protocol is a protocol designed for use in low-power embedded environments. DECADA exposes a set of APIs which can be accessed via CoAP and devices can connect into the DECADA cloud platform as long as the data format conforms to the standard.
+    - Details of implementation can be found [here](https://support.envisioniot.com/docs/device-connection/en/latest/learn/connection_protocols/enos_coap).
+
+ **Environment Information**
+
+Depending on the protocol used, Agencies will need to set the following parameters (address & ports) for their devices to communicate with DECADA:
+
+1. Via HTTP
+    - Address: iot-http-integration.decada.gov.sg
+    - Agencies may refer [here](https://support.envisioniot.com/docs/device-connection/en/latest/reference/http_online/index?msclkid=a1288c2ac08611eca235036ddbd6984f) for more information where its data is transmitted though the HTTP integration channel of the DECADA cloud.
+
+2. Via MQTT
+    - Address: mqtt.decada.gov.sg
+    - Ports: 11883 (TCP), 18885 (SSL TCP)
+    - Agencies may refer [here](https://support.envisioniot.com/docs/device-connection/en/latest/learn/connection_protocols/enos_mqtt) for more information about the connections though MQTT
+        
+3. Via CoAP
+    - Address: coap.decada.gov.sg
+    - Ports: 5683 (UDP), 5684 (UDP)
+    - Agencies may refer [here](https://support.envisioniot.com/docs/device-connection/en/latest/learn/connection_protocols/enos_coap) for more information about the connections though CoAP
+
+**<u>Flow Chart for Selection of Protocols</u>**
 
 Agencies to use the following flow chart to determine which protocol the sensors should use to connect to DECADA:
 
