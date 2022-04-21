@@ -77,6 +77,12 @@ The device SDK can be used to encapsulate the messaging interfaces for generatin
 
 To authenticate the devices to DECADA via certificate-basis, Agencies will need to have an account and access to the Device Management. If Agencies do not have the access, please contact GovTech for the creation of account with the necessary functionality access.
 
+**<u>Environment Information</u>**
+
+A certificate will be generated for the on-boarded devices after it is registered (with authentication mode set to X.509 authentication). Agencies will need to set the following parameters to download the certificate from DECADA:
+
+- Address: portal.decada.gov.sg/enos/CA/cacert
+
 **<u>Via DECADA Management Portal</u>**
 
 Once the certificate has been installed on the devices, Agencies can utilize the management portal to manage the lifecycle of the installed certificate.

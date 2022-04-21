@@ -39,7 +39,24 @@ Data can be ingested via the following protocol:
 
 1. HTTPS (via RESTFUL or Data Subscription Service)
 2. MQTT (via Data Subscription Service)
-3. TCP-Based Protocols (via Data Subscription Service)
+3. CoAP
+4. TCP-Based Protocols (via Data Subscription Service)
+
+Depending on the protocol used, Agencies will need to set the following parameters (address & ports) for their 3rd Party application to communicate with DECADA:
+
+- Via HTTP
+	- Address: iot-http-integration.decada.gov.sg
+	- Agencies may refer [here](https://support.envisioniot.com/docs/device-connection/en/latest/reference/http_online/index?msclkid=a1288c2ac08611eca235036ddbd6984f) for more information where its data is transmitted though the HTTP integration channel of the DECADA cloud.
+
+- Via MQTT
+	- Address: mqtt.decada.gov.sg
+	- Ports: 11883 (TCP), 18885 (SSL TCP)
+	- Agencies may refer [here](https://support.envisioniot.com/docs/device-connection/en/latest/learn/connection_protocols/enos_mqtt) for more information about the connections though MQTT
+
+- Via CoAP
+	- Address: coap.decada.gov.sg
+	- Ports: 5683 (UDP), 5684 (UDP)
+	- Agencies may refer [here](https://support.envisioniot.com/docs/device-connection/en/latest/learn/connection_protocols/enos_coap) for more information about the connections though CoAP.
 
 !> Agencies are advised to contact GovTech if they require further customization on the protocol to ingest data to their application. 
 
@@ -53,21 +70,29 @@ For data to be ingested from DECADA to 3rd Party applications, Agencies can cons
 
 The DECADA Data Subscription Service utilize the Kafka Pipeline to improves the API calling efficiency of applications with active data push, which supports subscription to various data types such as real-time asset data, asset alert data, and event data. Applications do not need to call APIs repeatedly and frequently to get the asset data. Instead the subscribed data will be pushed automatically and applications can consume the pushed data as needed. 
 
-Agencies can use the provided SDKs to retrieve the subscribed data:
+Agencies may refer [here](https://www.envisioniot.com/docs/data-subscription/en/latest/data_subscription_overview.html) for more information.
+
+Below are the existing SDKs Agencies can leverage on to utilize to retrieve the subscribed data:
 
 1. [Java SDK](https://mvnrepository.com/artifact/com.envisioniot/enos-subscribe)
 2. [Python SDK](https://github.com/EnvisionIot/enos-subscription-service-sdk-python)
+3. .NET SDK
 
 <div align=center>
 <img src="./images/onBoardingApplication/dataSubscriptionServicePortal.png"/>
 </div>
 
-Agencies may refer [here](https://www.envisioniot.com/docs/data-subscription/en/latest/data_subscription_overview.html) for more information.
+Agencies may refer [here](https://support-cn5.envisioniot.com/docs/data-subscription/en/2.2.0/consuming_subscribed_data.html) for more information.
+
+?> Agencies will have to set the following parameters to get the real-time data pushed subscribed data:\
+ \
+ Address: subscription.decada.gov.sg\
+ Ports: 9001 (TCP)
 
 **<u>Use-Case</u>**
 
 Agencies can learn how to quickly connect a typical IoT devices DECADA and start sending data to another system real-time:
 
-- [Subscribing to Device Real-Time Data and Alert Records](https://www.envisioniot.com/docs/enos-tutorials/en/latest/subscribing_to_device_data/index.html)
+- [Subscribing to Device Real-Time Data and Alert Records](https://www.envisioniot.com/docs/data-subscription/en/latest/gettingstarted_subscribe_realtime.html)
 
 ?> Agencies will have to ensure that the protocol has to be TCP based
